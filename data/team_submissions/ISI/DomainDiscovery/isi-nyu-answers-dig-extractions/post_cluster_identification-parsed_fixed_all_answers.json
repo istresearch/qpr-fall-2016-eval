@@ -1,0 +1,4071 @@
+[
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "9015053403", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "A5C09D048FB072FD40247C14238D97F5176FD7FF943ABE2E588D3AE1402279D1", 
+                1.0
+            ], 
+            [
+                "", 
+                "C44D94134B06A35B9884517020AA6C024ED9AF0D8DD6029D1CBF15F64A9E8975", 
+                0.5
+            ], 
+            [
+                "", 
+                "18D69FEEA97415FE459A3DEF55CA1FE929ED0B4503EE281566E7D642E8E3929C", 
+                0.3333333333333333
+            ], 
+            [
+                "", 
+                "BCC31824B7FDCF2231718438C9460F941E3C7F183C3029B840840E9E277046A9", 
+                0.25
+            ], 
+            [
+                "", 
+                "BE174276A8031F08A05BC11863E13899CEEF38698AC3637EEEB12CE28AD45386", 
+                0.2
+            ], 
+            [
+                "", 
+                "813B8D40D4F5EF8F0D87D4E704C7EA474B4DFCFE1FD8836BAA2DDB929A1E3EB8", 
+                0.16666666666666666
+            ], 
+            [
+                "", 
+                "89C58611F786156703C373448C6012619F25875AF7F52078DB3668D997FBE0E9", 
+                0.14285714285714285
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '9015053403' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 9015053403. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 9015053403.", 
+        "question_id": "3-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "6614472645", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "B29315831DA772BC54D0927B2BFB1417C5FB8C6D8616CED8E2B65A85CC12E2C2", 
+                1.0
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '6614472645' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 6614472645. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 6614472645.", 
+        "question_id": "4-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "2125675378", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "F52027DF19472F4EC12BC46DC6722C4C2EA3D3B883D29AB70BAA52F30A302469", 
+                1.0
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '2125675378' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 2125675378. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 2125675378.", 
+        "question_id": "5-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "sexydelialondon@gmail.com", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "D6ABBA020B357B59801767EF1231C6C7E5DFC1BDE6AB580EA17EA18FDB39B504", 
+                1.0
+            ], 
+            [
+                "", 
+                "9EB3C17ABD627E45B4F771C2F7EF04C4F8DDFB3C1527DD84F05C0B6F79CF7225", 
+                0.5
+            ], 
+            [
+                "", 
+                "DCCB324856F2FFF2271794B15580C6EE5FC96B4986CDBAE9B423E477408EAB70", 
+                0.3333333333333333
+            ], 
+            [
+                "", 
+                "9E1C6F35F4D29622A24788D5B1203A5B8C1229A6709A2E6DA45E2FE0896A6562", 
+                0.25
+            ], 
+            [
+                "", 
+                "1EC2467A6615269AB0495A1422E236C8EEE416CB186FD338BB6B72C09881C620", 
+                0.2
+            ], 
+            [
+                "", 
+                "C08956B049E449C354DE3F62795C58A0B19F80FCC3B8FC8A6DC07E7F3D0F9424", 
+                0.16666666666666666
+            ], 
+            [
+                "", 
+                "B5D3BBF04D32CE366D8DCEE5F0E4D2019188F66E479E25A76668E73421B116FF", 
+                0.14285714285714285
+            ], 
+            [
+                "", 
+                "995F9DC2DE0421D0AF50ED0A07EB403F6A05A095C32472C0C7C97B16865E5AC2", 
+                0.125
+            ], 
+            [
+                "", 
+                "FE4FC6523A38D9DFBADB02076D7D5D4753B8948423A7D4CDE81D36B3DAB956CB", 
+                0.1111111111111111
+            ], 
+            [
+                "", 
+                "35ECF87327B5DBB9135CEE4030277A390A5DC3FE082FF0EA437B99C2FE7B1C8B", 
+                0.1
+            ], 
+            [
+                "", 
+                "A2496DDCA1CED80FA04C6AE31FF20E1B2ECC85A4C6FC48AEE8D8FA892788421C", 
+                0.09090909090909091
+            ], 
+            [
+                "", 
+                "8F0B5702B89D9164F3F2A12956133E27CE65C8B25699818BC450A424F9A25CC6", 
+                0.08333333333333333
+            ], 
+            [
+                "", 
+                "BC33E05E1CE46EC3860E77710E4E41EA508C4CCED27B653935884AF8FCEAD08F", 
+                0.07692307692307693
+            ], 
+            [
+                "", 
+                "E3139755ECA18A31093BB0BBAA0667EC2965CA863377C0E2E26E056F76714675", 
+                0.07142857142857142
+            ], 
+            [
+                "", 
+                "BE2D029F828420B4F1785FA579F2D15057F10FF1EF20FF866E62A0E8A198D7DF", 
+                0.06666666666666667
+            ], 
+            [
+                "", 
+                "8BBED06421BFF74CEDFB955BF7FFC1D850D0B9E5FAAE03A231D17ABEFF8BF0B4", 
+                0.0625
+            ], 
+            [
+                "", 
+                "E8F72B374545791DEBD65C9ACE872392666B3999833ED29D2D101B12F1BA3D3D", 
+                0.058823529411764705
+            ], 
+            [
+                "", 
+                "250C4F4D1C41FE44A3558A96294776DCEFAD66E0D1F5667B86157B458AF2A8EF", 
+                0.05555555555555555
+            ], 
+            [
+                "", 
+                "1893F4623D43B9479F01FA534DE069A1261B1AFB0A55DE76FE3499671BAFBDD4", 
+                0.05263157894736842
+            ], 
+            [
+                "", 
+                "DC113239F4A7F5435F2B2425089330B4925FC6E9677E16E744063AD0C533642D", 
+                0.05
+            ], 
+            [
+                "", 
+                "6F383E1FCF1705B3924766F03113F38368AC1130B7212C34C6760B1166E65883", 
+                0.047619047619047616
+            ], 
+            [
+                "", 
+                "A989B00FF246455E6FE6D8DFEB4E2B9F5BF4BCA2FE88C2B8E0CA67EA7FE80E64", 
+                0.045454545454545456
+            ], 
+            [
+                "", 
+                "B06846C1B8C590C977C3F65EE9D0C1BB1424AD20C12B18292934624708F0C8FA", 
+                0.043478260869565216
+            ], 
+            [
+                "", 
+                "6B54C639CDAFB9EE74CE8DF88CAB3EFCE0AA7AE48AEDADA8142E183D6F98069A", 
+                0.041666666666666664
+            ], 
+            [
+                "", 
+                "116DFB765DA6BDE556E0A585764E21A1C82044E794B9BE2E840A4C4F7566D9E6", 
+                0.04
+            ], 
+            [
+                "", 
+                "DDE722E497C5252F2070518B59C0AB3374214381F16A647C5F21CE10FECC6B44", 
+                0.038461538461538464
+            ], 
+            [
+                "", 
+                "42DF79E7B553F1E34BCCC3219C742E3C91F38DBEBD2F61B7D2A7E1315AD8CD7F", 
+                0.037037037037037035
+            ], 
+            [
+                "", 
+                "BCCD805018AFF288A7263B2BDC9615BF40B836299F4F85A47A10F83E582414A4", 
+                0.03571428571428571
+            ], 
+            [
+                "", 
+                "5FB692F1C8FF1272F7213D245E64B19FBE016529A3A2E6AEAF6943EF9949D878", 
+                0.034482758620689655
+            ], 
+            [
+                "", 
+                "3E6CA52CA11DB00DE5D99068EE81F711B2720F0A3E392F14519923B7F27068E5", 
+                0.03333333333333333
+            ], 
+            [
+                "", 
+                "CFAB034A5149B625FE588E30830CDE9BFC8BFD9EDADE012E0D483A7777E9B0B5", 
+                0.03225806451612903
+            ], 
+            [
+                "", 
+                "15ECBF123B424252088F6201B3947A56C87B759B846560845F92E156568A1666", 
+                0.03125
+            ], 
+            [
+                "", 
+                "263D8C64AAE4DD9C5ADBD03940D97C83543033C36BF6325205EF7825C8C4027C", 
+                0.030303030303030304
+            ], 
+            [
+                "", 
+                "0F59BB8EDB2C3D52115D02AB7F140DF1A4DFAC4812E529805340398F98B514D6", 
+                0.029411764705882353
+            ], 
+            [
+                "", 
+                "17F6715DE823991142DA28D91BA147512CA37598CBA9B4F2BA5CA7B44A6BE7F8", 
+                0.02857142857142857
+            ], 
+            [
+                "", 
+                "480493F97D611D35447A51E66DB9A84D26DAD23EDCA70600D4EE555BD0362F2C", 
+                0.027777777777777776
+            ], 
+            [
+                "", 
+                "EB69AA8C37271453FCFD6A099F63115531DEF899881F275D665644BF0DC65493", 
+                0.02702702702702703
+            ], 
+            [
+                "", 
+                "EA5A3A8634C91C988A79B80CBBAC861698A549E527F5EE9BF4B7935A1C060052", 
+                0.02631578947368421
+            ], 
+            [
+                "", 
+                "4AABE73D522E80CB10E91D5C9B6CB8FFF13D2441BC24E79AE5E7190B0E19DCB0", 
+                0.02564102564102564
+            ], 
+            [
+                "", 
+                "FB136D928E2F805955C49417611CEB97C8E1A771351C8A9E0F4D18AE4D2BBD50", 
+                0.025
+            ], 
+            [
+                "", 
+                "5D7BE5B36F3E343F3E4A13A535DC830D087401C32881B6A6A1C623ED27071029", 
+                0.024390243902439025
+            ], 
+            [
+                "", 
+                "FAA7D55F011F9B3504EAFDC53DDA9D493740AC042C807E58D656520909C71738", 
+                0.023809523809523808
+            ], 
+            [
+                "", 
+                "425776AD021CB4C7B9E49EB2E6046EBFF0F4839E913FBE6FB168A35A20CC0737", 
+                0.023255813953488372
+            ], 
+            [
+                "", 
+                "093EE52D802090BF605548984DADB54DBB3630D9BC8C2D86BFC1D11D545FDE3D", 
+                0.022727272727272728
+            ], 
+            [
+                "", 
+                "6EBBF2F6EF56875C649FAD9A372EF57EE73EC8543755EAB3186F358ECF51CF88", 
+                0.022222222222222223
+            ], 
+            [
+                "", 
+                "3BD3C202B84927354DEE7C2FBB609437213BB91D65C2186419C2597E1181F094", 
+                0.021739130434782608
+            ], 
+            [
+                "", 
+                "F3E47EEC670CDA6BA3CC6CE077B5E07D391E7B78E0B547F1145A3F1E14CA77BC", 
+                0.02127659574468085
+            ], 
+            [
+                "", 
+                "D31914A77D575504B01056C27612D1004CE1B9E0DA07351A08120BB5954E85E0", 
+                0.020833333333333332
+            ], 
+            [
+                "", 
+                "A5B8C5C7B895EBD6B2D1A7329F2956FE0E6EFD9E8253A105C4F6D1F5912CABB7", 
+                0.02040816326530612
+            ], 
+            [
+                "", 
+                "93CADCD08398F6F8F301D57835B146960492B53331A968608819247ADD64C12C", 
+                0.02
+            ], 
+            [
+                "", 
+                "CEC165F266B43E8AD8BC198AF33B6C01B5A1DD817FB53842BB1110328E50D4D9", 
+                0.0196078431372549
+            ], 
+            [
+                "", 
+                "29EAC1A98722BA49622254A87ACAA213DBBCA625D3D5EBFDCD4B26215AFFEA12", 
+                0.019230769230769232
+            ], 
+            [
+                "", 
+                "838035D5165CFE26A68A01E8DE12D2189E1BB638E0BC226B5F1C3D6AE28FB0A6", 
+                0.018867924528301886
+            ], 
+            [
+                "", 
+                "757DB92E35007BB513E4C4D642A8C4258BBBB12F579A0436C53164662161D078", 
+                0.018518518518518517
+            ], 
+            [
+                "", 
+                "C8AA4CA15CC7C79EB36232C6B000EBA06CA26B70ED7DE754D5DAF28033A0C9F8", 
+                0.01818181818181818
+            ], 
+            [
+                "", 
+                "E8644BFF329A42ADF5EF7ACFA8FDC4334AD3AA97656FECEBD81C516024274FC5", 
+                0.017857142857142856
+            ], 
+            [
+                "", 
+                "8244206679736CCE7337A394CDCF2DEB7EF5A19C69C6C2A5423BAE502115ADB1", 
+                0.017543859649122806
+            ], 
+            [
+                "", 
+                "68E99A09CBDD2217F1C4ADEC5CD090BDBD497A44F41BD61C3EDB39B955C66800", 
+                0.017241379310344827
+            ], 
+            [
+                "", 
+                "6BC80E7B4C96E3B76B1019455E9F05FA7AA10B5D0BFDC89CBF03246C0E4F9B72", 
+                0.01694915254237288
+            ], 
+            [
+                "", 
+                "383F74CF81D4C0C1458463EDDA3B4ED40D11BB7E6707C123803F3072A789B422", 
+                0.016666666666666666
+            ], 
+            [
+                "", 
+                "14E179D5D6B64B079E833CD33A64282CA60441039CAA5D58DDD0BFCF0CA468EC", 
+                0.01639344262295082
+            ], 
+            [
+                "", 
+                "2EA15F0E68F50286FF2B21BF074105C1128067A4EFA373784673E97A1B007F17", 
+                0.016129032258064516
+            ], 
+            [
+                "", 
+                "1014B562A63E092138057036C2575FCD5CC3D827F3F148E47B5C8A53AC99D758", 
+                0.015873015873015872
+            ], 
+            [
+                "", 
+                "B4451D45AE781770D7E743190C9EAD13C3F5773E2B5CF5DC0E6AD7E138D6CCF1", 
+                0.015625
+            ], 
+            [
+                "", 
+                "522937E03AD363019E694CDCBCD313781325A6ED96C80C744510EAF5B5864FE9", 
+                0.015384615384615385
+            ], 
+            [
+                "", 
+                "230E8EF0A05F0A2FB274FEE56EC471361D5D6EF3D4A74A41E033EE7B9D613BBD", 
+                0.015151515151515152
+            ], 
+            [
+                "", 
+                "5733C200673E5914EAC1FC3DB15B6859715005BA92FF801CDC14C173638A54CA", 
+                0.014925373134328358
+            ], 
+            [
+                "", 
+                "7A8F35C5FC8783E071538EE37AD79DFD10243E13D74662E1E1FA41DD01156C02", 
+                0.014705882352941176
+            ], 
+            [
+                "", 
+                "ED7A1483ECAE9CF25B8A1ECDB611B41EDEA1ABE65BE5D91CCD2B6D191495016E", 
+                0.014492753623188406
+            ], 
+            [
+                "", 
+                "F7ED67A3039297917F3BC2E8802A64E8D1348B362766CCAF1C3470A7536DD2CF", 
+                0.014285714285714285
+            ], 
+            [
+                "", 
+                "379FBD5D9F775DF2D50BF612A71EF6922859294BCE6C9405E265AE30D7903124", 
+                0.014084507042253521
+            ], 
+            [
+                "", 
+                "B8443B1711BAAF922D84E3D34665A99E5BC64830818E6032A75ABFCE5B617D6E", 
+                0.013888888888888888
+            ], 
+            [
+                "", 
+                "567E096D14478A3E65E63721BAF5BA9FB9974F8BE4D8360DA2605E70459BAE63", 
+                0.0136986301369863
+            ], 
+            [
+                "", 
+                "CDC848CDB8681C332F13BA4F5DC19F3CA8830CE61253C57C294C5B2E4003E3F3", 
+                0.013513513513513514
+            ], 
+            [
+                "", 
+                "8E2E0EF511C04DA68805B4775AD8EEE741D3284584F3AE4C71A7768F8EEA7B75", 
+                0.013333333333333334
+            ], 
+            [
+                "", 
+                "1C12CFBD041544908CE87A400527F8C19F81E1333498253BC97C9FF44722B4F2", 
+                0.013157894736842105
+            ], 
+            [
+                "", 
+                "4BF8BEF6CEBB64B36AA369591D43597AB335EC0BA3783A092770613DAE03E426", 
+                0.012987012987012988
+            ], 
+            [
+                "", 
+                "B398DF6B29ED956CA9A693FBB23E11744B1A2D060D868889EEAE9E1AEA7A47E3", 
+                0.01282051282051282
+            ], 
+            [
+                "", 
+                "A29141212B3BFE2FB93AA971B9ECCC99B97B21D73394B892FB2A3B7473751D37", 
+                0.012658227848101266
+            ], 
+            [
+                "", 
+                "D5657BF7AF990E5021542F9B3AEB21503E7B4E92F116DE3B347399497B1C1A4D", 
+                0.0125
+            ], 
+            [
+                "", 
+                "8E6A083CFD4C2D4DB644A68EDA5AA85F02B9CADAB1EC103F100C9C3E83414462", 
+                0.012345679012345678
+            ], 
+            [
+                "", 
+                "951099333DA02E88BAD37E3AD618392686947B441D0C38424196BCB82EFB68A2", 
+                0.012195121951219513
+            ], 
+            [
+                "", 
+                "8EB8B1AE57F60A497FEC84AFDA995D5D5C9269423AB44575E1E4F4FD295EB038", 
+                0.012048192771084338
+            ], 
+            [
+                "", 
+                "C1B3FB5147B60599CA7C706785F095ADC2E30705034B3129F8F9E7A07B61F259", 
+                0.011904761904761904
+            ], 
+            [
+                "", 
+                "1957F63A874815508A561DBD0CACBB85EACEB5402B90942A1B9492E3EA485AC8", 
+                0.011764705882352941
+            ], 
+            [
+                "", 
+                "458C16A99B443C88D2F3A6CE59F94F2D76FC16FD9C423715C26432ED9F5F11DF", 
+                0.011627906976744186
+            ], 
+            [
+                "", 
+                "290968C5D31BC49A1967ED7E4327A612196F54B630BDC49D9431F4300C9094E2", 
+                0.011494252873563218
+            ], 
+            [
+                "", 
+                "A5B1151D44A70D82DB2CB31D0084E3BB4E5BFF198F55A254FA9D5FFD923EEA8B", 
+                0.011363636363636364
+            ], 
+            [
+                "", 
+                "5B2270817FB4773340C2F0A119F53375ACFFA109973651BD88AF17D8A1361F1A", 
+                0.011235955056179775
+            ], 
+            [
+                "", 
+                "5F0F26EC4A37B27BB694640A8E24675135D7F2B414DC048A2D69DEA7A49D5D33", 
+                0.011111111111111112
+            ], 
+            [
+                "", 
+                "E4043743B2ED9804DE22D6AD8A360BDC9355B88F4CA1FD5A823CB24416B9BAAC", 
+                0.01098901098901099
+            ], 
+            [
+                "", 
+                "D057E6C37F0E17FD1B436C7047D740CCC251934AD4B0A5A802D610686E82E77F", 
+                0.010869565217391304
+            ], 
+            [
+                "", 
+                "D82B640C3B29FF2D12F43729E5B844FB0F3AEFD378A692339E1A8FAB209CDD2D", 
+                0.010752688172043012
+            ], 
+            [
+                "", 
+                "B103CAFC3CA3C8D88AA114F8E4497BE7254BA7332487BCDA126750C34C75C48C", 
+                0.010638297872340425
+            ], 
+            [
+                "", 
+                "CB027FC98900134F52F50F7C33A70F442FFADE8797EAA6E5FF7312DBE0B29AB8", 
+                0.010526315789473684
+            ], 
+            [
+                "", 
+                "E20AF9D7727EA15C6174ABC2097ACED9FC951E19239B8E00A9263E94A5DB2BE2", 
+                0.010416666666666666
+            ], 
+            [
+                "", 
+                "6AAB53586B43379E77D68B58CE5036482281037287E2B7B23ED0AF7BD5C7E3EA", 
+                0.010309278350515464
+            ], 
+            [
+                "", 
+                "DE3AD888B91D71E09B020593BAFE77B89A99B188B210CEED3BFF69DDAAEC6BB3", 
+                0.01020408163265306
+            ], 
+            [
+                "", 
+                "6FD59FDC9B16BB4AC178DC3B50154A03B3A7D77CCDDFF01B6D9BD894D70D1DAB", 
+                0.010101010101010102
+            ], 
+            [
+                "", 
+                "0DA0ADB73F2B5AC0F2D378C00DE2142EF6B9BEB739E171427A8373728C19B702", 
+                0.01
+            ], 
+            [
+                "", 
+                "58E01C5D7AB6B1E90ED6D75086B5761EEC02550E7EC4C44CC6DA8438176D1C7A", 
+                0.009900990099009901
+            ], 
+            [
+                "", 
+                "7D7B11A4F7178AF0FAD4999C3C20E61B761EC303F86C0135C28BEC439B280408", 
+                0.00980392156862745
+            ], 
+            [
+                "", 
+                "596F4B14D909F285C169626B5FCAF2F95EAF48CAA47CED9AFAFB96A698CE7D31", 
+                0.009708737864077669
+            ], 
+            [
+                "", 
+                "6545CE1C9CA191D6340BFA020BBE44AA94998F66ECF6D11069197461A4B6B903", 
+                0.009615384615384616
+            ], 
+            [
+                "", 
+                "949DC2FF53ABCCEFAD37BEE9FA80597FADFCB141EEC3C7243F78D735922356C9", 
+                0.009523809523809525
+            ], 
+            [
+                "", 
+                "6E8256EE33BFCC111F181977422DEC8A2EC2BEE915B018545BA95417E7D35E26", 
+                0.009433962264150943
+            ], 
+            [
+                "", 
+                "22683B1B036DBA9CDC8CFB744EE0DF62C593E4317DA9D641494E9918CC15E3A5", 
+                0.009345794392523364
+            ], 
+            [
+                "", 
+                "359F31118A88846E84A799A116AE4B0CA9F974CF4E9AFDA473B244F492A6119B", 
+                0.009259259259259259
+            ], 
+            [
+                "", 
+                "D81178B6CB0F05F4ED667F06F89A2F796298343EEF502B272D483941AC5B3A08", 
+                0.009174311926605505
+            ], 
+            [
+                "", 
+                "E5FBC3540E5E4D09325794B57D5C9313A69BF1EB1347722C7E2844CFA3973457", 
+                0.00909090909090909
+            ], 
+            [
+                "", 
+                "6A731AE334DCA9F5FA0922B0200C424513F417A824358B8D1D51965EFECB7AE1", 
+                0.009009009009009009
+            ], 
+            [
+                "", 
+                "D0F58A7F25EA2B1A37FB54B01E23E52A758DB303D30862FDD546A914CFFBDACF", 
+                0.008928571428571428
+            ], 
+            [
+                "", 
+                "E6A2D912846DA42038EC79ED4BB0E610530033BA8A8FF6BADD202EAA40ADB7E4", 
+                0.008849557522123894
+            ], 
+            [
+                "", 
+                "010A0B488617245459DA5DC385371B022066E32D0ECB4EB92096C6B4A699CE4D", 
+                0.008771929824561403
+            ], 
+            [
+                "", 
+                "02DB10F76DC7E03C77FF7A019DF0DD0D98954338A2AC778F8CCCF7F8FDDB912E", 
+                0.008695652173913044
+            ], 
+            [
+                "", 
+                "DF7B585A562B67C0B5206147BDDE6505B97C83EA92BC5FDF59CC8D5DD756F6B4", 
+                0.008620689655172414
+            ], 
+            [
+                "", 
+                "5E74705EAD82A5D4218C258F14E6B26B358956AC05D365E53742028F15643713", 
+                0.008547008547008548
+            ], 
+            [
+                "", 
+                "A64E2AE85B604E3684E94A464BA451A74FB69E229B1E59E131FE6409BF448ADB", 
+                0.00847457627118644
+            ], 
+            [
+                "", 
+                "59F59687A521DA2D00B4BE4F33DDE7035549E3E0F39151BB9139969BE0F22282", 
+                0.008403361344537815
+            ], 
+            [
+                "", 
+                "67D108D8F0BD6E97724F50AF162BB74C7BF5228653E6AD71EFEDEC6B7661D44A", 
+                0.008333333333333333
+            ], 
+            [
+                "", 
+                "07E5BBA3F1832D0DB2D4FA6BB9DC6F7509B2E4C10C948717826F3C5147E31FAF", 
+                0.008264462809917356
+            ], 
+            [
+                "", 
+                "39D9CDEE046677CA133CACBFBFA442BCF06E37693DC0877AC252D60C01294B8E", 
+                0.00819672131147541
+            ], 
+            [
+                "", 
+                "7711BC1B0FC754E9DA465A643FDC109FDC4582FA3E66EDDA86D81D5569C2E422", 
+                0.008130081300813009
+            ], 
+            [
+                "", 
+                "0C2EED704A7A6A12E4A5886DA15CA2C28DF11386F16DCB39FA7C9C2A6296682A", 
+                0.008064516129032258
+            ], 
+            [
+                "", 
+                "9779AAA1CE239373143B408551B49CE2659A454E2D553FD76EAF058EE8029C7F", 
+                0.008
+            ], 
+            [
+                "", 
+                "4EB90A4F0279723BDD3803FF0073170A3993BA40E573E771EEAB5538078F5674", 
+                0.007936507936507936
+            ], 
+            [
+                "", 
+                "1CCCE19DC3E9B8F49B3E0A40DE1E42D002CE3E697D3F8919101732AC2219FC0C", 
+                0.007874015748031496
+            ], 
+            [
+                "", 
+                "A4E36911107ED3364E10076A629351A68619BBEC29C21E775E719202A796841B", 
+                0.0078125
+            ], 
+            [
+                "", 
+                "D5A2125CCFB6EBF80D4D22EF3D7A8C385C35AF8C8BF8455ECA42ED13009F5296", 
+                0.007751937984496124
+            ], 
+            [
+                "", 
+                "577DC02AF99825524F2160D001235831CACD959EE4E900BE75B3F0C87847B63D", 
+                0.007692307692307693
+            ], 
+            [
+                "", 
+                "73657E998EC8A7D023F9CE49F86C5E334AE4E5C7FC431878CCEB8E72B61B71E6", 
+                0.007633587786259542
+            ], 
+            [
+                "", 
+                "48D7F8F30C540E7233E883D138C9316AFF0BB72B2F9E6567FE5E126A6400FFF1", 
+                0.007575757575757576
+            ], 
+            [
+                "", 
+                "707F1CD7885200B577E0E9CE2B3927C8698EDD5AD38888CA062613329370F1CF", 
+                0.007518796992481203
+            ], 
+            [
+                "", 
+                "C7040CE92258D99050D10034E5DDE50DA1A5B3B8D31E8F10E8B0AC28F34DAB9F", 
+                0.007462686567164179
+            ], 
+            [
+                "", 
+                "AD35F84C0D2215AEAA80666FD0AA54F4C78D24CA2A0C91958787D035CDAE84FB", 
+                0.007407407407407408
+            ], 
+            [
+                "", 
+                "317B614D1904C6B2C22334F7206F6B6CCC295EDE00342D72F9A5496DC5F6B668", 
+                0.007352941176470588
+            ], 
+            [
+                "", 
+                "26E3A1DD79794760C81E2C5B46ED8F20B84D2E55EC1B15D17213DB9FCBF9BE44", 
+                0.0072992700729927005
+            ], 
+            [
+                "", 
+                "344B42069361843FBE1338B784D18FCC0663A9E9D9CC31A382AB0598F87C625F", 
+                0.007246376811594203
+            ], 
+            [
+                "", 
+                "8F4902D8E27A06E130087AB64B1B5924C8C1CDE7B13476DA4DF3625B65E75311", 
+                0.007194244604316547
+            ], 
+            [
+                "", 
+                "B12EA40057D723C4EBA420299C144A4BE5F8B5FD426A2252CA9CAF90A32C54E6", 
+                0.007142857142857143
+            ], 
+            [
+                "", 
+                "8BF791B6289145129F9FD173C26EF1ECEDDB4EB0614B4FA9BBE286E04E877545", 
+                0.0070921985815602835
+            ], 
+            [
+                "", 
+                "3825B3FA1D7C1178CDC1BBCD29AFCBCBB70B00629B21D242FB869753F0345D61", 
+                0.007042253521126761
+            ], 
+            [
+                "", 
+                "980FBB5CDA989DCE1C9E1748CDCDAE10F36F0FBCB192705B12147F6B8E3CFC2D", 
+                0.006993006993006993
+            ], 
+            [
+                "", 
+                "AE9CB2718E79558FCCF5996AB5DF78F3019308505ADAB97137E7AB40A737525F", 
+                0.006944444444444444
+            ], 
+            [
+                "", 
+                "9B338F5E7AF3B2AC7B131CD2AD766ADAA958430BA87FC7A9F3B75A4AD92277F4", 
+                0.006896551724137931
+            ], 
+            [
+                "", 
+                "C7B703CDFD6279F72B672F2A541800669A2DF4CD3C90AA828B0E48A3601A351B", 
+                0.00684931506849315
+            ], 
+            [
+                "", 
+                "913207532FC96563574A0196F1248CB45B35066DE3E7B5C0D3E68BEC6347C18F", 
+                0.006802721088435374
+            ], 
+            [
+                "", 
+                "6B972ED2537F2A6058CE24BE75907AD828F8BC4178900749454F4DE6D7910CA4", 
+                0.006756756756756757
+            ], 
+            [
+                "", 
+                "365290AB247AD61F452EFC286D727599A9F4969A98A0ACF249B72A89457EC10A", 
+                0.006711409395973154
+            ], 
+            [
+                "", 
+                "D9F6048ADF1D37CC081120F6FAEECA1192A2E6AEA948118C63AD59B58B9ED6D9", 
+                0.006666666666666667
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed 'sexydelialondon@gmail.com' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the email address sexydelialondon@gmail.com. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the email address sexydelialondon@gmail.com.", 
+        "question_id": "6-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "4388151357", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "8295D257384064272117DCB5FD9D22E99239F71724EF7E5E903EDBFC351D29D4", 
+                1.0
+            ], 
+            [
+                "", 
+                "6EEB26F3F3A99A0969C5475EA687B6FF833B7C169BC7B46FD5A9AE4B3810E23B", 
+                0.5
+            ], 
+            [
+                "", 
+                "5CAF65ADFD3FEF9D18FFE3CA352865111091DE42157C8684E6520A6D6FB98E6B", 
+                0.3333333333333333
+            ], 
+            [
+                "", 
+                "84C3216660B0B1A61B08B6C26E44DA188A3683DDAAA4FA8704F44E8FD28F54F2", 
+                0.25
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '4388151357' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 4388151357. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 4388151357.", 
+        "question_id": "7-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "7185105577", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "4473CC0ED22B0A6E46821EE171BE594BF13791624018CB0FDA0CEFE19EE24BF7", 
+                1.0
+            ], 
+            [
+                "", 
+                "DEC79BF70469D3A5C5BE35B8AC3597406135E0AC6983379B945DDB40A6AF131E", 
+                0.5
+            ], 
+            [
+                "", 
+                "A43A4DA2A7EEACD28D35F383AB835381D79EFD6273AD09200F935EC837CE4A15", 
+                0.3333333333333333
+            ], 
+            [
+                "", 
+                "3E540F4CCCE9D1A0E1A810741B1684103DF91BCF50B213E740574FB697ACAF8E", 
+                0.25
+            ], 
+            [
+                "", 
+                "64294CD1817EF39086DB0FB1109170D25141A5715B7D1E4AB4C73DAA5CE1FA5E", 
+                0.2
+            ], 
+            [
+                "", 
+                "9C3751B9D29EF6FB0A08FD1AC8EEFBBDEDE6532FBAD174B20F1299033DC714BF", 
+                0.16666666666666666
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '7185105577' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 7185105577. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 7185105577.", 
+        "question_id": "9-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "2028487000", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "0DCD8DC1FAFB78EF745C8252D236C637435BD0807C73305B6F3F08EA6DE9FB86", 
+                1.0
+            ], 
+            [
+                "", 
+                "04DBA28A3FF918FA503DCDCCFCE77DDB15518B2B9A181147E929C959CEC24FEF", 
+                0.5
+            ], 
+            [
+                "", 
+                "E309F55001A52B57E0319326A9E5AB6AFD8CDAC068E8CB1258D1DB0DC473D50C", 
+                0.3333333333333333
+            ], 
+            [
+                "", 
+                "B30DC2C639C371AC657B6888CB883255C39B11CE2D27BB363733F8AF572EF6B6", 
+                0.25
+            ], 
+            [
+                "", 
+                "923DCF98E9B41F1D3EEF0871ECE41CFF228EFD027659EF7E99ED5DCA204F7F36", 
+                0.2
+            ], 
+            [
+                "", 
+                "196D66E7CF8F4CAFAF3BE6329F9EB517AA7798EB097FD093E76D2BFB0874FE8B", 
+                0.16666666666666666
+            ], 
+            [
+                "", 
+                "02CF465B1F095258303A852C89C8DF04C1CF9ECF5F703C1E0BE8CDD9CEC71644", 
+                0.14285714285714285
+            ], 
+            [
+                "", 
+                "975FD744E015DC2F5338EE0D7FCBA3C5430F2F09DD06C4BB06D12FB10C2A7188", 
+                0.125
+            ], 
+            [
+                "", 
+                "FE0DEDE60FBFB06FC67CD9750DE7B3BD78CD4A61242DE3B5689C924AE10F9BAD", 
+                0.1111111111111111
+            ], 
+            [
+                "", 
+                "82AB07E1DE0B35096DBA3415D84B85C51687FCEB08A202486ADABB2771EF7C86", 
+                0.1
+            ], 
+            [
+                "", 
+                "D99C257A33069C129F4B8AAF66022504414203A527A03A833BFCFE9DFADCE9D6", 
+                0.09090909090909091
+            ], 
+            [
+                "", 
+                "CA43F194076ABDD45FE1FDD0F50A6D388E26A58DAF9EE62B9A0C690BABDEFC46", 
+                0.08333333333333333
+            ], 
+            [
+                "", 
+                "60E1D61A9882F8B703D0CF73A4FE08EEECD40E4D363138516D83D3889FE5AF3F", 
+                0.07692307692307693
+            ], 
+            [
+                "", 
+                "7ABBF1FCB18BD7EC2A723F9383A920B64C7AB88C40F18F91C88ED76A70A83ADC", 
+                0.07142857142857142
+            ], 
+            [
+                "", 
+                "603B8CAC2B419E08AE3F9B2D1059DA261B04A795796A3D473FE0722660B164F5", 
+                0.06666666666666667
+            ], 
+            [
+                "", 
+                "FC88572496241CC4CD9327A21681894C219B12304BFE1B385D358C20201051D0", 
+                0.0625
+            ], 
+            [
+                "", 
+                "893F4C647F9FDB58F5D2D036E28026FF3B5DA1DB5F3E8A4DE71F003D29C7D385", 
+                0.058823529411764705
+            ], 
+            [
+                "", 
+                "FD68EC6D3D4C1577895935689701E5A03C7060663062A199A00348464F66766B", 
+                0.05555555555555555
+            ], 
+            [
+                "", 
+                "ED5E2B642DA0835EB9390C6D5791D57889D795B3331F9036CD531039E0AA6F78", 
+                0.05263157894736842
+            ], 
+            [
+                "", 
+                "273073B7F0DA601F5CC5306B281696AA0014BFB5296C4C8187F64003588704EC", 
+                0.05
+            ], 
+            [
+                "", 
+                "207B924B0ACC4CB7C8AA08CB8DA06F068441080E12264610D1657B7681B66CC7", 
+                0.047619047619047616
+            ], 
+            [
+                "", 
+                "D873036ABE9A2DE25897C4227741764393FB26CB27279A7883CB51A4DE5B7335", 
+                0.045454545454545456
+            ], 
+            [
+                "", 
+                "EC8556BB10A7F52D0D2538CF1535CA88F133B724290808F155AF9FBAE9CC80B7", 
+                0.043478260869565216
+            ], 
+            [
+                "", 
+                "C8751F87752DEB408DE98888511754A4B2591BB89785504BB9032C5390A719C4", 
+                0.041666666666666664
+            ], 
+            [
+                "", 
+                "3ABC066A277299AFAC198B27F8074AEC5B7281C62AD69C95C1659E506BE22477", 
+                0.04
+            ], 
+            [
+                "", 
+                "2B91042755BA098F33099814CA5A0AC96C4594EDBFCCEE7449BE2D576B885203", 
+                0.038461538461538464
+            ], 
+            [
+                "", 
+                "655B02117EE137D77EE15636EEC9668423F0A9B5BC9F0AC5FEC5C10BA6730C74", 
+                0.037037037037037035
+            ], 
+            [
+                "", 
+                "D52DA200AD4653A80D62710FEE6A4614DE69D8BEC3263AE8E15B3D24FB510BAE", 
+                0.03571428571428571
+            ], 
+            [
+                "", 
+                "F9B507AD308658FD30299AB6965824A7377A76AC711D969F3086CEEE516BEF70", 
+                0.034482758620689655
+            ], 
+            [
+                "", 
+                "61E4670958C8BC5745DB9B67775315D1452FEFFDA6AF8037B17227F044A350A2", 
+                0.03333333333333333
+            ], 
+            [
+                "", 
+                "040CCA07E97CDFEEE380F8ADBD99A21DB9F392BF47D08BFAF41D15F55B160D2A", 
+                0.03225806451612903
+            ], 
+            [
+                "", 
+                "41696793AA7570D60054BE5954A368776C6DD184F2A2CDD29C33F358E7107FAC", 
+                0.03125
+            ], 
+            [
+                "", 
+                "6939D3E49DCB03BB0A4E1FAA963A7A4D1CB71F064336D92E7CFB3080F44852E3", 
+                0.030303030303030304
+            ], 
+            [
+                "", 
+                "901DDA14026BBF80FD5B91917B0C7CF2A484EFF4C850ABB642B0382AB6414ABE", 
+                0.029411764705882353
+            ], 
+            [
+                "", 
+                "41DA5EF5A745CE501481563B1728F3F43A2A81C2A53D52E38272A326CDF11CAB", 
+                0.02857142857142857
+            ], 
+            [
+                "", 
+                "8FD80E7DF8A205ABA7FCC39F0BA90182B9936DB12917444CAB12904C6DDD9263", 
+                0.027777777777777776
+            ], 
+            [
+                "", 
+                "0F2F671E5C78BF9DA638175EF85DDCE92954C99AE3B558C2F5C55F958F88437E", 
+                0.02702702702702703
+            ], 
+            [
+                "", 
+                "2ED00CD166891877218AF33E80B1169870FBB91527E28228E6281EBBEFE0E88A", 
+                0.02631578947368421
+            ], 
+            [
+                "", 
+                "9590CD2A31B585EF34EB1FA58D547CD0045DA19A11716EF608112F95A10C1280", 
+                0.02564102564102564
+            ], 
+            [
+                "", 
+                "497F876B01286DFD9D31AA48DE43EDAF6AD21E5CEA5591E57535AF5AB2281736", 
+                0.025
+            ], 
+            [
+                "", 
+                "310B0665CEDFDBDE5BC36EE6CB7811F367EA6A3523E89F4E91575B7E6C564788", 
+                0.024390243902439025
+            ], 
+            [
+                "", 
+                "A6140E58D15DF3E3D1A302F1D7544E84F1FA5D854C62221ADCCCE9F50E57239B", 
+                0.023809523809523808
+            ], 
+            [
+                "", 
+                "F4B7831DFE26803C30C839FF6AD3C43395EA3174B63719E698C61023BD5B4362", 
+                0.023255813953488372
+            ], 
+            [
+                "", 
+                "6E15995BC5E4659BC7C208AEBCB2D101F08451CA502DDA028A9CA3F4CF70D7AF", 
+                0.022727272727272728
+            ], 
+            [
+                "", 
+                "320ABA01E4EF66DD292A062F3A49A200C64A04956E7840AE022B98ABF74D2991", 
+                0.022222222222222223
+            ], 
+            [
+                "", 
+                "2593096D497425A2629AEABA864FEC457ECF5E8B6871AFB7D7935FF57E8B4159", 
+                0.021739130434782608
+            ], 
+            [
+                "", 
+                "46BD7F950C41BEB2C63706A73D77123EDEE610D90F16B3D3AF85BA9F495D8964", 
+                0.02127659574468085
+            ], 
+            [
+                "", 
+                "41D8F51037F600C0404E85BA8BF6AF6681BDEF565D9801B499714DF41448D4F1", 
+                0.020833333333333332
+            ], 
+            [
+                "", 
+                "33891C9B091DEA12436F45E3C30126AF1D6242BAAD7CAC656F72BFFA4074DF3E", 
+                0.02040816326530612
+            ], 
+            [
+                "", 
+                "25C205F88F4EEDD85469116464B3327B4C3B4673C0C509E2780F3E67212564E1", 
+                0.02
+            ], 
+            [
+                "", 
+                "3A443BD71DE2B255D5353E1828673084E4978FC5A74CE28CBB1CFE8E075B1687", 
+                0.0196078431372549
+            ], 
+            [
+                "", 
+                "A564302AC36C50B4B73BB87E7C627DF254F1A06A0A07FE81A92F92B44BDCA547", 
+                0.019230769230769232
+            ], 
+            [
+                "", 
+                "C690544C2C21D9055A7EB950FE9A545844CA7F0C98B19B28A320E480CBA13FC2", 
+                0.018867924528301886
+            ], 
+            [
+                "", 
+                "C39F0C315E7482466948486862B1B6942D7882E72D0F33747856AB2FCCB32F7B", 
+                0.018518518518518517
+            ], 
+            [
+                "", 
+                "DF9543CE1B1998C0677BFD362F5DC67A0B4ACA6996CA4AFD2DE6BCA2F4010EAE", 
+                0.01818181818181818
+            ], 
+            [
+                "", 
+                "16A8C18467AE5A975BB86CD441C07DB4984276EC32A909D88DF38FBCA18C947A", 
+                0.017857142857142856
+            ], 
+            [
+                "", 
+                "18B56C93557D63D729CA4A7883B11919D3D2B7DE3F97F78B70399F59513BA997", 
+                0.017543859649122806
+            ], 
+            [
+                "", 
+                "91F891FE95B562039758EF4504131BE78A238E657D36D493CC18E8B00559B9D4", 
+                0.017241379310344827
+            ], 
+            [
+                "", 
+                "8C4B6E2150AD98A2A4E7D4254378A706FAA4658B80004BA59F90D06781921A6A", 
+                0.01694915254237288
+            ], 
+            [
+                "", 
+                "15589605376D925EABE47C27D3DF45EAB6A467D2D0B9A75079820728BAC13590", 
+                0.016666666666666666
+            ], 
+            [
+                "", 
+                "5B743C2C788D81B496C4DCF78151120DE013339B4806BAA28D5EE6BA94DB67B7", 
+                0.01639344262295082
+            ], 
+            [
+                "", 
+                "BAF25FAB871A60C762AC3468980F0951E82C9C90B0774B5A2929557DCEAB3630", 
+                0.016129032258064516
+            ], 
+            [
+                "", 
+                "C24DAEDA5CDC52447F7F10BF9A577713E7887EDAD0E8847304BA464D51275F4F", 
+                0.015873015873015872
+            ], 
+            [
+                "", 
+                "BB764B7E18EB7FA352265EAAC286B989F621BA5A7B19685F19DAF1C97D0DDDD4", 
+                0.015625
+            ], 
+            [
+                "", 
+                "3D5FD4BEA88D2BF2548B726B9247687F6F0C74EFD473A32BD3190941C62F4FD5", 
+                0.015384615384615385
+            ], 
+            [
+                "", 
+                "A86CECD06C170FC16BA81831B45E5E4D1E2EB016D7D6EF5EC07E1255D4EC326C", 
+                0.015151515151515152
+            ], 
+            [
+                "", 
+                "7390F56C51B49A5D334673E036FC1E1E31663EE6D0602FA9D08874903C5010FF", 
+                0.014925373134328358
+            ], 
+            [
+                "", 
+                "88D1894333DC8590835519E47651471C2542E6618B7B004F2A83324A265889CB", 
+                0.014705882352941176
+            ], 
+            [
+                "", 
+                "BA65D44155F539722160E48671C9B2100A465A7132E4DCE7035D24EDDD4623BB", 
+                0.014492753623188406
+            ], 
+            [
+                "", 
+                "E3BAB9E8803A511D8F9C1B87DAACF2F0C4E2471BF8262EDF26EE5FB707CAA4DF", 
+                0.014285714285714285
+            ], 
+            [
+                "", 
+                "4A00FE958BFA8BAD35ED82D0B7518078246B82D543F358300D056FCB08F196B7", 
+                0.014084507042253521
+            ], 
+            [
+                "", 
+                "4A147E09874E84AB89838324C8F05F80740A8236AF4664CA0FD421A350514E18", 
+                0.013888888888888888
+            ], 
+            [
+                "", 
+                "50F8FF5943A00779D291F9407EDC15D408CE8E653753F8CD5190C7A7DFCE42A0", 
+                0.0136986301369863
+            ], 
+            [
+                "", 
+                "1EB01ED13795097B6143F8211ACCB0C3869D87A3C9399436253F0B721427E002", 
+                0.013513513513513514
+            ], 
+            [
+                "", 
+                "3CD33707A501E26DBD21F2C3963B166CB87BBE4E05348C5D6287F2788328EE60", 
+                0.013333333333333334
+            ], 
+            [
+                "", 
+                "75C7DC1C60BADAFED9A33AD33DB5576DE248D9589FE891982C347D53B9EC4CEB", 
+                0.013157894736842105
+            ], 
+            [
+                "", 
+                "8E7EEE7E74398491C3E28CCC2D42A958EEC200535CA0BE796C5E70862C84D6E1", 
+                0.012987012987012988
+            ], 
+            [
+                "", 
+                "BE6558B367ED617569DF9CB4987A8165C7A9A5EA7C58816E5A15650E70D4F37F", 
+                0.01282051282051282
+            ], 
+            [
+                "", 
+                "7AF128CEB19555BD8A15FA565529F823BEE66A72F709B0B80DD17D5A6816BE2F", 
+                0.012658227848101266
+            ], 
+            [
+                "", 
+                "4D9EB29BAB9F121FF2D66E724D0FAF81092C7BEB5E4EB4320F678AD7A2C91457", 
+                0.0125
+            ], 
+            [
+                "", 
+                "B7178C2D379B4B87D2581306182612C33DD956DC345E7FD71F5C944338E5B2C6", 
+                0.012345679012345678
+            ], 
+            [
+                "", 
+                "DA1F727ABFDE94776B33BB4E52EFE2CE49BFA6D8C3192FB3987B714E23AEB394", 
+                0.012195121951219513
+            ], 
+            [
+                "", 
+                "BB7FEDD8DE3EF8F5845D87FDD434847A8ED59B314D1B08F03F0AB731D591F31B", 
+                0.012048192771084338
+            ], 
+            [
+                "", 
+                "9881A117707AB9E6166BA897805008137A5A54F354A954A10941AC18C8268790", 
+                0.011904761904761904
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '2028487000' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 2028487000. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 2028487000.", 
+        "question_id": "10-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "2818576119", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "C912982322BB7BBAA269C85B7956133ADF65FD7CD231A1B10C50773A799A125B", 
+                1.0
+            ], 
+            [
+                "", 
+                "6BEA69902926631B0B69548FD1E7B28C5590F1FC010E69DB4231DAB4F30D4490", 
+                0.5
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '2818576119' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 2818576119. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 2818576119.", 
+        "question_id": "12-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "7573273421", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "5B7A0613FEBF93C9BC0BBEB257BC7D0E54CE92C486BC8877EEB2DDCF56C0A243", 
+                1.0
+            ], 
+            [
+                "", 
+                "776FAEEF29EF19E64ACB0881945FDF4628556BCF6E02A4256BD33FBC20732526", 
+                0.5
+            ], 
+            [
+                "", 
+                "BA586462B0D150AB16336B198DA2B8C4EC519D46900849E4B44C67D9B1CEF5FE", 
+                0.3333333333333333
+            ], 
+            [
+                "", 
+                "B4F7EE28DCDBB1D329856A1B86A48E313160BCFA6B171C48FF9A665D1459E5A6", 
+                0.25
+            ], 
+            [
+                "", 
+                "A83B4604F3101A066A06851579517F09688DB7E209E88F9AD972970F22B74EEA", 
+                0.2
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '7573273421' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 7573273421. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 7573273421.", 
+        "question_id": "14-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "7054921059", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "41B47D360A089EC407FA0AF33340CB13B73F0786C9D83EE81416D1DEE2434A0D", 
+                1.0
+            ], 
+            [
+                "", 
+                "DD407DB4CBFF65613A53C5D9643A366FCE69549EF6DA3561CD18E844967E706A", 
+                0.5
+            ], 
+            [
+                "", 
+                "F5F883E39E18695C30BF549D6518E78021B2AE1FFC807AAC0B7F86440E8C2BA1", 
+                0.3333333333333333
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '7054921059' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 7054921059. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 7054921059.", 
+        "question_id": "15-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "6466845896", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "CF84EDC6248EA8D9DEA468A6D162A97A709DA09F04ED942BBE7C3DD94D9B65C4", 
+                1.0
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '6466845896' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 6466845896. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 6466845896.", 
+        "question_id": "16-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "6474997664", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "8ED5B1F6BA20681826AB50C991B370C93955CA08777BBF803499F47E6C4525B9", 
+                1.0
+            ], 
+            [
+                "", 
+                "9DDB16A4E7DCA5D10447D1ABFD2C30A99642D0C5E7BE7F37394294A715C51164", 
+                0.5
+            ], 
+            [
+                "", 
+                "98D096C5E7E1E04D9C3125BE18A59590562641E3B7174B2BB00257ACBB136CD7", 
+                0.3333333333333333
+            ], 
+            [
+                "", 
+                "6EA808515E90FA6058613C2D6963A3E9A88A0F4F4BB96B3281BA58B08F935772", 
+                0.25
+            ], 
+            [
+                "", 
+                "B6EF929FDD601599B1CBB60673A02DE659B72BAF0970D172FC9D814EC57B66A2", 
+                0.2
+            ], 
+            [
+                "", 
+                "FCE5EA3E9488204E4345C4F003FD35C928859CB389D03BCFC624D77C2A1B4A18", 
+                0.16666666666666666
+            ], 
+            [
+                "", 
+                "8E1D2D3413DC542B46233148CB8A2436C9CF0190A86BE672D5FE82FD31A1CA7C", 
+                0.14285714285714285
+            ], 
+            [
+                "", 
+                "8EDFD559D82B43FEDDAF91EA3C4FFDF91066D83C0A5B917FD6B5E7E73C7A0BD3", 
+                0.125
+            ], 
+            [
+                "", 
+                "F972287CEDB4C97CA32721FCE4F99B75BC2C98FA36F9791EFF81D34D048ECA33", 
+                0.1111111111111111
+            ], 
+            [
+                "", 
+                "6E1C9E06960DFF1CA016670098D25C8718FB20FFE093FF6F594F4B33D0EDD34A", 
+                0.1
+            ], 
+            [
+                "", 
+                "1A2C9FFCD235F382E174DE3D9FA7BC27B500CE566D7585F1CC55707CA4F77C38", 
+                0.09090909090909091
+            ], 
+            [
+                "", 
+                "E435EA3E462926F9D3183B2D106045C557DA86A37A251B1C14D415DA8EB8173F", 
+                0.08333333333333333
+            ], 
+            [
+                "", 
+                "88127CD6EF304B900DB0127E11941830D54F324D058AFC503DDC9D9F15576D2E", 
+                0.07692307692307693
+            ], 
+            [
+                "", 
+                "371E5597729C12DF1148D792B020F9FE9CD20ADC4BA92B24A241EA4708790D21", 
+                0.07142857142857142
+            ], 
+            [
+                "", 
+                "A637380047911A1AB5829F2B6A085D074186547C783591E8E3AE4031F4B9F7E6", 
+                0.06666666666666667
+            ], 
+            [
+                "", 
+                "9C7CFA5773852F9549C12DD69A00E8F7572AF19F0DE4127DA8BBD66E201BFE7D", 
+                0.0625
+            ], 
+            [
+                "", 
+                "9B3825C76D3707E1A056C3AB5AEE0513FE9C7FFC565DB49313975CE11FF47895", 
+                0.058823529411764705
+            ], 
+            [
+                "", 
+                "6D17AA72E3452173B71F5967098A5068EB846FAD3AA3126E4AB21BB58F9874DD", 
+                0.05555555555555555
+            ], 
+            [
+                "", 
+                "71B18DD7CD3FD35ABFF70B6D69CD5AD3D7BECC5E53804A2D9CC3BA37043C3259", 
+                0.05263157894736842
+            ], 
+            [
+                "", 
+                "CD74F71ED2C548F41EB979C6CB7B3F90EBC3D8A2ADA5F08279A8F7BD9C2036B8", 
+                0.05
+            ], 
+            [
+                "", 
+                "97D4975E5499F0AD58B97D6809877D89E8153387079968532210E8109157816D", 
+                0.047619047619047616
+            ], 
+            [
+                "", 
+                "1DDC360B10946149179938ED781F7C2A398BC0C8F0B4FB60C1E372DDA481198B", 
+                0.045454545454545456
+            ], 
+            [
+                "", 
+                "C31F230E110D7A9909C6BA92B7599FE7E2CA1F520E9733E7C2B275B9320E7F4C", 
+                0.043478260869565216
+            ], 
+            [
+                "", 
+                "0787D2073DA461FC40A42CFA5E15EC4B6BD38628A0F86EEA40C3B7F8175E7844", 
+                0.041666666666666664
+            ], 
+            [
+                "", 
+                "C9F931E19F3136037095BDAA673688EBDF1120F878C71C3EF23BB28901B59D81", 
+                0.04
+            ], 
+            [
+                "", 
+                "EFDC18C50FA90DDF9ADD874E57AB35548C1E3DCFFB26A9A417938C9E23532028", 
+                0.038461538461538464
+            ], 
+            [
+                "", 
+                "09D6BE7E8E1DD7692E17583592174D115395D55C7406A2271A1BAAA942CADD60", 
+                0.037037037037037035
+            ], 
+            [
+                "", 
+                "54D49B27E3E53A2E29494DB05A8A0EA322CBCE3B593794F902E0A66F4BC4355F", 
+                0.03571428571428571
+            ], 
+            [
+                "", 
+                "E079923706E870F82755B124F9C5CDFBE7E1FAB5DEC92C9F134511DDFB00D695", 
+                0.034482758620689655
+            ], 
+            [
+                "", 
+                "D9C6877795EDFF6987E7E406247F5BB8AF02DFC9B1EF56D974D54617A2593D3A", 
+                0.03333333333333333
+            ], 
+            [
+                "", 
+                "A8BCC9E99330F3E803AD3C6418C7FCD921CFC8E45B7F302C0D7EDEBC3352E473", 
+                0.03225806451612903
+            ], 
+            [
+                "", 
+                "1F6D81D765AF6769A748688A04B73FC15230664E37D1EDE1DF908FE4196C9239", 
+                0.03125
+            ], 
+            [
+                "", 
+                "BBFC9B35269FE4F33372097548D7699BE85327D347BE0F015E24C7FC92E478AF", 
+                0.030303030303030304
+            ], 
+            [
+                "", 
+                "E2BE8EEDC5666C2434438D5ECEF004D85FF05C2BAA5E97A1CF38A7E34E8D2F0C", 
+                0.029411764705882353
+            ], 
+            [
+                "", 
+                "A9FE50597D146A89CB54FC4E910F13AB20A54218F734D2501CACB87043F419DB", 
+                0.02857142857142857
+            ], 
+            [
+                "", 
+                "F7D3400F52FDE24E22CEE66C4F31E58FF83B1023E8D3C4C7F0CD82D2B9615650", 
+                0.027777777777777776
+            ], 
+            [
+                "", 
+                "1B531DB5A0193AFA0B6348F436058E48CFC81CA649306739E6AAE78C1258AA23", 
+                0.02702702702702703
+            ], 
+            [
+                "", 
+                "23211B68BDD6A17D63D0D0C965FF86B340957FCB961D65083EE02DA1296CD080", 
+                0.02631578947368421
+            ], 
+            [
+                "", 
+                "7A2759A2BA92ED2C744BA944D3F2B8C3E098D57DB2B04B5782EAAAE8DFA74A27", 
+                0.02564102564102564
+            ], 
+            [
+                "", 
+                "8E83C2AEEC06D6232EA4F4F9FD89D235F21F025CCE21F01AAF2F5F0902625E30", 
+                0.025
+            ], 
+            [
+                "", 
+                "F83F3B70737AB5203ACFC078DD7B65C8F05B43E20A772E720E6FC3B4301EE4E4", 
+                0.024390243902439025
+            ], 
+            [
+                "", 
+                "3AC0038FF7EC694EE2D279E5DAF74B230E7720963D09DB9B36BD356256B8DD3D", 
+                0.023809523809523808
+            ], 
+            [
+                "", 
+                "1ED2675AFCC274165E0AD3DEB99FB3771E9D72ACCDB8C176AC28BC485DB5031D", 
+                0.023255813953488372
+            ], 
+            [
+                "", 
+                "FB8327F883EE2E0FBBA2F88D1C5F35C553AC9214D2E57BECD45D70773E44DAF4", 
+                0.022727272727272728
+            ], 
+            [
+                "", 
+                "C77F9FE81BC14C4398ED2FB19C8ECCADE4FE25ED85633D5006657315BAB45AEB", 
+                0.022222222222222223
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '6474997664' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 6474997664. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 6474997664.", 
+        "question_id": "17-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "2028735072", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "B4F7EE28DCDBB1D329856A1B86A48E313160BCFA6B171C48FF9A665D1459E5A6", 
+                1.0
+            ], 
+            [
+                "", 
+                "0DCD8DC1FAFB78EF745C8252D236C637435BD0807C73305B6F3F08EA6DE9FB86", 
+                0.5
+            ], 
+            [
+                "", 
+                "04DBA28A3FF918FA503DCDCCFCE77DDB15518B2B9A181147E929C959CEC24FEF", 
+                0.3333333333333333
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '2028735072' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 2028735072. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 2028735072.", 
+        "question_id": "18-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "7255023008", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "BBB0204589F25B1F5780891791DD51AA283C31CBA1D7A1983D72F9A852D571CF", 
+                1.0
+            ], 
+            [
+                "", 
+                "866C715CE1718DF296C52C6DFD467CEF77FEBEB5E2531F84475FBFA9D1D5D52F", 
+                0.5
+            ], 
+            [
+                "", 
+                "7DB7006B0FD636BE8D5266DC6F9356310314C0EA81C4F95AAC1136C15EF6554D", 
+                0.3333333333333333
+            ], 
+            [
+                "", 
+                "3B479520F5FE3C5CE538DD35FE8AF54FA538217F7530B7D2E644FEC63630163C", 
+                0.25
+            ], 
+            [
+                "", 
+                "8F17E83D0A2000D1F49C6FF02DBD7B4DB05D446F84A5283615291BBBBF1A80E7", 
+                0.2
+            ], 
+            [
+                "", 
+                "232A1C9EE3D24367F2F4DBCABAFFB8ECFF3037AFDD886A4B0899EA51378B75A1", 
+                0.16666666666666666
+            ], 
+            [
+                "", 
+                "1EE3ED353359F60D7AEE768073B64C714554904B40F72F0C979650F2153693B9", 
+                0.14285714285714285
+            ], 
+            [
+                "", 
+                "E15BE7652DDE4589B24961C2B1A4C970A6F728A8CBF0E4F5E06ACB812747E4E3", 
+                0.125
+            ], 
+            [
+                "", 
+                "BE98F011E83EAE234BAFED0DA1650DD25F5B23C8B60A9349E0F04AF1D10693D7", 
+                0.1111111111111111
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '7255023008' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 7255023008. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 7255023008.", 
+        "question_id": "19-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "4388888389", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "FAD9B860685878938BC71827EEA02C8F7D1330008EC4E0CECB311E48467DC057", 
+                1.0
+            ], 
+            [
+                "", 
+                "8295D257384064272117DCB5FD9D22E99239F71724EF7E5E903EDBFC351D29D4", 
+                0.5
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '4388888389' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 4388888389. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 4388888389.", 
+        "question_id": "21-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "7807569000", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "8174489051817FB098C0C46A630B159ACCC1D39B749D2C9335572F94732D3105", 
+                1.0
+            ], 
+            [
+                "", 
+                "E42D644581C87F6A4C768E8886B6B4A5A80F4C3C2625A9FF2184666C6A4AECE4", 
+                0.5
+            ], 
+            [
+                "", 
+                "29A925138172A6822169DB32F4C17BF3F9AD20CAD372984A64A6B86083B99D6A", 
+                0.3333333333333333
+            ], 
+            [
+                "", 
+                "5EDE9BDE960343F4B4CE523D21D6168A235C18AAE650841C915E2869E1A7F021", 
+                0.25
+            ], 
+            [
+                "", 
+                "8ECD25926FBA55B54A1144523EDD3D80317C274DB965EE08EE2FED8BB534B663", 
+                0.2
+            ], 
+            [
+                "", 
+                "D970468650A7AF56FFA50C4A5A63AC5280407CDC31F8B446CED75C0D3BEE6CD1", 
+                0.16666666666666666
+            ], 
+            [
+                "", 
+                "F3DDB1EC2DFD2CCAEAE38FEAB616966178BBBA3724F4A0D92FC08C72F30DBFE9", 
+                0.14285714285714285
+            ], 
+            [
+                "", 
+                "C3E855A595F0D429C9F98CF15339327A36D4157439B050E4CE183A18FBBA72A1", 
+                0.125
+            ], 
+            [
+                "", 
+                "3FC955031258375F1C3BAE804101FACF31ADF51E1968454CFEC07F604A54CF75", 
+                0.1111111111111111
+            ], 
+            [
+                "", 
+                "045FAC171F81632C2AFD26F7BCB02DDE58204970BB25EA7CDD648BA9B75AA9CD", 
+                0.1
+            ], 
+            [
+                "", 
+                "BD3FEA9E6DEA8FDED0DCF6BA7014569350D8EAE1EBAC2B3EA2951A3E1D1DE7CD", 
+                0.09090909090909091
+            ], 
+            [
+                "", 
+                "652F1B7083D8E0D9C857C3C929DA0917D66641B544C27B050CEC34DCD85A2229", 
+                0.08333333333333333
+            ], 
+            [
+                "", 
+                "59630A084525EA94CB2898DF5EB4A4F297B76076C36E672FF62301998A64BDFF", 
+                0.07692307692307693
+            ], 
+            [
+                "", 
+                "812D003B277969D17F83F02455DA53789953BCCE6A745F8C81C661D0AFC01BB9", 
+                0.07142857142857142
+            ], 
+            [
+                "", 
+                "4C80DDFFEEF8711106B558E5EC7E3CCA24CA9852CC1F8C8F44BC1EE3F02C1593", 
+                0.06666666666666667
+            ], 
+            [
+                "", 
+                "72288CEDB1DC20C21137A18CF566CB47240B0067B735EE99EBE83131EBEE9DF5", 
+                0.0625
+            ], 
+            [
+                "", 
+                "2281CE76D50D949BC381F153E4C22DA774C5A1401969B5EFDA5D45E59FB35FDE", 
+                0.058823529411764705
+            ], 
+            [
+                "", 
+                "25962574281A3A3F2B39A14D9F7D14E88F469F72877CCF60C47B80F49F86E274", 
+                0.05555555555555555
+            ], 
+            [
+                "", 
+                "E7E3374021BE29360AF7CEFBD6D1B3F6DE96BD20BE96F3838B3026EADDFC9315", 
+                0.05263157894736842
+            ], 
+            [
+                "", 
+                "5AAC525A5DC436D4D773E667B12754D6F031FED7E558072ACE1C4BB0F85CC2EF", 
+                0.05
+            ], 
+            [
+                "", 
+                "ACF3F87D23F627BED454E04FC440BD61B1A3CB434A3343E00FB7206370060CEF", 
+                0.047619047619047616
+            ], 
+            [
+                "", 
+                "5AA193B5F54CA4A1C9FF2275CF9C7C2CD96FBC23874F103B6A73368751397F31", 
+                0.045454545454545456
+            ], 
+            [
+                "", 
+                "D3CDA4D4B478A9E80018B1A3F35E3A693FEFD52216FABDE42FB3C1B1FDCBCA06", 
+                0.043478260869565216
+            ], 
+            [
+                "", 
+                "3A7828741A603BF9024017211AFB141565E03C22056FDE04C294531254209147", 
+                0.041666666666666664
+            ], 
+            [
+                "", 
+                "775CDF41D187955C52C01768D47B64A1825F97A5DDD8AE38D89E939C6114F023", 
+                0.04
+            ], 
+            [
+                "", 
+                "E5B38B192A1469F123C3046DEE04D56BA1A324BEF617190A9F4066C91CCC7B9F", 
+                0.038461538461538464
+            ], 
+            [
+                "", 
+                "026533DE72BB626CA935DBB45B4D67BB3B208D8A23B72C40593045A80135F3BC", 
+                0.037037037037037035
+            ], 
+            [
+                "", 
+                "111BCF28975261FFC5B1023248D7740846216A76A505B4C6BEDDA3E4DBD7DAD1", 
+                0.03571428571428571
+            ], 
+            [
+                "", 
+                "2AC31134DF8999771A34F5D3D744569314F7F1676A62D68EDA7F0273831E58FE", 
+                0.034482758620689655
+            ], 
+            [
+                "", 
+                "1517B3A1449C295A01190582D4EE48E4E233EC9220636DDAF880E502582C6AEF", 
+                0.03333333333333333
+            ], 
+            [
+                "", 
+                "8B8F228120ED1EDCE3CB1B29B8B95FBE4A1FBABE15E830A121709A98583EC039", 
+                0.03225806451612903
+            ], 
+            [
+                "", 
+                "9709DB5A52198E7D07CB7866045B35D600029887F7986B2D16E4D80C6D9F85EF", 
+                0.03125
+            ], 
+            [
+                "", 
+                "3D7D5FB43F3174B96D3D1FB9B791C721BC76F523F0A3BBA37C6432E33D7F27B0", 
+                0.030303030303030304
+            ], 
+            [
+                "", 
+                "51FA17C56C586076E4A5B73156C9C52F8C242F226117EDC82A396CD9336931A0", 
+                0.029411764705882353
+            ], 
+            [
+                "", 
+                "37C00F7EA941313B1D4EAC74D02D51A33EA5C440F55EC68667534ADAFA045EEA", 
+                0.02857142857142857
+            ], 
+            [
+                "", 
+                "24FD7E86458A231C9F21058EC19DA92384E35C14F9FD6669FFA6F71E665566D1", 
+                0.027777777777777776
+            ], 
+            [
+                "", 
+                "750D4359D51A6DE93D91A4A497AE0A8EBB10E5006ED2DF86694FF6831FE839B7", 
+                0.02702702702702703
+            ], 
+            [
+                "", 
+                "6CB2188B7A57A88F3241941A9F594F417255695A70241186F62A1362385820AD", 
+                0.02631578947368421
+            ], 
+            [
+                "", 
+                "7A9ED63BAA2470A618B6286FD43C6762DD7E21E5D2A0EC6C3DC7ACDA7C1261D4", 
+                0.02564102564102564
+            ], 
+            [
+                "", 
+                "DAC9C7A9AFC244255BB92270C54632729BE22DE08553917FEEC3203BCF88F72C", 
+                0.025
+            ], 
+            [
+                "", 
+                "47431E175641DF17F8D67F6B7092A0DC71CB3D524230CE3D18CD8193297A0D87", 
+                0.024390243902439025
+            ], 
+            [
+                "", 
+                "E4AE3EE28C3267D92AD0083B979E3F26E8639E779E0CEA30402233EF800D03E6", 
+                0.023809523809523808
+            ], 
+            [
+                "", 
+                "529D65CE41B565C2B54CF06F63321392AD4A0A904D6962BF7730E8B88DED6CD7", 
+                0.023255813953488372
+            ], 
+            [
+                "", 
+                "C074C8C37FEF38631BFBC4F72E103AC305E4DCA6E20199F8FE639F8885CA3618", 
+                0.022727272727272728
+            ], 
+            [
+                "", 
+                "8B85DB4FB8545E6817FEFF7A0B1047045D6E6E32655E7D6B9C156E31B345E5B7", 
+                0.022222222222222223
+            ], 
+            [
+                "", 
+                "F72ABD545812E52BCC4292FA92553641022C3CCDB7C068B987EE61707F9E96B0", 
+                0.021739130434782608
+            ], 
+            [
+                "", 
+                "E16C91A3D99B4DA056034A13D874DF73D01AC94A3C056BA533D441A54CB3D62F", 
+                0.02127659574468085
+            ], 
+            [
+                "", 
+                "2CF46497C0679036D50030442D7210A53F0D0FAA6D1C40C65F29EC7596A205B1", 
+                0.020833333333333332
+            ], 
+            [
+                "", 
+                "D8A800D4E14EC61BC3E8C669276DA1F456A5B3E62EDDFE0A6AE066A95A2B423C", 
+                0.02040816326530612
+            ], 
+            [
+                "", 
+                "EE311F7E94C1D2711318D367281A3DE7AA90BEED6F20A44681C908A5F81B1088", 
+                0.02
+            ], 
+            [
+                "", 
+                "3CC4D24F0EC60C01D6A78C6944285500ABE8474F380782CFDDAB0B0F179937A8", 
+                0.0196078431372549
+            ], 
+            [
+                "", 
+                "6DD5A09BF3CE23164BE11D88C1D6E096C0311A16F21D00F75C266107BF7A9B72", 
+                0.019230769230769232
+            ], 
+            [
+                "", 
+                "792F1E74BCA2729B3BC873338659EAB7E43E50A5D023B20DA2499A392093EB58", 
+                0.018867924528301886
+            ], 
+            [
+                "", 
+                "66E5C841DA4DB6E21639182708E6E1BBECC2E7F196B8A18C8FEE7A7E0CD30372", 
+                0.018518518518518517
+            ], 
+            [
+                "", 
+                "8A1FBAAB2DC1126BB95145EAE21D331DDEC3A99B365C6C1F6B3E0E6E7420D7F1", 
+                0.01818181818181818
+            ], 
+            [
+                "", 
+                "0784F9F0B2FA5261804DDDFB2EF8591C181A387390D844C738028F198816AAA7", 
+                0.017857142857142856
+            ], 
+            [
+                "", 
+                "DDC372DDF3C779B40AE197DCEF7FD7D7CCC121274A81210C48967211AFEA80D8", 
+                0.017543859649122806
+            ], 
+            [
+                "", 
+                "6A7D6AB167D238561A172B547510E08E989EA8894F1BEC1205A664B344850684", 
+                0.017241379310344827
+            ], 
+            [
+                "", 
+                "8BBE7D32C998D0CA5EED6D946C9B840B136FECFA181F1AE3E01DA33869E98A4D", 
+                0.01694915254237288
+            ], 
+            [
+                "", 
+                "9C8ACCD6DD226EFEB90C1D9E5612475605636CB1618C2BE1B1B01D0DAF78BD9F", 
+                0.016666666666666666
+            ], 
+            [
+                "", 
+                "2DFE2E5D1E8C489446BD45C1405E0799F3ED5184779000A2C5EC5AD36135E8B7", 
+                0.01639344262295082
+            ], 
+            [
+                "", 
+                "F78722C3E6B4247BCD08EA663414B2CBBC176C5496A26B7C51A93F5AD5FD6786", 
+                0.016129032258064516
+            ], 
+            [
+                "", 
+                "A9C73600FB117B024E5054DBE83BC77338228C13AE8B49E46E3D4DD1EDB1CB70", 
+                0.015873015873015872
+            ], 
+            [
+                "", 
+                "FC85980EC71E661067753338EF1D86FD0EF14245A279560C0567A17B9908EB3B", 
+                0.015625
+            ], 
+            [
+                "", 
+                "A110F3C09C1C9FB3793151635C67864F707777F43DAD49F27491AFBE0209ED77", 
+                0.015384615384615385
+            ], 
+            [
+                "", 
+                "C1225BCF58017988D9E4546F86D1B2CD5544C87FDF199EFEACC4A48D856323F6", 
+                0.015151515151515152
+            ], 
+            [
+                "", 
+                "0BE4410F509270F115634193AF07DF0E7E03DCD3F2868C95FD20A37F003F4DFD", 
+                0.014925373134328358
+            ], 
+            [
+                "", 
+                "F5117C2A5ED1DF89A9B3EB1652661DE848FA36AFC612854F3797C5323FF620D0", 
+                0.014705882352941176
+            ], 
+            [
+                "", 
+                "23B3CD8324F2BD04BF02BC53EC4627DBC59E6E810ABA9DBB283905599DEE1A0A", 
+                0.014492753623188406
+            ], 
+            [
+                "", 
+                "39217A36ED43CEBC70CD6D4BEFCE6132190F7F08BFBE83B5A8BFBBA49CF5E5A0", 
+                0.014285714285714285
+            ], 
+            [
+                "", 
+                "57A1731872216A3F6FFE5E6C114339C57627AB802992C74520C29C01B483961C", 
+                0.014084507042253521
+            ], 
+            [
+                "", 
+                "864B2C344C8E2D5D9C626ABB983DD31DABC2A4C7F647736C327487A328589C39", 
+                0.013888888888888888
+            ], 
+            [
+                "", 
+                "284E3F508189545D33CC9839E949244F7F578EBA05800EC124049C3298D05C58", 
+                0.0136986301369863
+            ], 
+            [
+                "", 
+                "49F629A93BF6681324B93DEAA9E74F9CB3D462C7DF243E0ED2EC289B02BF41E8", 
+                0.013513513513513514
+            ], 
+            [
+                "", 
+                "B325A772F313166FC65051064D3302648FDCE47955041B40B5484A3A9DB6E6A7", 
+                0.013333333333333334
+            ], 
+            [
+                "", 
+                "D88FBE431FB50566AE50BCBD9910548E018DB107E91AA1A05F2B571C1F31F0E6", 
+                0.013157894736842105
+            ], 
+            [
+                "", 
+                "E140AAC6AE3D5729C51A63DD7F19A364FE8E329FFB16B7785019F769F4468C10", 
+                0.012987012987012988
+            ], 
+            [
+                "", 
+                "CE79ADA43E12CBF2EFC089F068CA5C0561FF0B0C437987520532AA01FE246A53", 
+                0.01282051282051282
+            ], 
+            [
+                "", 
+                "1B6EFA682180EC1F2DB2B4124D85C30A0EBFF24D326D71CB701E0A6B96128E0F", 
+                0.012658227848101266
+            ], 
+            [
+                "", 
+                "B8735500B879E55B4B4833C937C33EFFF6A403990955AC68E3CDE8C4CE03C394", 
+                0.0125
+            ], 
+            [
+                "", 
+                "378E38F37197DDE3C496FFE990D33136F048D35588F3FFBBCD5DAECEC2DA4966", 
+                0.012345679012345678
+            ], 
+            [
+                "", 
+                "F2117E0FB2BDD948B6FFD2A2E291518450FC53DB23C94E045345CFA4E7696C93", 
+                0.012195121951219513
+            ], 
+            [
+                "", 
+                "E85FF3C7281A6A509D69490843DB15FFD164999A2594EC83F7B9F56FE85CA1F3", 
+                0.012048192771084338
+            ], 
+            [
+                "", 
+                "AF25FE406F168C470C02B9CAC0854BEB2330423156CFC541D27CF4E78B014763", 
+                0.011904761904761904
+            ], 
+            [
+                "", 
+                "467C55C8A3A0A46F076E6157705A9E098AE686217582D9A4116BBFF152D41711", 
+                0.011764705882352941
+            ], 
+            [
+                "", 
+                "12151481909DC47BD4ED98CC7CB4D85BEE6D338B7F3BC02EDC6E8C95A9BD7485", 
+                0.011627906976744186
+            ], 
+            [
+                "", 
+                "ACF35CD266640C460B7A28D68DA882920AFE18A19556AC249C855554902ACB38", 
+                0.011494252873563218
+            ], 
+            [
+                "", 
+                "62CF595C44CEF4706B7B0FA7DA33A935BFF4DBFFF10200790094144027A71C7A", 
+                0.011363636363636364
+            ], 
+            [
+                "", 
+                "E1BB0C28DE29C7D857268F3DFC64A75AD6417A8AED6B6EB0D9ADE71F72A6F9EC", 
+                0.011235955056179775
+            ], 
+            [
+                "", 
+                "07E2BBD44AB892A170FF8A5D69E0116FD2EC4367C972A674D92B20090F340C6A", 
+                0.011111111111111112
+            ], 
+            [
+                "", 
+                "F5643E97879096F03DDDA0FD45F23CDA31D9D73EEB0584E824B660900D381D81", 
+                0.01098901098901099
+            ], 
+            [
+                "", 
+                "0876C5956CADC13845646C1836C7F15816F1E05D59416F3ACC5E64311E59E496", 
+                0.010869565217391304
+            ], 
+            [
+                "", 
+                "7A557432B0890C5285AE665862A3D4D27727B22AB10BA263F05EB8A8F214ABB5", 
+                0.010752688172043012
+            ], 
+            [
+                "", 
+                "FCFEB717115D90418F27490F29C18B66CEB35BEFFFC9C53F691AC15EDE744DCB", 
+                0.010638297872340425
+            ], 
+            [
+                "", 
+                "41696793AA7570D60054BE5954A368776C6DD184F2A2CDD29C33F358E7107FAC", 
+                0.010526315789473684
+            ], 
+            [
+                "", 
+                "B7178C2D379B4B87D2581306182612C33DD956DC345E7FD71F5C944338E5B2C6", 
+                0.010416666666666666
+            ], 
+            [
+                "", 
+                "C39F0C315E7482466948486862B1B6942D7882E72D0F33747856AB2FCCB32F7B", 
+                0.010309278350515464
+            ], 
+            [
+                "", 
+                "BA65D44155F539722160E48671C9B2100A465A7132E4DCE7035D24EDDD4623BB", 
+                0.01020408163265306
+            ], 
+            [
+                "", 
+                "BE6558B367ED617569DF9CB4987A8165C7A9A5EA7C58816E5A15650E70D4F37F", 
+                0.010101010101010102
+            ], 
+            [
+                "", 
+                "9590CD2A31B585EF34EB1FA58D547CD0045DA19A11716EF608112F95A10C1280", 
+                0.01
+            ], 
+            [
+                "", 
+                "BB764B7E18EB7FA352265EAAC286B989F621BA5A7B19685F19DAF1C97D0DDDD4", 
+                0.009900990099009901
+            ], 
+            [
+                "", 
+                "3CD33707A501E26DBD21F2C3963B166CB87BBE4E05348C5D6287F2788328EE60", 
+                0.00980392156862745
+            ], 
+            [
+                "", 
+                "75C7DC1C60BADAFED9A33AD33DB5576DE248D9589FE891982C347D53B9EC4CEB", 
+                0.009708737864077669
+            ], 
+            [
+                "", 
+                "1EB01ED13795097B6143F8211ACCB0C3869D87A3C9399436253F0B721427E002", 
+                0.009615384615384616
+            ], 
+            [
+                "", 
+                "0F2F671E5C78BF9DA638175EF85DDCE92954C99AE3B558C2F5C55F958F88437E", 
+                0.009523809523809525
+            ], 
+            [
+                "", 
+                "6DDC006642021ABC3FAD8A5A5565F59789A5D4229115852F135BEEE0C97CD8F6", 
+                0.009433962264150943
+            ], 
+            [
+                "", 
+                "E5D63B2DABB318407C0D4CB3BB90449DD397FDFBB7DFB741D320B6491B7FF8F1", 
+                0.009345794392523364
+            ], 
+            [
+                "", 
+                "B02778A7CA6860314DC2751A9E106987F29D979721E395C0D58AC9BD9B913933", 
+                0.009259259259259259
+            ], 
+            [
+                "", 
+                "8E7EEE7E74398491C3E28CCC2D42A958EEC200535CA0BE796C5E70862C84D6E1", 
+                0.009174311926605505
+            ], 
+            [
+                "", 
+                "18B56C93557D63D729CA4A7883B11919D3D2B7DE3F97F78B70399F59513BA997", 
+                0.00909090909090909
+            ], 
+            [
+                "", 
+                "C24DAEDA5CDC52447F7F10BF9A577713E7887EDAD0E8847304BA464D51275F4F", 
+                0.009009009009009009
+            ], 
+            [
+                "", 
+                "8C4B6E2150AD98A2A4E7D4254378A706FAA4658B80004BA59F90D06781921A6A", 
+                0.008928571428571428
+            ], 
+            [
+                "", 
+                "4A00FE958BFA8BAD35ED82D0B7518078246B82D543F358300D056FCB08F196B7", 
+                0.008849557522123894
+            ], 
+            [
+                "", 
+                "A6140E58D15DF3E3D1A302F1D7544E84F1FA5D854C62221ADCCCE9F50E57239B", 
+                0.008771929824561403
+            ], 
+            [
+                "", 
+                "16A8C18467AE5A975BB86CD441C07DB4984276EC32A909D88DF38FBCA18C947A", 
+                0.008695652173913044
+            ], 
+            [
+                "", 
+                "7AF128CEB19555BD8A15FA565529F823BEE66A72F709B0B80DD17D5A6816BE2F", 
+                0.008620689655172414
+            ], 
+            [
+                "", 
+                "25C205F88F4EEDD85469116464B3327B4C3B4673C0C509E2780F3E67212564E1", 
+                0.008547008547008548
+            ], 
+            [
+                "", 
+                "BAF25FAB871A60C762AC3468980F0951E82C9C90B0774B5A2929557DCEAB3630", 
+                0.00847457627118644
+            ], 
+            [
+                "", 
+                "BB7FEDD8DE3EF8F5845D87FDD434847A8ED59B314D1B08F03F0AB731D591F31B", 
+                0.008403361344537815
+            ], 
+            [
+                "", 
+                "F4B7831DFE26803C30C839FF6AD3C43395EA3174B63719E698C61023BD5B4362", 
+                0.008333333333333333
+            ], 
+            [
+                "", 
+                "310B0665CEDFDBDE5BC36EE6CB7811F367EA6A3523E89F4E91575B7E6C564788", 
+                0.008264462809917356
+            ], 
+            [
+                "", 
+                "33891C9B091DEA12436F45E3C30126AF1D6242BAAD7CAC656F72BFFA4074DF3E", 
+                0.00819672131147541
+            ], 
+            [
+                "", 
+                "6E15995BC5E4659BC7C208AEBCB2D101F08451CA502DDA028A9CA3F4CF70D7AF", 
+                0.008130081300813009
+            ], 
+            [
+                "", 
+                "2593096D497425A2629AEABA864FEC457ECF5E8B6871AFB7D7935FF57E8B4159", 
+                0.008064516129032258
+            ], 
+            [
+                "", 
+                "320ABA01E4EF66DD292A062F3A49A200C64A04956E7840AE022B98ABF74D2991", 
+                0.008
+            ], 
+            [
+                "", 
+                "15589605376D925EABE47C27D3DF45EAB6A467D2D0B9A75079820728BAC13590", 
+                0.007936507936507936
+            ], 
+            [
+                "", 
+                "DA1F727ABFDE94776B33BB4E52EFE2CE49BFA6D8C3192FB3987B714E23AEB394", 
+                0.007874015748031496
+            ], 
+            [
+                "", 
+                "4D9EB29BAB9F121FF2D66E724D0FAF81092C7BEB5E4EB4320F678AD7A2C91457", 
+                0.0078125
+            ], 
+            [
+                "", 
+                "88D1894333DC8590835519E47651471C2542E6618B7B004F2A83324A265889CB", 
+                0.007751937984496124
+            ], 
+            [
+                "", 
+                "41D8F51037F600C0404E85BA8BF6AF6681BDEF565D9801B499714DF41448D4F1", 
+                0.007692307692307693
+            ], 
+            [
+                "", 
+                "2ED00CD166891877218AF33E80B1169870FBB91527E28228E6281EBBEFE0E88A", 
+                0.007633587786259542
+            ], 
+            [
+                "", 
+                "91F891FE95B562039758EF4504131BE78A238E657D36D493CC18E8B00559B9D4", 
+                0.007575757575757576
+            ], 
+            [
+                "", 
+                "497F876B01286DFD9D31AA48DE43EDAF6AD21E5CEA5591E57535AF5AB2281736", 
+                0.007518796992481203
+            ], 
+            [
+                "", 
+                "46BD7F950C41BEB2C63706A73D77123EDEE610D90F16B3D3AF85BA9F495D8964", 
+                0.007462686567164179
+            ], 
+            [
+                "", 
+                "4A147E09874E84AB89838324C8F05F80740A8236AF4664CA0FD421A350514E18", 
+                0.007407407407407408
+            ], 
+            [
+                "", 
+                "C690544C2C21D9055A7EB950FE9A545844CA7F0C98B19B28A320E480CBA13FC2", 
+                0.007352941176470588
+            ], 
+            [
+                "", 
+                "50F8FF5943A00779D291F9407EDC15D408CE8E653753F8CD5190C7A7DFCE42A0", 
+                0.0072992700729927005
+            ], 
+            [
+                "", 
+                "3A443BD71DE2B255D5353E1828673084E4978FC5A74CE28CBB1CFE8E075B1687", 
+                0.007246376811594203
+            ], 
+            [
+                "", 
+                "A86CECD06C170FC16BA81831B45E5E4D1E2EB016D7D6EF5EC07E1255D4EC326C", 
+                0.007194244604316547
+            ], 
+            [
+                "", 
+                "A564302AC36C50B4B73BB87E7C627DF254F1A06A0A07FE81A92F92B44BDCA547", 
+                0.007142857142857143
+            ], 
+            [
+                "", 
+                "E3BAB9E8803A511D8F9C1B87DAACF2F0C4E2471BF8262EDF26EE5FB707CAA4DF", 
+                0.0070921985815602835
+            ], 
+            [
+                "", 
+                "DF9543CE1B1998C0677BFD362F5DC67A0B4ACA6996CA4AFD2DE6BCA2F4010EAE", 
+                0.007042253521126761
+            ], 
+            [
+                "", 
+                "7390F56C51B49A5D334673E036FC1E1E31663EE6D0602FA9D08874903C5010FF", 
+                0.006993006993006993
+            ], 
+            [
+                "", 
+                "71D89CC300C07D805B83400D29F3C0B8CF2ED81A4C0AC03B8F9D82690FC7A90D", 
+                0.006944444444444444
+            ], 
+            [
+                "", 
+                "951E60C0FACE7A9F35EFABF70268C2A6DDF517614B4D824DD73ECF6BA34A7BCC", 
+                0.006896551724137931
+            ], 
+            [
+                "", 
+                "72323986530F8637237E82B389295BB1E0FFAC71C6213E1CD489D9A8EF7FE563", 
+                0.00684931506849315
+            ], 
+            [
+                "", 
+                "7C332816D029C853309889D1BE39212D883318FD1D5858BAC1A8A3D79C2DFC62", 
+                0.006802721088435374
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '7807569000' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 7807569000. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 7807569000.", 
+        "question_id": "22-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "9734890946", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "08CCC484ED7B9BBEA5E48E0C053B36C6D552678A9148CC9E2F7F06ED95FE20C7", 
+                1.0
+            ], 
+            [
+                "", 
+                "CF84EDC6248EA8D9DEA468A6D162A97A709DA09F04ED942BBE7C3DD94D9B65C4", 
+                0.5
+            ], 
+            [
+                "", 
+                "36F76242E52BDE65AA7BB2CF96ED1C28E8A44BDCDDACA22DC7B0113939738636", 
+                0.3333333333333333
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '9734890946' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 9734890946. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 9734890946.", 
+        "question_id": "23-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "2892739463", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "5D3F01F6F9CC6633E9846D46CB5E68B2AAFE0054F54B6840350F5D16C7AA9B83", 
+                1.0
+            ], 
+            [
+                "", 
+                "C5637E93223C45D29231CC14AEE24DF26E749B2BFB5DD55933AFDE32DAFCA5E1", 
+                0.5
+            ], 
+            [
+                "", 
+                "983075782F3D8A599DA56A8925AC20CA54AF251E9BFF9554D67E01498EB096CC", 
+                0.3333333333333333
+            ], 
+            [
+                "", 
+                "3F86324DFEF67F6953625B95AC0E47DA1A36321C1C032910BBE22098849E3C99", 
+                0.25
+            ], 
+            [
+                "", 
+                "B15EA9228CBDB9AB666E2127A9BA22A88A2F2CFAD914657B490EE19C48F0EC5C", 
+                0.2
+            ], 
+            [
+                "", 
+                "8A18C6211356EAEDBC3448D59AE70607927C1D191095CFD5A0F705665BAC76EE", 
+                0.16666666666666666
+            ], 
+            [
+                "", 
+                "031E2534E3342D595C12C0932FF7F2E211A0EEFB0385F69D3DBF99F6C909C6DB", 
+                0.14285714285714285
+            ], 
+            [
+                "", 
+                "445683834570AC14A0B1F1BB0E2B614B7159201F95709C4E2BB263712337959D", 
+                0.125
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '2892739463' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 2892739463. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 2892739463.", 
+        "question_id": "26-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "5107106295", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "55303F8562309779971522DA909B492CEB106B01C316FA24532DD43F76E27A85", 
+                1.0
+            ], 
+            [
+                "", 
+                "CF245B331E39577983E46108EC7222FC3561FDE3A209C3DB9FEFA50E2B26BB77", 
+                0.5
+            ], 
+            [
+                "", 
+                "069740A74819381ECA6E7FEA0ED826B07EEA417D0CCA652B504D493FF6AE8EA8", 
+                0.3333333333333333
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '5107106295' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 5107106295. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 5107106295.", 
+        "question_id": "27-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "3345579838", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "BBBA368D9CF7C60104DEE8CB2EC76E2592DBB0BC8E74A0554958D93DBE4BA79E", 
+                1.0
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '3345579838' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 3345579838. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 3345579838.", 
+        "question_id": "29-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "3152153434", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "F9941DE813291996A64EC7634A4E75EB43F76F9E9F91E60363E76E1CF664E67E", 
+                1.0
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '3152153434' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 3152153434. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 3152153434.", 
+        "question_id": "30-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "8036618360", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "72A8F994CB5D090B3BCCE769F1F84D993E52E2786FE75CEEAC0510CE222C9BD3", 
+                1.0
+            ], 
+            [
+                "", 
+                "23001E500DDE3717A46B30E62E6278BE30B5BCFB351CFC92ED08A319BE13DDBF", 
+                0.5
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '8036618360' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 8036618360. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 8036618360.", 
+        "question_id": "31-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "4254997966", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "A9E0D71AEF094346B2981BEA92D33FE9A19867B7B4234638220BDEF53A017D81", 
+                1.0
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '4254997966' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 4254997966. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 4254997966.", 
+        "question_id": "32-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "5735138036", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "F774B7A2A6E93AABFBD6E55B580B966895C3302131CE6B3D5B1C09A2C1DEEFD1", 
+                1.0
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '5735138036' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 5735138036. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 5735138036.", 
+        "question_id": "33-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "4792354008", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "FC2A2B7CA101AD0BE9B958FB6A518EF131169A82F3571C3161FB5A3D11663342", 
+                1.0
+            ], 
+            [
+                "", 
+                "79AC84921EE4ACAD5E72152C874BE6264153D77E9A7A8ECF929F18721E748645", 
+                0.5
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '4792354008' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 4792354008. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 4792354008.", 
+        "question_id": "34-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "9152357427", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "8A65A33963ED35480A536764E6CDC31C087E6AB1F9636411452769F202ED5282", 
+                1.0
+            ], 
+            [
+                "", 
+                "565FCA7353561D2BD4331ACFB50157BF3E51FAB6850654BA898200BB26C38BA6", 
+                0.5
+            ], 
+            [
+                "", 
+                "9F17175699D6BB0411C5373BB41B922B5BA88E7242744696420AB91F17EACABA", 
+                0.3333333333333333
+            ], 
+            [
+                "", 
+                "776FAEEF29EF19E64ACB0881945FDF4628556BCF6E02A4256BD33FBC20732526", 
+                0.25
+            ], 
+            [
+                "", 
+                "1914C860516E5BA0A93AA0FCDF73B46F2F9496AE75B7341BB0AE8379AA82833C", 
+                0.2
+            ], 
+            [
+                "", 
+                "D99C257A33069C129F4B8AAF66022504414203A527A03A833BFCFE9DFADCE9D6", 
+                0.16666666666666666
+            ], 
+            [
+                "", 
+                "3FC955031258375F1C3BAE804101FACF31ADF51E1968454CFEC07F604A54CF75", 
+                0.14285714285714285
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '9152357427' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 9152357427. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 9152357427.", 
+        "question_id": "35-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "2026706528", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "48F6EBE4359430AC197640FDDB6E4BED56C6DCCF7EDA6175F2021163256FAF26", 
+                1.0
+            ], 
+            [
+                "", 
+                "52F33C005F489630BB5EB5BC62C75BA81B10F0BDA1523368A46F2560D02B8060", 
+                0.5
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '2026706528' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 2026706528. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 2026706528.", 
+        "question_id": "36-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "6462800740", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "DEFCB0E786FFE8B340C62EFE84D380CB28F9FF4B82C222E7B24211B69F16F4A9", 
+                1.0
+            ], 
+            [
+                "", 
+                "4473CC0ED22B0A6E46821EE171BE594BF13791624018CB0FDA0CEFE19EE24BF7", 
+                0.5
+            ], 
+            [
+                "", 
+                "3CAB8444FDFC62FBB0AB2FD2FCAC4B0DF747F49C12112B5E209B86533E0DA13F", 
+                0.3333333333333333
+            ], 
+            [
+                "", 
+                "CA19249FBEA7EF35279EDD27EFE8D1DD5480E4A1DB1F71ED868534107D4BE965", 
+                0.25
+            ], 
+            [
+                "", 
+                "8D26BE5C7D435F95E6366D3F8D2611DB4CEC8B01A93AC056207A1BB1E382B4BE", 
+                0.2
+            ], 
+            [
+                "", 
+                "DEC79BF70469D3A5C5BE35B8AC3597406135E0AC6983379B945DDB40A6AF131E", 
+                0.16666666666666666
+            ], 
+            [
+                "", 
+                "A43A4DA2A7EEACD28D35F383AB835381D79EFD6273AD09200F935EC837CE4A15", 
+                0.14285714285714285
+            ], 
+            [
+                "", 
+                "9C3751B9D29EF6FB0A08FD1AC8EEFBBDEDE6532FBAD174B20F1299033DC714BF", 
+                0.125
+            ], 
+            [
+                "", 
+                "79FF80C4849771385C82A4E829F68A3270AD3F751A7C0C43CAB1F68878DEDC7A", 
+                0.1111111111111111
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '6462800740' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 6462800740. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 6462800740.", 
+        "question_id": "37-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "4053089136", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "ED9B66D5816E86498F2A40D818E9AE312903C68213624C4071D8FDB942A6CA59", 
+                1.0
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '4053089136' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 4053089136. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 4053089136.", 
+        "question_id": "38-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "7577689219", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "79DC745E9E9D913E8508D1E51631E9D3C9D08B69397EE88AA9CA254534E16044", 
+                1.0
+            ], 
+            [
+                "", 
+                "314685121BBBA8843AFFBF156270277CFBE171D44BCC962CD74C817C64BC7BC5", 
+                0.5
+            ], 
+            [
+                "", 
+                "01DEEFB950604E57EF58F5644E33203413C86CF367128657FED5C5B82420B7E5", 
+                0.3333333333333333
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '7577689219' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 7577689219. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 7577689219.", 
+        "question_id": "41-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "4698104921", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "A220A76D6E8397E1C612DDE0B238B9CFECADCAC7F93CE54333F71D6EBAFB69A1", 
+                1.0
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '4698104921' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 4698104921. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 4698104921.", 
+        "question_id": "42-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "3093408436", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "00650DC112E986880E9CF6CAEB402B13918AA32620D5FE2D280C96498657F88F", 
+                1.0
+            ], 
+            [
+                "", 
+                "EADC19796332E303B45ABE7B2384401DA81ED210A631D100993556058172A423", 
+                0.5
+            ], 
+            [
+                "", 
+                "505380C58457AEE0F6DD0034928D98917574A2734A703706BC70F9DFCE532F02", 
+                0.3333333333333333
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '3093408436' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 3093408436. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 3093408436.", 
+        "question_id": "43-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "9293646066", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "35A0DA55239C5097B6BAF591767982448D495DB1DE4F3AED54FE891045BD6ADA", 
+                1.0
+            ], 
+            [
+                "", 
+                "D3CBBE764C13422FAD2F6BF8E2EE08A2D1DC7A6CF0CDCD5F9E814F3F1548F560", 
+                0.5
+            ], 
+            [
+                "", 
+                "FDFC3CCE06202848BF8C486792F0467913A80638006BBCFA10A13D1200692F0E", 
+                0.3333333333333333
+            ], 
+            [
+                "", 
+                "650AC0EE0964096C9AFB8E48E555745EC4F92F4E322E4BAC00CE3017B9F294D0", 
+                0.25
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '9293646066' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 9293646066. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 9293646066.", 
+        "question_id": "44-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "7578096869", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "5B7A0613FEBF93C9BC0BBEB257BC7D0E54CE92C486BC8877EEB2DDCF56C0A243", 
+                1.0
+            ], 
+            [
+                "", 
+                "B4F7EE28DCDBB1D329856A1B86A48E313160BCFA6B171C48FF9A665D1459E5A6", 
+                0.5
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '7578096869' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 7578096869. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 7578096869.", 
+        "question_id": "45-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "7784009953", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "DBF8BDDB7B901DE1183B6889250B1186ED7019BFC4436542D2AD552589720124", 
+                1.0
+            ], 
+            [
+                "", 
+                "69C64B96BB5D7A28A4CA67F31E85DC9941CB6FAEA211BB4F23402C4E40DD4494", 
+                0.5
+            ], 
+            [
+                "", 
+                "3403DFD6DEA3665061F7D3E661E7B305BB0FDB2A4E5F42E039547422B38B5DE0", 
+                0.3333333333333333
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '7784009953' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 7784009953. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 7784009953.", 
+        "question_id": "46-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "6074815436", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "07105DB64538F431C5D2790F68A8FF786021AEE9B83A7DBBFE72A3E19A6942A8", 
+                1.0
+            ], 
+            [
+                "", 
+                "1DA7C1FADA58C2744F467593EF248B763BFB50EC39DF9563EBAA718D0103F79D", 
+                0.5
+            ], 
+            [
+                "", 
+                "3CF77D51D0022896422608ADBCAEBE76458D66CFECB561E6851DA55174DB1E27", 
+                0.3333333333333333
+            ], 
+            [
+                "", 
+                "0A287EE6A86820C07CB791EB96F9D5B164EFCCB078587B8E4DF9623DD2638985", 
+                0.25
+            ], 
+            [
+                "", 
+                "6ABDE8F5645FE694F7DBB35F540F1027078AD8B082654F5C93156373904E546F", 
+                0.2
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '6074815436' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 6074815436. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 6074815436.", 
+        "question_id": "49-1", 
+        "type": "Cluster Identification"
+    }, 
+    {
+        "SPARQL": {
+            "group-by": {
+                "limit": 500
+            }, 
+            "select": {
+                "variables": [
+                    {
+                        "type": "simple", 
+                        "variable": "?ad"
+                    }
+                ]
+            }, 
+            "where": {
+                "clauses": [
+                    {
+                        "constraint": "4149346155", 
+                        "isOptional": false, 
+                        "predicate": "seed"
+                    }, 
+                    {
+                        "isOptional": false, 
+                        "predicate": "ad", 
+                        "variable": "?ad"
+                    }
+                ], 
+                "type": "cluster", 
+                "variable": "?cluster"
+            }
+        }, 
+        "answer": [
+            [
+                "", 
+                "817A134E9B9669B6C0A46478DB3094F43BFD1472C8F1316DD7FEDE71B498E40E", 
+                1.0
+            ], 
+            [
+                "", 
+                "AB9CFF75D41977116B21C1530102A198A18F4F98E53BD31AA35DA8B3DB4C63B9", 
+                0.5
+            ], 
+            [
+                "", 
+                "6E600FFDF7CFA72C639507B303AE3C04F1B679C38E2F95244F6D1DAA22F5DF6B", 
+                0.3333333333333333
+            ], 
+            [
+                "", 
+                "B30B127CC0D9975E66F907BA85F1DFC59F12EE4C9EFCE033F22FC55E45C8D346", 
+                0.25
+            ], 
+            [
+                "", 
+                "CDE902AF1994B36BEBD8C6D47BD94347C4E632B264B52DDBEFE94A433A5E0F55", 
+                0.2
+            ], 
+            [
+                "", 
+                "F1DD7DB02EBDB5A16D84426D924CE75635E95501CF15C431F64760DDCCE2C965", 
+                0.16666666666666666
+            ], 
+            [
+                "", 
+                "B2CBF157973C16818C777DAFA12B33F0564D259E6113AB6C769CE40A5E4C57BD", 
+                0.14285714285714285
+            ], 
+            [
+                "", 
+                "BA6C20A9F236F536FA556FC427E7BF9253841E1BC29603935E798075A7B5D681", 
+                0.125
+            ]
+        ], 
+        "orig_query": "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT ?ad\nWHERE\n{\t?cluster a qpr:cluster ;\n\tqpr:seed '4149346155' ;\n\tqpr:ad ?ad .\n}", 
+        "question": "Please find and list all of the ads connected via a shared phone number, email, or street address to the phone number 4149346155. The connection between ads can be multiple steps removed as long as there is a connection back to the original attribute via one of the listed attributes. For example, an ad could be considered connected if it contains an email that appeared in a different ad with a street address, which in yet another ad that street address appeared with the phone number 4149346155.", 
+        "question_id": "50-1", 
+        "type": "Cluster Identification"
+    }
+]
