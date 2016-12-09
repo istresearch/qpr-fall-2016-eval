@@ -190,7 +190,7 @@ hg_keys = [u'hg_0037925d0d0c_items_deduped.jl.gz',
  u'hg_try_exp_max_domains_c57767923e0c_items_deduped.jl.gz',
  u'hg_try_exp_max_domains_eafc1432c220_items_deduped.jl.gz']
 
-def process_key(_key, s3_key, s3_secret, index)
+def process_key(_key, s3_key, s3_secret, index):
     key = boto.connect_s3(aws_access_key_id=s3_key, aws_secret_access_key=s3_secret).get_bucket("memex-fall2016-qpr").get_key(_key)
     with smart_open.smart_open(key) as f:
         for line in f:
@@ -215,7 +215,7 @@ if __name__ == "__main__":
     _ids = [i for i in f.split('\n') if i != '']
     _id_set = frozenset(_ids)
 
-    if args.index == 'hg'
+    if args.index == 'hg':
         for _key in hg_keys:
             print('Operating on {0}: {1}'.format(args.index,_key))
             process_key(_key, args.s3_key, args.s3_secret, args.index)
