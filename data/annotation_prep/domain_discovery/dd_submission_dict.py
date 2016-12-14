@@ -246,15 +246,16 @@ for i in ci_inner:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--user", help="IST ES username")
-    parser.add_argument("--password", help="IST ES username")
+    parser.add_argument("--host", help="ES host:port")
+    parser.add_argument("--user", help="ES username")
+    parser.add_argument("--password", help="ES username")
     parser.add_argument("--s3_key", help="S3 access key")
     parser.add_argument("--s3_secret", help="S3 secret key")
     parser.add_argument("--pf_depth", help="number of ads to consider per submission")
     parser.add_argument("--cluster_depth", help="number of ads to consider per submission")
     args = parser.parse_args()
 
-    es = ElasticSearch('https://' + args.user + ':' + args.password + '@ist-es.istresearch.com:9200')
+    es = ElasticSearch('https://' + args.user + ':' + args.password + '@' + args.host)
 
     #####################################
     ### Process NYU PF Data into dict ###
@@ -300,7 +301,7 @@ if __name__ == "__main__":
     update_submission_d(uncharted_ci, 'ci', nyu_ci_d, args.cluster_depth)
     update_submission_d(isi_ci, 'ci', nyu_ci_d, args.cluster_depth) 
     
-    ads = get_ads(nyu_ci_d, 'nyu', "AKIAJTYKI2TXPAGSBIYA", "yGnRNHaKQNajkCZFb4vGBjO6q8DRrz4Cou0fOWni")
+    ads = get_ads(nyu_ci_d, 'nyu', args.s3_key, args.s3_secret)
     for kk, vv in nyu_ci_d.iteritems():
         vv['ads'] = []
         for _id in vv['_ids']:
