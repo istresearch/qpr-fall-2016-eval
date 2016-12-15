@@ -41,12 +41,14 @@ def get_ads(submission_dict, team, s3_key, s3_secret):
     return ads
 
 def update_submission_d(submission_set, submission_type, submission_dict, depth):
-    if submission_type == 'pf':
+    if submission_type == 'pf' or submission_type == 'cf':
+        if depth > 10 and submission_type == 'pf':
+            depth = 10
         for i in submission_set:
             q_id = i['question_id']
             _id_set = set()
             for ans in i['answer']:
-                if len(_id_set) < 10:
+                if len(_id_set) < depth:
                     submission_dict[q_id]['_ids'].add(ans[1])
                     _id_set.add(ans[1])
                     if ans[1] not in submission_dict[q_id]['submissions']:
@@ -63,8 +65,11 @@ def update_submission_d(submission_set, submission_type, submission_dict, depth)
             for ans in i['answer']:
                 if len(_id_set) < depth:
                     for i in ans:
-                        if len(str(i)) == 64:
-                            _id = i
+                        try:
+                            if len(str(i)) == 64:
+                                _id = i
+                        except:
+                            continue
                     if _id:
                         submission_dict[q_id]['_ids'].add(_id)
                         _id_set.add(_id)
@@ -110,9 +115,9 @@ def get_annotation_cluster(es, q_id, q_type):
     q = gen_sparql_query(q_id, q_type)
     res = es.search(query=q, index='memex-fall2016-search', doc_type='sparql', size=1)['hits']['hits'][0]['_source']
     question = res['question']
-    answer = res['value']
+    answer = res.get('value','')
     return {'question': question, 
-            'answer': answer}            
+            'answer': answer}         
 
 georgetown_path = '../../team_submissions/Georgetown/DomainDiscovery/'
 uncharted_path = '../../team_submissions/Uncharted/DomainDiscovery/'
@@ -244,6 +249,49 @@ for i in ci_inner:
 ###################################
 ###################################
 
+
+######################################
+### Read in NYU cluster facet data ###
+######################################
+nyu_cf_questions = set()
+
+# read in and normalize georgetown
+f = open(gt_nyu_cf, 'r')
+georgetown_cf = eval(f.read())
+f.close()
+for i in georgetown_cf:
+    i['question_id'] = i.pop('id')
+    nyu_cf_questions.add(i['question_id'])
+
+uncharted_cf = []
+f = open(unch_nyu, 'r')
+cf_inner = [i for i in eval(f.read()) if i['questionType'] == 'Cluster Facet']
+f.close()
+for i in cf_inner:
+    i.pop('questionType')
+    nyu_cf_questions.add(i['question_id'])
+    if 'answers' in i:
+        i['answer'] = i.pop('answers') 
+    else:
+        i['answer'] = []
+    uncharted_cf.append(i)
+    
+# read in and parse ISI
+isi_cf = []
+f = open(isi_nyu_cf, 'r')
+cf_inner = json.loads(f.read())
+f.close()
+for i in cf_inner:
+    i.pop('SPARQL')
+    i.pop('orig_query')
+    i.pop('question')
+    i.pop('type')
+    i['question_id'] = i['question_id'].split('-')[0]
+    nyu_cf_questions.add(i['question_id'])
+    isi_cf.append(i)      
+###################################
+###################################
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--host", help="ES host:port")
@@ -253,6 +301,7 @@ if __name__ == "__main__":
     parser.add_argument("--s3_secret", help="S3 secret key")
     parser.add_argument("--pf_depth", help="number of ads to consider per submission")
     parser.add_argument("--cluster_depth", help="number of ads to consider per submission")
+    parser.add_argument("--scope", help="one of [pf, ci, cf, agg, all]")
     args = parser.parse_args()
 
     es = ElasticSearch('https://' + args.user + ':' + args.password + '@' + args.host)
@@ -260,29 +309,30 @@ if __name__ == "__main__":
     #####################################
     ### Process NYU PF Data into dict ###
     #####################################
-    print('Building NYU PF Submission Dictionary')
-    # build out a dictionary where the key is the question ID
-    nyu_pf_d = {}
-    for i in nyu_pf_questions:
-        nyu_pf_d[i] = {'_ids': set(), 'submissions': {}, 'annotation': get_annotation(es, i)}
+    if args.scope == 'pf' or args.scope == 'all':
+        print('Building NYU PF Submission Dictionary')
+        # build out a dictionary where the key is the question ID
+        nyu_pf_d = {}
+        for i in nyu_pf_questions:
+            nyu_pf_d[i] = {'_ids': set(), 'submissions': {}, 'annotation': get_annotation(es, i)}
 
-    update_submission_d(georgetown_pf, 'pf', nyu_pf_d, args.pf_depth)
-    update_submission_d(uncharted_pf, 'pf', nyu_pf_d, args.pf_depth)
-    update_submission_d(isi_pf, 'pf', nyu_pf_d, args.pf_depth)        
+        update_submission_d(georgetown_pf, 'pf', nyu_pf_d, args.pf_depth)
+        update_submission_d(uncharted_pf, 'pf', nyu_pf_d, args.pf_depth)
+        update_submission_d(isi_pf, 'pf', nyu_pf_d, args.pf_depth)        
 
-    ads = get_ads(nyu_pf_d, 'nyu', args.s3_key, args.s3_secret)
+        ads = get_ads(nyu_pf_d, 'nyu', args.s3_key, args.s3_secret)
 
-    for kk, vv in nyu_pf_d.iteritems():
-        vv['ads'] = []
-        for _id in vv['_ids']:
-            if _id in ads:
-                vv['ads'].append(ads[_id])
-
-    with gzip.open('dd_nyu_pf_dict.json.gz','w') as f:
         for kk, vv in nyu_pf_d.iteritems():
-            vv['_ids'] = list(vv['_ids'])
-        f.write(json.dumps(nyu_pf_d))
-        f.close() 
+            vv['ads'] = []
+            for _id in vv['_ids']:
+                if _id in ads:
+                    vv['ads'].append(ads[_id])
+
+        with gzip.open('dd_nyu_pf_dict.json.gz','w') as f:
+            for kk, vv in nyu_pf_d.iteritems():
+                vv['_ids'] = list(vv['_ids'])
+            f.write(json.dumps(nyu_pf_d))
+            f.close() 
     #####################################
     #####################################
    
@@ -290,28 +340,59 @@ if __name__ == "__main__":
     #####################################
     ### Process NYU CI Data into dict ###
     #####################################
-    print('Building NYU CI Submission Dictionary')        
+    if args.scope == 'ci' or args.scope == 'all':
+        print('Building NYU CI Submission Dictionary')        
 
-    # build out a dictionary where the key is the question ID
-    nyu_ci_d = {}
-    for i in nyu_ci_questions:
-        nyu_ci_d[i] = {'_ids': set(), 'submissions': {}, 'annotation': get_annotation_cluster(es, i, 'identification')}
+        # build out a dictionary where the key is the question ID
+        nyu_ci_d = {}
+        for i in nyu_ci_questions:
+            nyu_ci_d[i] = {'_ids': set(), 'submissions': {}, 'annotation': get_annotation_cluster(es, i, 'identification')}
 
-    update_submission_d(georgetown_ci, 'ci', nyu_ci_d, args.cluster_depth)
-    update_submission_d(uncharted_ci, 'ci', nyu_ci_d, args.cluster_depth)
-    update_submission_d(isi_ci, 'ci', nyu_ci_d, args.cluster_depth) 
-    
-    ads = get_ads(nyu_ci_d, 'nyu', args.s3_key, args.s3_secret)
-    for kk, vv in nyu_ci_d.iteritems():
-        vv['ads'] = []
-        for _id in vv['_ids']:
-            if _id in ads:
-                vv['ads'].append(ads[_id])       
-
-    with gzip.open('dd_nyu_ci_dict.json.gz','w') as f:
+        update_submission_d(georgetown_ci, 'ci', nyu_ci_d, args.cluster_depth)
+        update_submission_d(uncharted_ci, 'ci', nyu_ci_d, args.cluster_depth)
+        update_submission_d(isi_ci, 'ci', nyu_ci_d, args.cluster_depth) 
+        
+        ads = get_ads(nyu_ci_d, 'nyu', args.s3_key, args.s3_secret)
         for kk, vv in nyu_ci_d.iteritems():
-            vv['_ids'] = list(vv['_ids'])
-        f.write(json.dumps(nyu_ci_d))
-        f.close()                 
+            vv['ads'] = []
+            for _id in vv['_ids']:
+                if _id in ads:
+                    vv['ads'].append(ads[_id])       
+
+        with gzip.open('dd_nyu_ci_dict.json.gz','w') as f:
+            for kk, vv in nyu_ci_d.iteritems():
+                vv['_ids'] = list(vv['_ids'])
+            f.write(json.dumps(nyu_ci_d))
+            f.close()                 
+    #####################################
+    #####################################        
+
+    #####################################
+    ### Process NYU CF Data into dict ###
+    #####################################
+    if args.scope == 'cf' or args.scope == 'all':
+        print('Building NYU CF Submission Dictionary')        
+
+        # build out a dictionary where the key is the question ID
+        nyu_cf_d = {}
+        for i in nyu_cf_questions:
+            nyu_cf_d[i] = {'_ids': set(), 'submissions': {}, 'annotation': get_annotation_cluster(es, i, 'facet')}
+
+        update_submission_d(georgetown_cf, 'cf', nyu_cf_d, args.cluster_depth)
+        update_submission_d(uncharted_cf, 'cf', nyu_cf_d, args.cluster_depth)
+        update_submission_d(isi_cf, 'cf', nyu_cf_d, args.cluster_depth) 
+        
+        ads = get_ads(nyu_cf_d, 'nyu', args.s3_key, args.s3_secret)
+        for kk, vv in nyu_cf_d.iteritems():
+            vv['ads'] = []
+            for _id in vv['_ids']:
+                if _id in ads:
+                    vv['ads'].append(ads[_id])       
+
+        with gzip.open('dd_nyu_cf_dict.json.gz','w') as f:
+            for kk, vv in nyu_cf_d.iteritems():
+                vv['_ids'] = list(vv['_ids'])
+            f.write(json.dumps(nyu_cf_d))
+            f.close()                 
     #####################################
     #####################################        
