@@ -41,22 +41,21 @@ def get_ads(submission_dict, team, s3_key, s3_secret):
     return ads
 
 def update_submission_d(submission_set, submission_type, submission_dict, depth):
-    if submission_type == 'pf' or submission_type == 'cf':
-        if depth > 10 and submission_type == 'pf':
-            depth = 10
+    if submission_type == 'pf' or submission_type == 'cf' or submission_type == 'agg':
         for i in submission_set:
             q_id = i['question_id']
             _id_set = set()
             for ans in i['answer']:
-                if len(_id_set) < depth:
-                    submission_dict[q_id]['_ids'].add(ans[1])
-                    _id_set.add(ans[1])
-                    if ans[1] not in submission_dict[q_id]['submissions']:
-                        submission_dict[q_id]['submissions'][ans[1]] = [ans[0]]
+                if type(ans) == list and len(ans) > 1:
+                    if len(_id_set) < depth:
+                        submission_dict[q_id]['_ids'].add(ans[1])
+                        _id_set.add(ans[1])
+                        if ans[1] not in submission_dict[q_id]['submissions']:
+                            submission_dict[q_id]['submissions'][ans[1]] = [ans[0]]
+                        else:
+                            submission_dict[q_id]['submissions'][ans[1]].append([ans[0]])
                     else:
-                        submission_dict[q_id]['submissions'][ans[1]].append([ans[0]])
-                else:
-                    break
+                        break
                     
     elif submission_type == 'ci':
         for i in submission_set:
@@ -117,7 +116,16 @@ def get_annotation_cluster(es, q_id, q_type):
     question = res['question']
     answer = res.get('value','')
     return {'question': question, 
-            'answer': answer}         
+            'answer': answer}   
+
+def get_annotation_aggregate(es, q_id, q_type):
+    q = gen_sparql_query(q_id, q_type)
+    res = es.search(query=q, index='memex-fall2016-search', doc_type='sparql', size=1)['hits']['hits'][0]['_source']
+    agg_type = res['type']
+    question = res['questions'][agg_type]
+    answer = res.get('value','')
+    return {'question': question, 
+            'answer': answer}                  
 
 georgetown_path = '../../team_submissions/Georgetown/DomainDiscovery/'
 uncharted_path = '../../team_submissions/Uncharted/DomainDiscovery/'
@@ -292,6 +300,51 @@ for i in cf_inner:
 ###################################
 ###################################
 
+
+
+##################################
+### Read in NYU aggregate data ###
+##################################
+nyu_agg_questions = set()
+
+# read in and normalize georgetown
+f = open(gt_nyu_agg, 'r')
+georgetown_agg = eval(f.read())
+f.close()
+for i in georgetown_agg:
+    i['question_id'] = i.pop('id')
+    nyu_agg_questions.add(i['question_id'])
+
+uncharted_agg = []
+f = open(unch_nyu, 'r')
+agg_inner = [i for i in eval(f.read()) if i['questionType'] == 'AVG' or i['questionType'] == 'MIN' \
+             or i['questionType'] == 'MAX' or i['questionType'] == 'MODE']
+f.close()
+for i in agg_inner:
+    i.pop('questionType')
+    nyu_agg_questions.add(i['question_id'])
+    if 'answers' in i:
+        i['answer'] = i.pop('answers') 
+    else:
+        i['answer'] = []
+    uncharted_agg.append(i)
+    
+# read in and parse ISI
+isi_agg = []
+f = open(isi_nyu_agg, 'r')
+agg_inner = json.loads(f.read())
+f.close()
+for i in agg_inner:
+    i.pop('SPARQL')
+    i.pop('orig_query')
+    i.pop('question')
+    i.pop('type')
+    i['question_id'] = i['question_id'].split('-')[0]
+    nyu_agg_questions.add(i['question_id'])
+    isi_agg.append(i)      
+##################################
+##################################
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--host", help="ES host:port")
@@ -396,3 +449,189 @@ if __name__ == "__main__":
             f.close()                 
     #####################################
     #####################################        
+
+    ######################################
+    ### Process NYU Agg Data into dict ###
+    ######################################
+    if args.scope == 'agg' or args.scope == 'all':
+        print('Building NYU Aggregate Submission Dictionary')        
+
+        # build out a dictionary where the key is the question ID
+        nyu_agg_d = {}
+        for i in nyu_agg_questions:
+            nyu_agg_d[i] = {'_ids': set(), 'submissions': {}, 'annotation': get_annotation_aggregate(es, i, 'aggregate')}
+
+        update_submission_d(georgetown_agg, 'agg', nyu_agg_d, args.cluster_depth)
+        update_submission_d(uncharted_agg, 'agg', nyu_agg_d, args.cluster_depth)
+        update_submission_d(isi_agg, 'agg', nyu_agg_d, args.cluster_depth)
+
+        ads = get_ads(nyu_agg_d, 'nyu', args.s3_key, args.s3_secret)
+        for kk, vv in nyu_agg_d.iteritems():
+            vv['ads'] = []
+            for _id in vv['_ids']:
+                if _id in ads:
+                    vv['ads'].append(ads[_id])       
+
+        with gzip.open('dd_nyu_agg_dict.json.gz','w') as f:
+            for kk, vv in nyu_agg_d.iteritems():
+                vv['_ids'] = list(vv['_ids'])
+            f.write(json.dumps(nyu_agg_d))
+            f.close()                 
+    #####################################
+    #####################################
+
+
+    #######################################
+    ### Process Uncharted HG + JPL Data ###
+    ####################################### 
+    if args.scope == 'hg' or args.scope == 'jpl' or args.scope == 'all':
+        if args.scope == 'all':          
+            teams = ['hg','jpl']
+        elif args.scope == 'hg': 
+            teams = ['hg']
+        elif args.scope == 'jpl': 
+            teams = ['hg']
+
+        file_dict = {'hg': unch_hg, 'jpl': unch_jpl}
+
+        for dd_team in teams:
+            # Process PF data
+            print('Building {0} PF Submission Dictionary'.format(dd_team)) 
+            pf_questions = set()
+            uncharted_pf = []
+            f = open(file_dict[dd_team], 'r')
+            pf_inner = [i for i in eval(f.read()) if i['questionType'] == 'Point Fact']
+            f.close()
+            for i in pf_inner:
+                i.pop('questionType')
+                i['answer'] = i.pop('answers') 
+                pf_questions.add(i['question_id'])
+                uncharted_pf.append(i)
+                
+            pf_d = {}
+            for i in pf_questions:
+                pf_d[i] = {'_ids': set(), 'submissions': {}, 'annotation': get_annotation(es, i)}
+
+            update_submission_d(uncharted_pf, 'pf', pf_d, args.pf_depth)
+
+            ads = get_ads(pf_d, dd_team, args.s3_key, args.s3_secret)
+
+            for kk, vv in pf_d.iteritems():
+                vv['ads'] = []
+                for _id in vv['_ids']:
+                    if _id in ads:
+                        vv['ads'].append(ads[_id])
+
+            with gzip.open('dd_' + dd_team + '_pf_dict.json.gz','w') as f:
+                for kk, vv in pf_d.iteritems():
+                    vv['_ids'] = list(vv['_ids'])
+                f.write(json.dumps(pf_d))
+                f.close()              
+
+            # Process CI data
+            print('Building {0} CI Submission Dictionary'.format(dd_team)) 
+            ci_questions = set()
+            uncharted_ci = []
+            f = open(file_dict[dd_team], 'r')
+            ci_inner = [i for i in eval(f.read()) if i['questionType'] == 'Cluster Identification']
+            f.close()
+            for i in ci_inner:
+                i.pop('questionType')
+                ci_questions.add(i['question_id'])
+                if 'answers' in i:
+                    i['answer'] = i.pop('answers') 
+                else:
+                    i['answer'] = []
+                uncharted_ci.append(i)
+                
+            ci_d = {}
+            for i in ci_questions:
+                ci_d[i] = {'_ids': set(), 'submissions': {}, 'annotation': get_annotation_cluster(es, i, 'identification')}
+
+            update_submission_d(uncharted_ci, 'ci', ci_d, args.cluster_depth)
+
+            ads = get_ads(ci_d, dd_team, args.s3_key, args.s3_secret)
+            for kk, vv in ci_d.iteritems():
+                vv['ads'] = []
+                for _id in vv['_ids']:
+                    if _id in ads:
+                        vv['ads'].append(ads[_id])       
+
+            with gzip.open('dd_' + dd_team + '_ci_dict.json.gz','w') as f:
+                for kk, vv in ci_d.iteritems():
+                    vv['_ids'] = list(vv['_ids'])
+                f.write(json.dumps(ci_d))
+                f.close()
+
+            # Process CF data 
+            print('Building {0} CF Submission Dictionary'.format(dd_team))  
+            cf_questions = set()    
+            uncharted_cf = []
+            f = open(file_dict[dd_team], 'r')
+            cf_inner = [i for i in eval(f.read()) if i['questionType'] == 'Cluster Facet']
+            f.close()
+            for i in cf_inner:
+                i.pop('questionType')
+                cf_questions.add(i['question_id'])
+                if 'answers' in i:
+                    i['answer'] = i.pop('answers') 
+                else:
+                    i['answer'] = []
+                uncharted_cf.append(i)
+
+            cf_d = {}
+            for i in cf_questions:
+                cf_d[i] = {'_ids': set(), 'submissions': {}, 'annotation': get_annotation_cluster(es, i, 'facet')}
+
+            update_submission_d(uncharted_cf, 'cf', cf_d, args.cluster_depth)
+
+            ads = get_ads(cf_d, dd_team, args.s3_key, args.s3_secret)
+            for kk, vv in cf_d.iteritems():
+                vv['ads'] = []
+                for _id in vv['_ids']:
+                    if _id in ads:
+                        vv['ads'].append(ads[_id])       
+
+            with gzip.open('dd_' + dd_team + '_cf_dict.json.gz','w') as f:
+                for kk, vv in cf_d.iteritems():
+                    vv['_ids'] = list(vv['_ids'])
+                f.write(json.dumps(cf_d))
+                f.close()            
+
+            # Process Agg data
+            print('Building {0} Agg Submission Dictionary'.format(dd_team))  
+            agg_questions = set()    
+            uncharted_agg = []
+            f = open(file_dict[dd_team], 'r')
+            agg_inner = [i for i in eval(f.read()) if i['questionType'] == 'AVG' or i['questionType'] == 'MIN' \
+                         or i['questionType'] == 'MAX' or i['questionType'] == 'MODE']
+            f.close()
+            for i in agg_inner:
+                i.pop('questionType')
+                agg_questions.add(i['question_id'])
+                if 'answers' in i:
+                    i['answer'] = i.pop('answers') 
+                else:
+                    i['answer'] = []
+                uncharted_agg.append(i) 
+                
+            agg_d = {}
+            for i in agg_questions:
+                agg_d[i] = {'_ids': set(), 'submissions': {}, 'annotation': get_annotation_aggregate(es, i, 'aggregate')}
+
+            update_submission_d(uncharted_agg, 'agg', agg_d, args.cluster_depth)
+
+            ads = get_ads(agg_d, dd_team, args.s3_key, args.s3_secret)
+            for kk, vv in agg_d.iteritems():
+                vv['ads'] = []
+                for _id in vv['_ids']:
+                    if _id in ads:
+                        vv['ads'].append(ads[_id])       
+
+            with gzip.open('dd_' + dd_team + '_agg_dict.json.gz','w') as f:
+                for kk, vv in agg_d.iteritems():
+                    vv['_ids'] = list(vv['_ids'])
+                f.write(json.dumps(agg_d))
+                f.close()                                                    
+    #####################################
+    #####################################
