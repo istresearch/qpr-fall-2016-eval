@@ -1,0 +1,10 @@
+1.find and list all the ads with the phone number +6592435711 that include a price in the ad text.
+2.find and list all the ads with the phone number 07570298928 that include a price in the ad text.
+3.find and list all the ads with the phone number 07754154012 that include a price in the ad text.
+4.find and list all the ads with the email enq@myntmodels.com that include a weight in the ad text.
+5.find and list all the ads with the phone number 416 820-4321 that include a weight in the ad text.
+6.find and list all the ads with the email home@japan-escort.com that include a weight in the ad text.
+7.find and list all the ads with the phone number (+81)9022586648 that include a height in the ad text.
+8.find and list all the ads with the email pimbty77@gmail.com that include a height in the ad text。
+9.find and list all the ads with the address 813 Sansom St Philadelphia, PA 19107, US that include a price in the ad text.
+10.find and list all the ads with the phone number 209-818-4104 that include a height in the ad text.
