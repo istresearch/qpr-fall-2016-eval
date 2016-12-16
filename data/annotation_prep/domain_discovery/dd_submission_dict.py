@@ -490,7 +490,7 @@ if __name__ == "__main__":
         elif args.scope == 'hg': 
             teams = ['hg']
         elif args.scope == 'jpl': 
-            teams = ['hg']
+            teams = ['jpl']
 
         file_dict = {'hg': unch_hg, 'jpl': unch_jpl}
 
