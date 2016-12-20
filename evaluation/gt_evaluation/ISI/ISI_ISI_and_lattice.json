@@ -395,307 +395,408 @@
   }, 
   "Point Fact": {
     "217": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "1301": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 1.0
     }, 
     "1612": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "1942": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 1.0
     }, 
     "288": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 1.0
     }, 
     "2249": {
-      "avg_precision": 0.5
+      "avg_precision": 0.16666666666666666, 
+      "pf_metric": 0.0
     }, 
     "1464": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "1677": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "2241": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "1159": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 1.0
     }, 
     "1098": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 0.0
     }, 
     "260": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 1.0
     }, 
     "1705": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 1.0
     }, 
     "1707": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 1.0
     }, 
     "2256": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 0.0
     }, 
     "418": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "823": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "1124": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 1.0
     }, 
     "192": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "392": {
-      "avg_precision": 0.1111111111111111
+      "avg_precision": 0.1111111111111111, 
+      "pf_metric": 0.0
     }, 
     "110": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "276": {
-      "avg_precision": 0.1
+      "avg_precision": 0.1, 
+      "pf_metric": 1.0
     }, 
     "921": {
-      "avg_precision": 0
+      "avg_precision": 0.0625, 
+      "pf_metric": 0.0
     }, 
     "796": {
-      "avg_precision": 0.3333333333333333
+      "avg_precision": 0.3333333333333333, 
+      "pf_metric": 1.0
     }, 
     "2304": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 1.0
     }, 
     "799": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "429": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "2268": {
-      "avg_precision": 1.0
+      "avg_precision": 0.3958333333333333, 
+      "pf_metric": 0.33333333333333331
     }, 
     "1521": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 1.0
     }, 
     "2266": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "363": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "1986": {
-      "avg_precision": 0.3333333333333333
+      "avg_precision": 1.0, 
+      "pf_metric": 0.33333333333333331
     }, 
     "1339": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 0.0
     }, 
     "1330": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 1.0
     }, 
     "244": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 1.0
     }, 
     "383": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "242": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "107": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "900": {
-      "avg_precision": 0.14285714285714285
+      "avg_precision": 0.14285714285714285, 
+      "pf_metric": 0.0
     }, 
     "381": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "292": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "1725": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 1.0
     }, 
     "2278": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "519": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 0.0
     }, 
     "1666": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "510": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 0.0
     }, 
     "434": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "1342": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 0.0
     }, 
     "455": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 1.0
     }, 
     "1876": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 1.0
     }, 
     "258": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "1871": {
-      "avg_precision": 0.3333333333333333
+      "avg_precision": 0.3333333333333333, 
+      "pf_metric": 1.0
     }, 
     "1907": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 1.0
     }, 
     "1905": {
-      "avg_precision": 0.5
+      "avg_precision": 1.0, 
+      "pf_metric": 1.0
     }, 
     "1630": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "1734": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "1038": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "1506": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "2112": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 0.0
     }, 
     "1035": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "758": {
-      "avg_precision": 0.5
+      "avg_precision": 0.5, 
+      "pf_metric": 1.0
     }, 
     "1647": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 1.0
     }, 
     "1597": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "1127": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 0.0
     }, 
     "1915": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "221": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "163": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 1.0
     }, 
     "1621": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "813": {
-      "avg_precision": 0.25
+      "avg_precision": 0.25, 
+      "pf_metric": 1.0
     }, 
     "2215": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "1998": {
-      "avg_precision": 0.3333333333333333
+      "avg_precision": 0.16666666666666666, 
+      "pf_metric": 1.0
     }, 
     "1180": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 0.0
     }, 
     "284": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 1.0
     }, 
     "724": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "1103": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 1.0
     }, 
     "1453": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "1513": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "881": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "559": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "884": {
-      "avg_precision": 0.1
+      "avg_precision": 0.1, 
+      "pf_metric": 0.0
     }, 
     "552": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 0.0
     }, 
     "230": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "1892": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "1965": {
-      "avg_precision": 0.5
+      "avg_precision": 0.5, 
+      "pf_metric": 1.0
     }, 
     "1967": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 1.0
     }, 
     "1960": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 1.0
     }, 
     "1446": {
-      "avg_precision": 0.3333333333333333
+      "avg_precision": 0.3333333333333333, 
+      "pf_metric": 1.0
     }, 
     "321": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "1692": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 1.0
     }, 
     "1442": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 0.0
     }, 
     "2030": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "1448": {
-      "avg_precision": 0.3333333333333333
+      "avg_precision": 0.3333333333333333, 
+      "pf_metric": 0.0
     }, 
     "202": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "204": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "141": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 0.0
     }, 
     "2247": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "684": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "2121": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 1.0
     }, 
     "1284": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 1.0
     }, 
     "1971": {
-      "avg_precision": 0
+      "avg_precision": 0, 
+      "pf_metric": "NA"
     }, 
     "1763": {
-      "avg_precision": 1.0
+      "avg_precision": 1.0, 
+      "pf_metric": 1.0
     }
   }, 
   "Cluster Facet": {
