@@ -1,5 +1,5 @@
 {
-	"price": 0.10,
-	"height": 0.10,
-	"weight": 0.10
+	"price": {"function": "multiply", "amount": 0.10},
+	"height": {"function": "add", "amount": 1},
+	"weight": {"function": "add", "amount": 5},
 }

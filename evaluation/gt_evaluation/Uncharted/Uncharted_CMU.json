@@ -98,7 +98,7 @@
     }, 
     "82": {
       "avg_precision": 0.2756149242699304, 
-      "agg_metric": 1
+      "agg_metric": 0
     }, 
     "83": {
       "avg_precision": 0.9561761516075385, 
@@ -118,7 +118,7 @@
     }, 
     "87": {
       "avg_precision": 0.7660826274258123, 
-      "agg_metric": 1
+      "agg_metric": 0
     }, 
     "84": {
       "avg_precision": 0.9656460558616383, 
@@ -126,7 +126,7 @@
     }, 
     "85": {
       "avg_precision": 0.9954536925007282, 
-      "agg_metric": 1
+      "agg_metric": 0
     }, 
     "3": {
       "avg_precision": 0.9111450012245486, 
@@ -186,7 +186,7 @@
     }, 
     "61": {
       "avg_precision": 0.3837150900158939, 
-      "agg_metric": 1
+      "agg_metric": 0
     }, 
     "62": {
       "avg_precision": 0.9753278515771826, 
@@ -250,7 +250,7 @@
     }, 
     "92": {
       "avg_precision": 0.6749432299071646, 
-      "agg_metric": 1
+      "agg_metric": 0
     }, 
     "95": {
       "avg_precision": 0.9595469448707566, 
@@ -322,7 +322,7 @@
     }, 
     "44": {
       "avg_precision": 0.8779010198835161, 
-      "agg_metric": 1
+      "agg_metric": 0
     }, 
     "45": {
       "avg_precision": 0.9515766904806341, 
@@ -338,7 +338,7 @@
     }, 
     "40": {
       "avg_precision": 0.4859688927439135, 
-      "agg_metric": 1
+      "agg_metric": 0
     }, 
     "41": {
       "avg_precision": 0.27103650957782827, 
