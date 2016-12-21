@@ -98,11 +98,11 @@
     }, 
     "82": {
       "avg_precision": 0, 
-      "agg_metric": 1
+      "agg_metric": 0
     }, 
     "83": {
       "avg_precision": 0.9285545075626016, 
-      "agg_metric": 1
+      "agg_metric": 0
     }, 
     "80": {
       "avg_precision": 0.8433734939759037, 
@@ -118,7 +118,7 @@
     }, 
     "87": {
       "avg_precision": 0.21621621621621623, 
-      "agg_metric": 1
+      "agg_metric": 0
     }, 
     "84": {
       "avg_precision": 0.9604486227591756, 
@@ -126,7 +126,7 @@
     }, 
     "85": {
       "avg_precision": 2.292736610418195e-05, 
-      "agg_metric": 1
+      "agg_metric": 0
     }, 
     "3": {
       "avg_precision": 0, 
@@ -206,7 +206,7 @@
     }, 
     "66": {
       "avg_precision": 0.9227662319414669, 
-      "agg_metric": 1
+      "agg_metric": 0
     }, 
     "67": {
       "avg_precision": 0.9444444444444444, 
@@ -214,7 +214,7 @@
     }, 
     "68": {
       "avg_precision": 0.9596815258102609, 
-      "agg_metric": 1
+      "agg_metric": 0
     }, 
     "69": {
       "avg_precision": 0.0017992474964515324, 
@@ -238,7 +238,7 @@
     }, 
     "91": {
       "avg_precision": 0.010621112843533792, 
-      "agg_metric": 1
+      "agg_metric": 0
     }, 
     "90": {
       "avg_precision": 0.4693898035091083, 
@@ -250,7 +250,7 @@
     }, 
     "92": {
       "avg_precision": 0.889117050863904, 
-      "agg_metric": 1
+      "agg_metric": 0
     }, 
     "95": {
       "avg_precision": 0.9318823680682489, 
@@ -322,7 +322,7 @@
     }, 
     "44": {
       "avg_precision": 0.0014532104993137751, 
-      "agg_metric": 1
+      "agg_metric": 0
     }, 
     "45": {
       "avg_precision": 0.9295260102814137, 
@@ -330,7 +330,7 @@
     }, 
     "42": {
       "avg_precision": 0.006345211712446784, 
-      "agg_metric": 1
+      "agg_metric": 0
     }, 
     "43": {
       "avg_precision": 0.9200757310685529, 
@@ -338,7 +338,7 @@
     }, 
     "40": {
       "avg_precision": 0.44886022038915113, 
-      "agg_metric": 1
+      "agg_metric": 0
     }, 
     "41": {
       "avg_precision": 0.7363399207508533, 
