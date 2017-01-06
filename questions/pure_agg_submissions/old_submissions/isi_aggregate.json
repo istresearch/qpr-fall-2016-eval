@@ -1,0 +1,82 @@
+[
+  {
+    "question": "What is the most common name associated with the number 16099548368?",
+    "type": "MODE",
+    "id": "isi-1",
+    "SPARQL": [
+      "PREFIX qpr:<http://istresearch.com/qpr>\nSELECT ((count(?ad)) AS ?count) ?name\nWHERE\n{\t?ad a qpr:Ad ;\n\tqpr:phone '16099548368' ;\n\tqpr:name ?name .\n}\nGROUP BY ?name\nORDER BY DESC(?count)\nLIMIT 1"
+    ]
+  },
+  {
+    "question": "What is the average price for the full hour for escorts with the number 609 447 2451 in Savannah, GA?",
+    "type": "AVG",
+    "id": "isi-2",
+    "SPARQL": [
+      "PREFIX qpr:<http://istresearch.com/qpr>\nSELECT (AVG(?price) AS ?avg_price)\nWHERE\n{\t?ad a qpr:Ad ;\n\tqpr:phone '6094472451' ;\n\tqpr:location 'Savannah,GA' ;\n\tqpr:price ?price .\n}"
+    ]
+  },
+  {
+    "id": "isi-3",
+    "type": "MODE",
+    "SPARQL": [
+      "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT (count(?ad)) AS ?count) ?age\nWHERE\n{\t?ad a qpr:Ad ;\n\tqpr:phone '4039292560' ;\n\tqpr:location 'Lethbridge ,Canada' ;\n\tqpr:age ?age ;\n\tqpr:ad ?ad .\n}\nGROUP BY ?age\nORDER BY DESC(?count)\nLIMIT 1"
+    ],
+    "question": "What is the most common age for escorts with phone number 4039292560 in Lethbridge Canada"
+  },
+  {
+    "id": "isi-4",
+    "type": "MODE",
+    "SPARQL": [
+      "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT (count(?ad)) AS ?count) ?age\nWHERE\n{\t?ad a qpr:Ad ;\n\tqpr:location 'Belfast' ;\n\tqpr:service 'GFE' ;\n\tqpr:age ?age ;\n\tqpr:ad ?ad .\n}\nGROUP BY ?age\nORDER BY DESC(?count)\nLIMIT 1"
+    ],
+    "question": "What is the most common age for escorts offering GFE experience in Belfast"
+  },
+  {
+    "id": "isi-5",
+    "type": "MODE",
+    "SPARQL": [
+      "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT (count(?ad)) AS ?count) ?phone\nWHERE\n{\t?ad a qpr:Ad ;\n\tqpr:post_date '2016-04-29' ;\n\tqpr:phone ?phone ;\n\tqpr:ad ?ad .\n}\nGROUP BY ?phone\nORDER BY DESC(?count)\nLIMIT 1"
+    ],
+    "question": "What is the most common phone number posted on 2016-09-30"
+  },
+  {
+    "id": "isi-6",
+    "type": "MODE",
+    "SPARQL": [
+      "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT (count(?ad)) AS ?count) ?ethnicity\nWHERE\n{\t?ad a qpr:Ad ;\n\tqpr:service 'nuru' ;\n\tqpr:location 'Costa Mesa, California';\n\tqpr:ethnicity ?ethnicity ;\n\tqpr:ad ?ad .\n}\nGROUP BY ?ethnicity\nORDER BY DESC(?count)\nLIMIT 1"
+    ],
+    "question": "What is the most common ethnicity of escorts offering nuru massage in Costa Mesa, California"
+  },
+  {
+    "id": "isi-7",
+    "type": "MODE",
+    "SPARQL": [
+      "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT (count(?ad)) AS ?count) ?location\nWHERE\n{\t?ad a qpr:Ad ;\n\tqpr:hair_color 'blond' ;\n\tqpr:location ?location ;\n\tqpr:ad ?ad .\n}\nGROUP BY ?location\nORDER BY DESC(?count)\nLIMIT 1"
+    ],
+    "question": "What is the most common city where blond escorts age 21 post ads"
+  },
+  {
+    "question": "What is the average price for 22 year old, black hair, blue-eyed escorts",
+    "type": "AVG",
+    "id": "isi-8",
+    "SPARQL": [
+      "PREFIX qpr:<http://istresearch.com/qpr>\nSELECT (AVG(?price) AS ?avg_price)\nWHERE\n{\t?ad a qpr:Ad ;\n\tqpr:hair_color 'black' ;\n\tqpr:eye_color 'blue' ;\n\tqpr:age '22' ;\n\tqpr:price ?price .\n}"
+    ]
+  },
+  {
+    "question": "What is the height of the tallest escort in Savannah?",
+    "type": "MAX",
+    "id": "isi-9",
+    "SPARQL": [
+      "PREFIX qpr:<http://istresearch.com/qpr>\nSELECT (AVG(?height) AS ?max_height)\nWHERE\n{\t?ad a qpr:Ad ;\n\tqpr:height ?height ;\n\tqpr:location 'Savannah, GA' .\n}"
+    ]
+  },
+  {
+    "id": "isi-10",
+    "type": "MODE",
+    "SPARQL": [
+      "PREFIX qpr: <http://istresearch.com/qpr>\nSELECT (count(?ad)) AS ?count) ?name\nWHERE\n{\t?ad a qpr:Ad ;\n\tqpr:service 'massage' ;\n\tqpr:location 'Los Angeles, CA' ;\n\tqpr:ad ?ad .\n}\nGROUP BY ?name\nORDER BY DESC(?count)\nLIMIT 1"
+    ],
+    "question": "What is the most common name of escorts who offer massages in Orange County"
+  }
+]
