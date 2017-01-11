@@ -49,9 +49,9 @@ for _file_ in uncharted_files:
                         if 'JPL' in _file_:
                             unch_jpl.add(e)
                         if 'NYU' in _file_:
-                            unch_nyu.add(e)                                                       
+                            unch_nyu.add(e)
         except:
-            continue                        
+            continue
 
 isi_nyu = set()
 
@@ -64,7 +64,7 @@ for _file_ in isi_files:
                     if len(str(e)) == 64:
                         isi_nyu.add(e)
                 except:
-                    continue            
+                    continue
 
 nyu_combined = isi_nyu.union(gt_nyu, unch_nyu)
 
@@ -80,7 +80,7 @@ if __name__ == "__main__":
     with open('hg_dd_ids.txt','a') as f:
         for i in list(unch_hg):
             f.write(i + '\n')
-            
+
     with open('jpl_dd_ids.txt','a') as f:
         for i in list(unch_jpl):
-            f.write(i + '\n')                                   
+            f.write(i + '\n')
