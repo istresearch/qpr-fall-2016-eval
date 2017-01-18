@@ -1,0 +1,122 @@
+[
+  {
+    "filter": {
+      "feature": "lattice-phone", 
+      "value": "+16187098512"
+    }, 
+    "contains": "lattice-age", 
+    "type": "AVG"
+  }, 
+  {
+    "filter": {
+      "feature": "lattice-phone", 
+      "value": "+16197585452"
+    }, 
+    "contains": "lattice-email", 
+    "type": "MODE"
+  }, 
+  {
+    "filter": {
+      "feature": "lattice-age", 
+      "value": "21"
+    }, 
+    "contains": "lattice-location", 
+    "type": "MODE"
+  }, 
+  {
+    "filter": {
+      "feature": "lattice-age", 
+      "value": "30"
+    }, 
+    "contains": "lattice-email", 
+    "type": "MODE"
+  }, 
+  {
+    "filter": {
+      "feature": "lattice-rate", 
+      "value": "150,NO DURATION"
+    }, 
+    "contains": "lattice-age", 
+    "type": "MAX"
+  }, 
+  {
+    "filter": {
+      "feature": "lattice-rate", 
+      "value": "100,NO DURATION"
+    }, 
+    "contains": "lattice-age", 
+    "type": "MIN"
+  }, 
+  {
+    "filter": {
+      "feature": "lattice-name", 
+      "value": "Avery"
+    }, 
+    "contains": "location", 
+    "type": "MODE"
+  }, 
+  {
+    "filter": {
+      "feature": "lattice-name", 
+      "value": "Vanesa"
+    }, 
+    "contains": "lattice-age", 
+    "type": "MIN"
+  }, 
+  {
+    "filter": {
+      "feature": "lattice-email", 
+      "value": "annabelle@denver-escort.com"
+    }, 
+    "contains": "lattice-phone", 
+    "type": "MODE"
+  }, 
+  {
+    "filter": {
+      "feature": "lattice-email", 
+      "value": "info@bombshellescorts.com"
+    }, 
+    "contains": "lattice-age", 
+    "type": "AVG"
+  }, 
+  {
+    "filter": {
+      "feature": "lattice-location", 
+      "value": "St. Louis, Missouri"
+    }, 
+    "contains": "lattice-rate", 
+    "type": "MAX"
+  }, 
+  {
+    "filter": {
+      "feature": "lattice-location", 
+      "value": "Albany, New York"
+    }, 
+    "contains": "lattice-age", 
+    "type": "AVG"
+  }, 
+  {
+    "filter": {
+      "feature": "lattice-age", 
+      "value": "44"
+    }, 
+    "contains": "found-hair", 
+    "type": "MODE"
+  }, 
+  {
+    "filter": {
+      "feature": "lattice-name", 
+      "value": "Blair"
+    }, 
+    "contains": "found_height", 
+    "type": "AVG"
+  }, 
+  {
+    "filter": {
+      "feature": "lattice-age", 
+      "value": "28"
+    }, 
+    "contains": "found_weight", 
+    "type": "MAX"
+  }
+]
