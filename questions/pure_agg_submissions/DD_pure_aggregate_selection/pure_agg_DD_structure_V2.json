@@ -4,6 +4,7 @@
       "feature": "lattice-phone", 
       "value": "+16187098512"
     }, 
+    "nyu_ads": 4, 
     "contains": "lattice-age", 
     "type": "AVG"
   }, 
@@ -12,14 +13,16 @@
       "feature": "lattice-phone", 
       "value": "+16197585452"
     }, 
+    "nyu_ads": 2, 
     "contains": "lattice-email", 
     "type": "MODE"
   }, 
   {
     "filter": {
       "feature": "lattice-age", 
-      "value": "21"
+      "value": "34"
     }, 
+    "nyu_ads": 331, 
     "contains": "lattice-location", 
     "type": "MODE"
   }, 
@@ -28,6 +31,7 @@
       "feature": "lattice-age", 
       "value": "30"
     }, 
+    "nyu_ads": 88, 
     "contains": "lattice-email", 
     "type": "MODE"
   }, 
@@ -36,6 +40,7 @@
       "feature": "lattice-rate", 
       "value": "150,NO DURATION"
     }, 
+    "nyu_ads": 155, 
     "contains": "lattice-age", 
     "type": "MAX"
   }, 
@@ -44,6 +49,7 @@
       "feature": "lattice-rate", 
       "value": "100,NO DURATION"
     }, 
+    "nyu_ads": 309, 
     "contains": "lattice-age", 
     "type": "MIN"
   }, 
@@ -52,7 +58,8 @@
       "feature": "lattice-name", 
       "value": "Avery"
     }, 
-    "contains": "location", 
+    "nyu_ads": 2, 
+    "contains": "lattice-location", 
     "type": "MODE"
   }, 
   {
@@ -60,6 +67,7 @@
       "feature": "lattice-name", 
       "value": "Vanesa"
     }, 
+    "nyu_ads": 5, 
     "contains": "lattice-age", 
     "type": "MIN"
   }, 
@@ -68,6 +76,7 @@
       "feature": "lattice-email", 
       "value": "annabelle@denver-escort.com"
     }, 
+    "nyu_ads": 2, 
     "contains": "lattice-phone", 
     "type": "MODE"
   }, 
@@ -76,22 +85,27 @@
       "feature": "lattice-email", 
       "value": "info@bombshellescorts.com"
     }, 
+    "nyu_ads": 2, 
     "contains": "lattice-age", 
     "type": "AVG"
   }, 
   {
     "filter": {
+      "loc_name": "St. Louis, Missouri", 
       "feature": "lattice-location", 
-      "value": "St. Louis, Missouri"
+      "value": "38022"
     }, 
+    "nyu_ads": 322, 
     "contains": "lattice-rate", 
     "type": "MAX"
   }, 
   {
     "filter": {
+      "loc_name": "Albany, New York", 
       "feature": "lattice-location", 
-      "value": "Albany, New York"
+      "value": "24861"
     }, 
+    "nyu_ads": 188, 
     "contains": "lattice-age", 
     "type": "AVG"
   }, 
