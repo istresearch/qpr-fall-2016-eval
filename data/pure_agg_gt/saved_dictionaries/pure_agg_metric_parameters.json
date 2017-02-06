@@ -1,0 +1,12 @@
+{
+	"price": {"function": "multiply", "amount": 0.10},
+	"height": {"function": "add", "amount": 1},
+	"weight": {"function": "add", "amount": 5},
+	"age": {"function": "add", "amount": 1},
+	"name": {"function": "match", "amount": "NA"},
+	"phone": {"function": "match", "amount": "NA"},
+	"name": {"function": "match", "amount": "NA"},
+	"hair_color": {"function": "match", "amount": "NA"},
+	"location": {"function": "match", "amount": "NA"},
+	"ethnicity": {"function": "match", "amount": "NA"}
+}

@@ -1,0 +1,64 @@
+{
+  "Pure Aggregate": {
+    "11": {
+      "avg_precision": 0.632921024878448, 
+      "agg_metric": 0
+    }, 
+    "10": {
+      "avg_precision": 1.0, 
+      "agg_metric": 1
+    }, 
+    "13": {
+      "avg_precision": 0, 
+      "agg_metric": 0
+    }, 
+    "12": {
+      "avg_precision": 0.33215895989117966, 
+      "agg_metric": 1
+    }, 
+    "15": {
+      "avg_precision": 0.1046257390642304, 
+      "agg_metric": 0
+    }, 
+    "14": {
+      "avg_precision": 0.9013876961548286, 
+      "agg_metric": 1
+    }, 
+    "1": {
+      "avg_precision": 0.5595037127276947, 
+      "agg_metric": 0
+    }, 
+    "3": {
+      "avg_precision": 0.6246412756772116, 
+      "agg_metric": 1
+    }, 
+    "2": {
+      "avg_precision": 0.17493888474050384, 
+      "agg_metric": 1
+    }, 
+    "5": {
+      "avg_precision": 0.5411243643662831, 
+      "agg_metric": 0
+    }, 
+    "4": {
+      "avg_precision": 0.01708493352663946, 
+      "agg_metric": 0
+    }, 
+    "7": {
+      "avg_precision": 0.9853927107609052, 
+      "agg_metric": 0
+    }, 
+    "6": {
+      "avg_precision": 0.8956257313338011, 
+      "agg_metric": 1
+    }, 
+    "9": {
+      "avg_precision": 0.37519345733631443, 
+      "agg_metric": 1
+    }, 
+    "8": {
+      "avg_precision": 0, 
+      "agg_metric": 0
+    }
+  }
+}
