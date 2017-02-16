@@ -5,22 +5,22 @@
         "avg_precision": 0
       }, 
       "49": {
-        "avg_precision": 0.04116946778711485
+        "avg_precision": 0.03829717933685102
       }, 
       "19": {
-        "avg_precision": 0.007779349363507779
+        "avg_precision": 0.00818452380952381
       }, 
       "37": {
-        "avg_precision": 0.03434343434343434
+        "avg_precision": 0.014166666666666666
       }, 
       "50": {
-        "avg_precision": 0.01727357609710551
+        "avg_precision": 0.017105871474803514
       }, 
       "29": {
-        "avg_precision": 0.049077313031943036
+        "avg_precision": 0.03479387631408092
       }, 
       "3": {
-        "avg_precision": 0.024092009685230023
+        "avg_precision": 0
       }
     }, 
     "JPL": {
