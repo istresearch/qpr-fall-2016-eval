@@ -25,19 +25,19 @@
     }, 
     "JPL": {
       "17": {
-        "avg_precision": 0
+        "avg_precision": 0.009615384615384616
       }, 
       "49": {
-        "avg_precision": 0
+        "avg_precision": 0.015503875968992248
       }, 
       "19": {
-        "avg_precision": 0
+        "avg_precision": 0.028645833333333332
       }, 
       "37": {
         "avg_precision": 0
       }, 
       "29": {
-        "avg_precision": 0
+        "avg_precision": 0.006666666666666667
       }, 
       "50": {
         "avg_precision": 0
@@ -48,25 +48,25 @@
     }, 
     "HG": {
       "17": {
-        "avg_precision": 0
+        "avg_precision": 0.18194644473231764
       }, 
       "49": {
-        "avg_precision": 0
+        "avg_precision": 0.12505162715989732
       }, 
       "19": {
-        "avg_precision": 0
+        "avg_precision": 0.2692493939015396
       }, 
       "37": {
-        "avg_precision": 0
+        "avg_precision": 0.39529432279209537
       }, 
       "29": {
-        "avg_precision": 0
+        "avg_precision": 0.251325219420264
       }, 
       "50": {
-        "avg_precision": 0
+        "avg_precision": 0.31943283480908813
       }, 
       "3": {
-        "avg_precision": 0
+        "avg_precision": 0.2445282617037223
       }
     }
   }
