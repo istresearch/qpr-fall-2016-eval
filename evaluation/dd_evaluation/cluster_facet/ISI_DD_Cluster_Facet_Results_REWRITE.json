@@ -1,0 +1,73 @@
+{
+  "Cluster Facet": {
+    "NYU": {
+      "25": {
+        "avg_precision": 0
+      }, 
+      "26": {
+        "avg_precision": 0.03225806451612903
+      }, 
+      "22": {
+        "avg_precision": 0.0935258069475579
+      }, 
+      "17": {
+        "avg_precision": 0.011700913242009132
+      }, 
+      "47": {
+        "avg_precision": 0.014705882352941176
+      }, 
+      "37": {
+        "avg_precision": "NA"
+      }, 
+      "9": {
+        "avg_precision": 0.018695155286850788
+      }
+    }, 
+    "JPL": {
+      "25": {
+        "avg_precision": 0
+      }, 
+      "26": {
+        "avg_precision": 0
+      }, 
+      "22": {
+        "avg_precision": 0.02656538863435415
+      }, 
+      "17": {
+        "avg_precision": 0
+      }, 
+      "47": {
+        "avg_precision": 0
+      }, 
+      "37": {
+        "avg_precision": "NA"
+      }, 
+      "9": {
+        "avg_precision": 0.14068817399505595
+      }
+    }, 
+    "HG": {
+      "25": {
+        "avg_precision": 0.2
+      }, 
+      "26": {
+        "avg_precision": 0.2903225806451613
+      }, 
+      "22": {
+        "avg_precision": 0.07575757575757576
+      }, 
+      "17": {
+        "avg_precision": 0.03049958983178161
+      }, 
+      "47": {
+        "avg_precision": 0.7510334958386503
+      }, 
+      "37": {
+        "avg_precision": "NA"
+      }, 
+      "9": {
+        "avg_precision": 0.11764705882352941
+      }
+    }
+  }
+}
