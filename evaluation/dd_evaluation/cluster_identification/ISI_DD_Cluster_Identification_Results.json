@@ -2,25 +2,25 @@
   "Cluster Identification": {
     "NYU": {
       "17": {
-        "avg_precision": 0
+        "avg_precision": "No Relevant Docs Found"
       }, 
       "49": {
-        "avg_precision": 0.03875968992248062
+        "avg_precision": 0.625
       }, 
       "19": {
         "avg_precision": 0
       }, 
       "37": {
-        "avg_precision": 0.02895833333333333
-      }, 
-      "50": {
-        "avg_precision": 0.008032824780397595
+        "avg_precision": 0.7722222222222221
       }, 
       "29": {
-        "avg_precision": 0.006666666666666667
+        "avg_precision": 0.07692307692307693
+      }, 
+      "50": {
+        "avg_precision": 0.20684523809523808
       }, 
       "3": {
-        "avg_precision": 0
+        "avg_precision": "No Relevant Docs Found"
       }
     }, 
     "JPL": {
@@ -28,42 +28,42 @@
         "avg_precision": 0
       }, 
       "49": {
-        "avg_precision": 0.015503875968992248
+        "avg_precision": 0.027777777777777776
       }, 
       "19": {
-        "avg_precision": 0.020833333333333332
+        "avg_precision": 0.03636363636363636
       }, 
       "37": {
         "avg_precision": 0
       }, 
       "29": {
-        "avg_precision": 0.006666666666666667
+        "avg_precision": 0.014925373134328358
       }, 
       "50": {
         "avg_precision": 0
       }, 
       "3": {
-        "avg_precision": 0
+        "avg_precision": "No Relevant Docs Found"
       }
     }, 
     "HG": {
       "17": {
-        "avg_precision": 0.17307692307692307
+        "avg_precision": 0.2465753424657534
       }, 
       "49": {
-        "avg_precision": 0.13178294573643412
+        "avg_precision": 0.3469387755102041
       }, 
       "19": {
-        "avg_precision": 0.1820175438596491
+        "avg_precision": 0.4480431848852901
       }, 
       "37": {
-        "avg_precision": 0.16912438791514006
+        "avg_precision": 0.17802567148962112
       }, 
       "29": {
-        "avg_precision": 0.23056838182220413
+        "avg_precision": 0.5012356126569655
       }, 
       "50": {
-        "avg_precision": 0.2912621359223301
+        "avg_precision": 0.5660377358490566
       }, 
       "3": {
         "avg_precision": 0.9866269841269841
