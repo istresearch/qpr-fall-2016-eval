@@ -2,68 +2,68 @@
   "Cluster Identification": {
     "NYU": {
       "17": {
-        "avg_precision": 0
+        "avg_precision": "No Relevant Docs Found"
       }, 
       "49": {
-        "avg_precision": 0.04127823081311453
+        "avg_precision": 0.6656114718614718
       }, 
       "19": {
-        "avg_precision": 0.005555555555555556
+        "avg_precision": 0.26666666666666666
       }, 
       "37": {
-        "avg_precision": 0.022187500000000002
+        "avg_precision": 0.5916666666666667
       }, 
       "29": {
-        "avg_precision": 0.05394080543925745
+        "avg_precision": 0.622393908914509
       }, 
       "50": {
-        "avg_precision": 0.028478964401294497
+        "avg_precision": 0.7333333333333333
       }, 
       "3": {
-        "avg_precision": 0
+        "avg_precision": "No Relevant Docs Found"
       }
     }, 
     "JPL": {
       "17": {
-        "avg_precision": 0.11959836368983787
+        "avg_precision": 0.40123322012074636
       }, 
       "49": {
-        "avg_precision": 0.5035526465206825
+        "avg_precision": 0.9021984916828897
       }, 
       "19": {
-        "avg_precision": 0.4747783230440048
+        "avg_precision": 0.8287039820404447
       }, 
       "37": {
-        "avg_precision": 0.0125
+        "avg_precision": 1.0
       }, 
       "29": {
-        "avg_precision": 0.3595668543129993
+        "avg_precision": 0.8050004201037297
       }, 
       "50": {
-        "avg_precision": 0.3710478859310921
+        "avg_precision": 0.830824614150054
       }, 
       "3": {
-        "avg_precision": 0
+        "avg_precision": "No Relevant Docs Found"
       }
     }, 
     "HG": {
       "17": {
-        "avg_precision": 0.4210781649509976
+        "avg_precision": 0.5998921802041609
       }, 
       "49": {
-        "avg_precision": 0.16940168076630935
+        "avg_precision": 0.4459758534459981
       }, 
       "19": {
-        "avg_precision": 0.2597050292555
+        "avg_precision": 0.6392739181673845
       }, 
       "37": {
-        "avg_precision": 0.2840842140952359
+        "avg_precision": 0.2990360148370904
       }, 
       "29": {
-        "avg_precision": 0.08586265977452223
+        "avg_precision": 0.18665795603157007
       }, 
       "50": {
-        "avg_precision": 0.44284670857543057
+        "avg_precision": 0.8606266223258368
       }, 
       "3": {
         "avg_precision": 0
