@@ -119,4 +119,4 @@ with open('{}/{}'.format(DATA_PATH, DOCID_OUTPUT_FILE), 'wb') as ff:
 with open('{}/{}'.format(DATA_PATH, TASK_OUTPUT_FILE), 'wb') as ff:
     for id in questions:
         for ll in make_tasks(questions[id]):
-            ff.write('{}\n'.format(ll))
+            ff.write('{}\n'.format(json.dumps(ll)))
