@@ -48,10 +48,10 @@ def parse_answer(answer):
 
 def make_tasks(question):
     tasks = []
-    aa = list(question['answers'])
+    aa = question['answers'].items()
     chunks = [aa[ii:ii + DOCS_PER_TASK] for ii in xrange(0, len(aa), DOCS_PER_TASK)]
     for cc in chunks:
-        question['answers'] = cc
+        question['answers'] = dict(cc)
         tasks.append(question)
     return tasks
 
@@ -116,7 +116,11 @@ with open('{}/{}'.format(DATA_PATH, DOCID_OUTPUT_FILE), 'wb') as ff:
     for id in sorted(list(docids)):
         ff.write('{}\n'.format(id))
 
+with open('{}/{}'.format(DATA_PATH, 'debug.json'), 'wb') as ff:
+    ff.write(json.dumps(questions))
+
 with open('{}/{}'.format(DATA_PATH, TASK_OUTPUT_FILE), 'wb') as ff:
     for id in questions:
         for ll in make_tasks(questions[id]):
             ff.write('{}\n'.format(json.dumps(ll)))
+
