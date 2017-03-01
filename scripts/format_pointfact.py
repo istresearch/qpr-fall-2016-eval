@@ -51,8 +51,9 @@ def make_tasks(question):
     aa = question['answers'].items()
     chunks = [aa[ii:ii + DOCS_PER_TASK] for ii in xrange(0, len(aa), DOCS_PER_TASK)]
     for cc in chunks:
-        question['answers'] = dict(cc)
-        tasks.append(question)
+        qq = question.copy()
+        qq['answers'] = dict(cc)
+        tasks.append(qq)
     return tasks
 
 questions = {}
