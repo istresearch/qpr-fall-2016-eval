@@ -14,6 +14,16 @@ LOG_LEVELS = {
     'debug': logging.DEBUG
 }
 
+def make_tasks(question):
+    tasks = []
+    aa = question['answers'].items()
+    chunks = [aa[ii:ii + args['chunk']] for ii in xrange(0, len(aa), args['chunk'])]
+    for cc in chunks:
+        qq = question.copy()
+        qq['answers'] = dict(cc)
+        tasks.append(qq)
+    return tasks
+
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
@@ -23,6 +33,8 @@ if __name__ == "__main__":
     parser.add_argument("--georgetown", help="path to JSONL-formatted answer data submitted by Georgetown", required=True)
     parser.add_argument("--isi", help="path to JSONL-formatted answer data submitted by ISI", required=True)
     parser.add_argument("--uncharted", help="path to JSONL-formatted answer data submitted by Uncharted", required=True)
+    parser.add_argument("--max", "-m", help="max annotations per team", default=100)
+    parser.add_argument("--chunk", "-c", help="max annotations per task", default=20)
     parser.add_argument("--logging", "-l", choices=LOG_LEVELS.keys(), default='info')
     args = vars(parser.parse_args())
 
@@ -56,7 +68,7 @@ if __name__ == "__main__":
             }
             for tt in TEAMS:
                 logging.debug('collating answers for {} from {}'.format(qq, tt))
-                for aa in answers[tt][qq]['answers']:
+                for aa in answers[tt][qq]['answers'][:args['max']]:
                     _answer = (aa[0], tt)
                     _id = aa[1]
                     if _id and not _id in data['answers']:
@@ -85,6 +97,7 @@ if __name__ == "__main__":
     with open(args['out'], 'wb') as ff:
         cc = 0
         for tt in annotation_tasks:
-            ff.write(json.dumps(annotation_tasks[tt]) + '\n')
-            cc += 1
+            for ll in make_tasks(annotation_tasks[tt]):
+                ff.write('{}\n'.format(json.dumps(ll)))
+                cc += 1
         logging.info('Wrote {} annotation tasks to {}'.format(cc, args['out']))
