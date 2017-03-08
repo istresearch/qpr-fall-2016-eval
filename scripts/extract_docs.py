@@ -22,7 +22,7 @@ if __name__ == "__main__":
     bucket = boto.connect_s3(aws_access_key_id=args.key, aws_secret_access_key=args.secret).get_bucket(BUCKET)
     with open(args.ids, "rb") as ff:
         for ll in ff:
-            tt, ii = ll.split('\n')[0].split(':')
+            tt, ii = ll.split('\n')[0].split('/')
             try:
                 print('Getting {}/{}'.format(tt, ii))
                 key_path = s3_path.format(team=tt, id=ii)

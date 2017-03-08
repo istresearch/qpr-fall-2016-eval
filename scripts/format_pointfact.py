@@ -7,13 +7,15 @@ DATA_FILES = [
     'georgetown_jpl_pointfact.json',
     'georgetown_nyu_pointfact.json',
     'isi_hg_pointfact.json',
-    'isi_jpl_pointfact.json',
+    'isi_jpl_all.json',
     'isi_nyu_pointfact.json',
-    'uncharted_nyu_pointfact.json',
+    'uncharted_nyu_all.json',
+    'uncharted_hg_all.json',
 ]
 TASK_OUTPUT_FILE = 'combined_pointfact_tasks.json'
 DOCID_OUTPUT_FILE = 'docids.txt'
 DOCS_PER_TASK = 20
+MAX_DOCS_PER_TEAM = 20
 
 QUESTIONS_FILE = 'post_point_fact_V3.json'
 
@@ -28,10 +30,19 @@ def get_analysis_team(filename):
 def get_crawling_team(filename):
     return parse_filename(filename)[1]
 
+def get_collection_type(filename):
+    return parse_filename(filename)[2]
+
 def munge(team, ff):
     data = ff.read()
     if team == 'isi':
         data = data.replace('False', 'false').replace('True', 'true')
+    data = json.loads(data)
+    if team == 'uncharted':
+        for kk, vv in enumerate(data):
+            if 'answers' in vv:
+                vv['answer'] = vv['answers']
+                del vv['answers']
     return data
 
 def get_quid(data):
@@ -65,7 +76,7 @@ for filename in DATA_FILES:
     with open('{}/{}'.format(DATA_PATH, filename), 'rb') as ff:
         team = get_analysis_team(filename)
         crawler = get_crawling_team(filename)
-        data = json.loads(munge(team, ff))
+        data = munge(team, ff)
         for oo in data:
             id = get_quid(oo)
             if not int(id) in QUIDS:
@@ -76,7 +87,7 @@ for filename in DATA_FILES:
                 answers[id][team] = {}
             if not crawler in answers[id][team]:
                 answers[id][team][crawler] = {}
-            for aa in oo['answer']:
+            for aa in oo['answer'][:MAX_DOCS_PER_TEAM]:
                 _id, _value = parse_answer(aa)
                 if not _id in answers[id][team][crawler]:
                     answers[id][team][crawler][_id] = []
