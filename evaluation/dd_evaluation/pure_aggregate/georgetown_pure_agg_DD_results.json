@@ -1,0 +1,135 @@
+{
+  "Pure Aggregate": {
+    "11": {
+      "avg_precision": 0.20950650619166541, 
+      "agg_metric": 0, 
+      "expected_agg": 3006, 
+      "submitted_agg": [
+        "79993"
+      ], 
+      "feature": "price"
+    }, 
+    "10": {
+      "avg_precision": 0.5833333333333333, 
+      "agg_metric": 1, 
+      "expected_agg": 27, 
+      "submitted_agg": [
+        26
+      ], 
+      "feature": "age"
+    }, 
+    "13": {
+      "avg_precision": 0, 
+      "agg_metric": 0, 
+      "expected_agg": "blonde", 
+      "submitted_agg": [
+        "black"
+      ], 
+      "feature": "hair_color"
+    }, 
+    "12": {
+      "avg_precision": 0.15950931887451655, 
+      "agg_metric": 0, 
+      "expected_agg": 42, 
+      "submitted_agg": [
+        26
+      ], 
+      "feature": "age"
+    }, 
+    "15": {
+      "avg_precision": 0.11301717679161806, 
+      "agg_metric": 0, 
+      "expected_agg": 500, 
+      "submitted_agg": [
+        "95"
+      ], 
+      "feature": "weight"
+    }, 
+    "14": {
+      "avg_precision": 0.2611980351283563, 
+      "agg_metric": 0, 
+      "expected_agg": 59, 
+      "submitted_agg": [
+        162
+      ], 
+      "feature": "height"
+    }, 
+    "1": {
+      "avg_precision": 0, 
+      "agg_metric": 0, 
+      "expected_agg": 26, 
+      "submitted_agg": [], 
+      "feature": "age"
+    }, 
+    "3": {
+      "avg_precision": 0, 
+      "agg_metric": 0, 
+      "expected_agg": "kansas city", 
+      "submitted_agg": [
+        "London"
+      ], 
+      "feature": "location"
+    }, 
+    "2": {
+      "avg_precision": 0, 
+      "agg_metric": "NA", 
+      "expected_agg": "NA", 
+      "submitted_agg": [
+        "lindseylovevip@gmail.com"
+      ], 
+      "feature": "email"
+    }, 
+    "5": {
+      "avg_precision": 0.02028660895724198, 
+      "agg_metric": 0, 
+      "expected_agg": 60, 
+      "submitted_agg": [
+        68
+      ], 
+      "feature": "age"
+    }, 
+    "4": {
+      "avg_precision": 0.0012241741892904682, 
+      "agg_metric": 0, 
+      "expected_agg": "layla45643@gmail.com", 
+      "submitted_agg": [
+        "hello@taylorstitch.com"
+      ], 
+      "feature": "email"
+    }, 
+    "7": {
+      "avg_precision": 0.24744512658049614, 
+      "agg_metric": 0, 
+      "expected_agg": "milwaukee", 
+      "submitted_agg": [
+        "Naughty America"
+      ], 
+      "feature": "location"
+    }, 
+    "6": {
+      "avg_precision": 0.0010572209472375432, 
+      "agg_metric": 0, 
+      "expected_agg": 18, 
+      "submitted_agg": [
+        10
+      ], 
+      "feature": "age"
+    }, 
+    "9": {
+      "avg_precision": 0, 
+      "agg_metric": "NA", 
+      "expected_agg": "NA", 
+      "submitted_agg": [], 
+      "feature": "phone number"
+    }, 
+    "8": {
+      "avg_precision": 0.15265976188105218, 
+      "agg_metric": 0, 
+      "expected_agg": 18, 
+      "submitted_agg": [
+        10
+      ], 
+      "feature": "age"
+    }
+  }
+}

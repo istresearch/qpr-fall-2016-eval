@@ -1,0 +1,139 @@
+{
+  "Pure Aggregate": {
+    "11": {
+      "avg_precision": 0.2278287570797656, 
+      "agg_metric": 0, 
+      "expected_agg": 3006, 
+      "submitted_agg": [
+        "48.152301912"
+      ], 
+      "feature": "price"
+    }, 
+    "10": {
+      "avg_precision": 0, 
+      "agg_metric": 1, 
+      "expected_agg": 27, 
+      "submitted_agg": [
+        "26.6677849632"
+      ], 
+      "feature": "age"
+    }, 
+    "13": {
+      "avg_precision": 0.6508223668638959, 
+      "agg_metric": 0, 
+      "expected_agg": "blonde", 
+      "submitted_agg": [
+        ""
+      ], 
+      "feature": "hair_color"
+    }, 
+    "12": {
+      "avg_precision": 0.267840707081357, 
+      "agg_metric": 0, 
+      "expected_agg": 42, 
+      "submitted_agg": [
+        "23.9559610877"
+      ], 
+      "feature": "age"
+    }, 
+    "15": {
+      "avg_precision": 0.2517413176558145, 
+      "agg_metric": 0, 
+      "expected_agg": 500, 
+      "submitted_agg": [
+        "112.399225748"
+      ], 
+      "feature": "weight"
+    }, 
+    "14": {
+      "avg_precision": 0.30792342267479506, 
+      "agg_metric": 0, 
+      "expected_agg": 59, 
+      "submitted_agg": [
+        "171.915799952"
+      ], 
+      "feature": "height"
+    }, 
+    "1": {
+      "avg_precision": 0.9287874181565093, 
+      "agg_metric": 1, 
+      "expected_agg": 26, 
+      "submitted_agg": [
+        "26.0"
+      ], 
+      "feature": "age"
+    }, 
+    "3": {
+      "avg_precision": 0.7944243911674187, 
+      "agg_metric": 1, 
+      "expected_agg": "kansas city", 
+      "submitted_agg": [
+        "kansas city"
+      ], 
+      "feature": "location"
+    }, 
+    "2": {
+      "avg_precision": 1.0, 
+      "agg_metric": "NA", 
+      "expected_agg": "NA", 
+      "submitted_agg": [
+        "lindseylovevip@gmail.com"
+      ], 
+      "feature": "email"
+    }, 
+    "5": {
+      "avg_precision": 0.6758885798183702, 
+      "agg_metric": 0, 
+      "expected_agg": 60, 
+      "submitted_agg": [
+        "29.1946735258"
+      ], 
+      "feature": "age"
+    }, 
+    "4": {
+      "avg_precision": 0.8194156604535136, 
+      "agg_metric": 0, 
+      "expected_agg": "layla45643@gmail.com", 
+      "submitted_agg": [
+        "forne901@gmail.com"
+      ], 
+      "feature": "email"
+    }, 
+    "7": {
+      "avg_precision": 0.17548574776784376, 
+      "agg_metric": 0, 
+      "expected_agg": "milwaukee", 
+      "submitted_agg": [
+        "california"
+      ], 
+      "feature": "location"
+    }, 
+    "6": {
+      "avg_precision": 0.449319632170366, 
+      "agg_metric": 0, 
+      "expected_agg": 18, 
+      "submitted_agg": [
+        "22.7742640041"
+      ], 
+      "feature": "age"
+    }, 
+    "9": {
+      "avg_precision": 0.2222222222222222, 
+      "agg_metric": "NA", 
+      "expected_agg": "NA", 
+      "submitted_agg": [
+        "3034195816"
+      ], 
+      "feature": "phone number"
+    }, 
+    "8": {
+      "avg_precision": 0.4094628278892061, 
+      "agg_metric": 0, 
+      "expected_agg": 18, 
+      "submitted_agg": [
+        "23.0"
+      ], 
+      "feature": "age"
+    }
+  }
+}

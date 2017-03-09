@@ -1,0 +1,190 @@
+{
+  "Point Fact": {
+    "NYU": {
+      "217": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }, 
+      "1647": {
+        "pf_metric": 0, 
+        "avg_precision": 1.0
+      }, 
+      "1159": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }, 
+      "1707": {
+        "pf_metric": 1, 
+        "avg_precision": 1.0
+      }, 
+      "1038": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }, 
+      "2304": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }, 
+      "799": {
+        "pf_metric": 1, 
+        "avg_precision": 1.0
+      }, 
+      "363": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }, 
+      "392": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }, 
+      "1597": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }, 
+      "1180": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }, 
+      "510": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }, 
+      "1339": {
+        "pf_metric": "NA", 
+        "avg_precision": 0
+      }, 
+      "284": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }, 
+      "1035": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }
+    }, 
+    "JPL": {
+      "217": {
+        "pf_metric": "NA", 
+        "avg_precision": 0
+      }, 
+      "1647": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }, 
+      "1159": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }, 
+      "1707": {
+        "pf_metric": "NA", 
+        "avg_precision": 0
+      }, 
+      "1038": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }, 
+      "2304": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }, 
+      "799": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }, 
+      "363": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }, 
+      "392": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }, 
+      "1597": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }, 
+      "1180": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }, 
+      "510": {
+        "pf_metric": 1, 
+        "avg_precision": 0.6
+      }, 
+      "1339": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }, 
+      "284": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }, 
+      "1035": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }
+    }, 
+    "HG": {
+      "217": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }, 
+      "1647": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }, 
+      "1159": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }, 
+      "1707": {
+        "pf_metric": 0, 
+        "avg_precision": 0.6
+      }, 
+      "1038": {
+        "pf_metric": "NA", 
+        "avg_precision": 0
+      }, 
+      "2304": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }, 
+      "799": {
+        "pf_metric": 1, 
+        "avg_precision": 1.0
+      }, 
+      "363": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }, 
+      "392": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }, 
+      "1597": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }, 
+      "1180": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }, 
+      "510": {
+        "pf_metric": 0, 
+        "avg_precision": 0.25
+      }, 
+      "1339": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }, 
+      "284": {
+        "pf_metric": "NA", 
+        "avg_precision": 1.0
+      }, 
+      "1035": {
+        "pf_metric": "NA", 
+        "avg_precision": "No Relevant Docs Found"
+      }
+    }
+  }
+}
