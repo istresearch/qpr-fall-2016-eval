@@ -1,0 +1,139 @@
+{
+  "Pure Aggregate": {
+    "11": {
+      "avg_precision": 0.33494258217092626, 
+      "agg_metric": 0, 
+      "expected_agg": 3006, 
+      "submitted_agg": [
+        950
+      ], 
+      "feature": "price"
+    }, 
+    "10": {
+      "avg_precision": 0, 
+      "agg_metric": 1, 
+      "expected_agg": 27, 
+      "submitted_agg": [
+        28
+      ], 
+      "feature": "age"
+    }, 
+    "13": {
+      "avg_precision": 0.001734943824437307, 
+      "agg_metric": 1, 
+      "expected_agg": "blonde", 
+      "submitted_agg": [
+        "blonde"
+      ], 
+      "feature": "hair_color"
+    }, 
+    "12": {
+      "avg_precision": 0.13528394057814447, 
+      "agg_metric": 0, 
+      "expected_agg": 42, 
+      "submitted_agg": [
+        34.17432377609061
+      ], 
+      "feature": "age"
+    }, 
+    "15": {
+      "avg_precision": 0.13836626389939854, 
+      "agg_metric": 0, 
+      "expected_agg": 500, 
+      "submitted_agg": [
+        230
+      ], 
+      "feature": "weight"
+    }, 
+    "14": {
+      "avg_precision": 0.5173975215464877, 
+      "agg_metric": 0, 
+      "expected_agg": 59, 
+      "submitted_agg": [
+        64.35742574257426
+      ], 
+      "feature": "height"
+    }, 
+    "1": {
+      "avg_precision": 0.10810810810810811, 
+      "agg_metric": 1, 
+      "expected_agg": 26, 
+      "submitted_agg": [
+        26
+      ], 
+      "feature": "age"
+    }, 
+    "3": {
+      "avg_precision": 0.026390656760435106, 
+      "agg_metric": 0, 
+      "expected_agg": "kansas city", 
+      "submitted_agg": [
+        "London,UK"
+      ], 
+      "feature": "location"
+    }, 
+    "2": {
+      "avg_precision": 0.3333333333333333, 
+      "agg_metric": "NA", 
+      "expected_agg": "NA", 
+      "submitted_agg": [
+        "lindseylovevip@gmail.com"
+      ], 
+      "feature": "email"
+    }, 
+    "5": {
+      "avg_precision": 0.18581478190711812, 
+      "agg_metric": 1, 
+      "expected_agg": 60, 
+      "submitted_agg": [
+        60
+      ], 
+      "feature": "age"
+    }, 
+    "4": {
+      "avg_precision": 0.01664878324259558, 
+      "agg_metric": 0, 
+      "expected_agg": "layla45643@gmail.com", 
+      "submitted_agg": [
+        "support@dnxnetwork.lu"
+      ], 
+      "feature": "email"
+    }, 
+    "7": {
+      "avg_precision": 0.42074247240456936, 
+      "agg_metric": 0, 
+      "expected_agg": "milwaukee", 
+      "submitted_agg": [
+        "NewYork,NY,USA"
+      ], 
+      "feature": "location"
+    }, 
+    "6": {
+      "avg_precision": 0.039507125294796525, 
+      "agg_metric": 1, 
+      "expected_agg": 18, 
+      "submitted_agg": [
+        18
+      ], 
+      "feature": "age"
+    }, 
+    "9": {
+      "avg_precision": 0.46259467902956813, 
+      "agg_metric": "NA", 
+      "expected_agg": "NA", 
+      "submitted_agg": [
+        "3034195816"
+      ], 
+      "feature": "phone number"
+    }, 
+    "8": {
+      "avg_precision": 0.3162443005289368, 
+      "agg_metric": 1, 
+      "expected_agg": 18, 
+      "submitted_agg": [
+        18
+      ], 
+      "feature": "age"
+    }
+  }
+}
