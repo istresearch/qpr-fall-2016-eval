@@ -5,27 +5,24 @@ import logging
 ADS_PATH = '/data/sites/ads/{}/{}.gz'
 
 DATA_FILES = [
-    ('georgetown', 'jpl', 'data/team_submissions/Georgetown/DomainDiscovery/Georgetown_Submission_2_8/JPL/JPL_Cluster_Facet.json'),
-    ('georgetown', 'hg', 'data/team_submissions/Georgetown/DomainDiscovery/Georgetown_Submission_2_8/HG/HG_Cluster_Facet.json'),
-    ('georgetown', 'nyu', 'data/team_submissions/Georgetown/DomainDiscovery/NYU_CF.json'),
+    ('georgetown', 'jpl', 'data/team_submissions/Georgetown/DomainDiscovery/Georgetown_Submission_2_8/JPL/JPL_post_aggregate.json'),
+    ('georgetown', 'hg', 'data/team_submissions/Georgetown/DomainDiscovery/Georgetown_Submission_2_8/HG/HG_post_aggregate.json'),
+    ('georgetown', 'nyu', 'data/team_submissions/Georgetown/DomainDiscovery/NYU_aggregate.json'),
     ('uncharted', 'jpl', 'data/team_submissions/Uncharted/DomainDiscovery/uncharted_JPL_DD.json'),
     ('uncharted', 'hg', 'data/team_submissions/Uncharted/DomainDiscovery/uncharted_HG_DD.json'),
     ('uncharted', 'nyu', 'data/team_submissions/Uncharted/DomainDiscovery/uncharted_NYU_DD.json'),
-    ('isi', 'jpl', 'data/team_submissions/ISI/DomainDiscovery/jpl_answers_isi/properly_formatted_submissions/formatted_cluster-facet-queries-parsed_all_answers.json'),
-    ('isi', 'hg', 'data/team_submissions/ISI/DomainDiscovery/hg_all_asnwers/properly_formatted_submissions/formatted_post_cluster_facet_parsed_fixed_all_answers.json'),
-    ('isi', 'nyu', 'data/team_submissions/ISI/DomainDiscovery/isi-nyu-answers-dig-extractions/properly_formatted_submissions/formatted_post_cluster_facet_parsed_fixed_all_answers.json'),
+    ('isi', 'jpl', 'data/team_submissions/ISI/DomainDiscovery/jpl_answers_isi/properly_formatted_submissions/formatted_aggregate-queries-parsed_all_answers.json'),
+    ('isi', 'hg', 'data/team_submissions/ISI/DomainDiscovery/jpl_answers_isi/properly_formatted_submissions/formatted_aggregate-queries-parsed_all_answers.json'),
+    ('isi', 'nyu', 'data/team_submissions/ISI/DomainDiscovery/isi-nyu-answers-dig-extractions/properly_formatted_submissions/formatted_post_aggregate_parsed_fixed_all_answers.json'),
 ]
 
 SEEDS_PATH = 'data/annotation_prep/dd_clustering/FIRST_ROUND_chosen_questions.json'
-QUESTIONS_PATH = 'questions/post_cluster_facet.json'
+QUESTIONS_PATH = 'questions/post_aggregate_V2.json'
 
 CLUSTER_FILES = (
     'data/annotation_prep/dd_clustering/FIRST_ROUND_seeds2cluster_ads.json',
     'data/annotation_prep/dd_clustering/SECOND_ROUND_seeds2cluster_ads.json'
 )
-
-TEAMS = ('georgetown', 'isi', 'uncharted')
-CRAWLERS = ('hg', 'jpl', 'nyu')
 
 LOG_LEVELS = {
     'critical': logging.CRITICAL, 
@@ -40,7 +37,7 @@ def get_relevant_questions():
     logging.debug('opening {}'.format(SEEDS_PATH))
     with open(SEEDS_PATH) as ff:
         data = json.load(ff)
-        for kk,vv in data.get('JPL', {}).get('Cluster Facet', {}).items():
+        for kk,vv in data.get('JPL', {}).get('Cluster Aggregate', {}).items():
             qq[kk] = { 'id': kk, 'seed': vv.get('seed'), 'answers': {} }
 
     logging.debug('opening {}'.format(QUESTIONS_PATH))
@@ -69,7 +66,7 @@ def get_valid_ads(qq):
                 else:
                     logging.debug('{} NOT found in {}'.format(kk, _f))
     for _q in qq:
-        qq[_q]['valid'] = list(qq[_q]['valid'])
+        qq[_q]['valid'] = list(qq[_q]['valid']) if 'valid' in qq[_q] else ()
     return qq
 
 def get_team_answers(qq):
@@ -82,7 +79,8 @@ def get_team_answers(qq):
             if not crawler in qq[aa['id']]['answers'][team]:
                 qq[aa['id']]['answers'][team][crawler] = []
             for answer in aa['answers']:
-                qq[aa['id']]['answers'][team][crawler].append(answer)
+                if type(answer).__name__ == 'list':
+                    qq[aa['id']]['answers'][team][crawler].append(answer)
     return qq
             
 def parse_data_file(team, crawler, path):
@@ -106,7 +104,7 @@ def parse_data_file(team, crawler, path):
                 _answers = _answers[:ARGS['max']]
             except Exception as ee:
                 logging.debug(ee)
-            if _id and _answers is not None and _type.lower() == 'cluster facet':
+            if _id and _answers is not None:
                 obj = {'id': _id, 'team': team, 'crawler': crawler, 'answers': _answers }
                 out.append(obj)
     return out
@@ -137,7 +135,12 @@ def collate_answers(qq):
                 for aa in qq[ii]['answers'][tt][cc]:
                     try:
                         open(ADS_PATH.format(cc, aa[1]))
-                        tasks[ii]['answers']['{}:{}'.format(cc, aa[1])] = []
+                        adid = '{}:{}'.format(cc, aa[1])
+                        answer = (aa[0], tt)
+                        if not adid in tasks[ii]['answers']:
+                            tasks[ii]['answers'][adid] = []
+                        if aa[0] and not answer in tasks[ii]['answers'][adid]:
+                            tasks[ii]['answers'][adid].append(answer)
                     except IOError:
                         logging.debug('Skipping {}:{}'.format(cc, aa[1]))
     return tasks
@@ -164,7 +167,7 @@ def write_tasks(tasks):
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--out", "-o", help="path to write JSONL-formatted annotation data", default='cluster_facet_tasks.json')
+    parser.add_argument("--out", "-o", help="path to write JSONL-formatted annotation data", default='cluster_aggregate_tasks.json')
     parser.add_argument("--ids", "-i", help="path to write list of doc ids", default='docids.txt')
     parser.add_argument("--max", "-m", help="max annotations per team", default=100)
     parser.add_argument("--chunk", "-c", help="max annotations per task", default=20)
@@ -177,7 +180,7 @@ if __name__ == "__main__":
     questions = get_valid_ads(questions)
     questions = get_team_answers(questions)
 
-    #logging.debug('questions: {}'.format(json.dumps(questions)))
+    logging.debug('questions: {}'.format(json.dumps(questions)))
     
     docids = collect_docids(questions)
     write_docids(docids)

@@ -6,7 +6,7 @@ import argparse
 import gzip
 import os
 
-file_path = '/data/ads/{team}/{id}.gz'
+file_path = '/data/sites/ads/{team}/{id}.gz'
 s3_path = 'unpacked/{team}/{id}.gz'
 BUCKET = 'memex-fall2016-qpr'
 
