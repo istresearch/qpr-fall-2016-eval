@@ -1,0 +1,190 @@
+{
+  "Cluster Aggregate": {
+    "NYU": {
+      "82": {
+        "avg_precision": 0, 
+        "agg_metric": 0
+      }, 
+      "79": {
+        "avg_precision": 0, 
+        "agg_metric": 0
+      }, 
+      "44": {
+        "avg_precision": 0.09395819360608093, 
+        "agg_metric": 0
+      }, 
+      "37": {
+        "avg_precision": 0.05555555555555555, 
+        "agg_metric": 0
+      }, 
+      "35": {
+        "avg_precision": 0.29411764705882354, 
+        "agg_metric": 0
+      }, 
+      "76": {
+        "avg_precision": 0.13793103448275862, 
+        "agg_metric": 0
+      }, 
+      "5": {
+        "avg_precision": 0.1111111111111111, 
+        "agg_metric": 0
+      }, 
+      "4": {
+        "avg_precision": 0.1306547619047619, 
+        "agg_metric": 0
+      }, 
+      "71": {
+        "avg_precision": 0.0012578616352201257, 
+        "agg_metric": 0
+      }, 
+      "69": {
+        "avg_precision": 0.2702702702702703, 
+        "agg_metric": 0
+      }, 
+      "68": {
+        "avg_precision": 0.01818181818181818, 
+        "agg_metric": 0
+      }, 
+      "83": {
+        "avg_precision": 0, 
+        "agg_metric": 0
+      }, 
+      "100": {
+        "avg_precision": 0, 
+        "agg_metric": 0
+      }, 
+      "84": {
+        "avg_precision": 0, 
+        "agg_metric": 0
+      }, 
+      "78": {
+        "avg_precision": 0, 
+        "agg_metric": 0
+      }
+    }, 
+    "JPL": {
+      "82": {
+        "avg_precision": "NA", 
+        "agg_metric": "NA"
+      }, 
+      "79": {
+        "avg_precision": "NA", 
+        "agg_metric": "NA"
+      }, 
+      "44": {
+        "avg_precision": 0, 
+        "agg_metric": 0
+      }, 
+      "37": {
+        "avg_precision": 0, 
+        "agg_metric": 0
+      }, 
+      "35": {
+        "avg_precision": 0, 
+        "agg_metric": 0
+      }, 
+      "76": {
+        "avg_precision": 0, 
+        "agg_metric": 0
+      }, 
+      "5": {
+        "avg_precision": 0, 
+        "agg_metric": 0
+      }, 
+      "4": {
+        "avg_precision": "NA", 
+        "agg_metric": "NA"
+      }, 
+      "71": {
+        "avg_precision": 0, 
+        "agg_metric": "NA"
+      }, 
+      "69": {
+        "avg_precision": 0, 
+        "agg_metric": "NA"
+      }, 
+      "68": {
+        "avg_precision": "NA", 
+        "agg_metric": "NA"
+      }, 
+      "83": {
+        "avg_precision": "NA", 
+        "agg_metric": "NA"
+      }, 
+      "100": {
+        "avg_precision": 0, 
+        "agg_metric": 0
+      }, 
+      "84": {
+        "avg_precision": 0, 
+        "agg_metric": 0
+      }, 
+      "78": {
+        "avg_precision": "NA", 
+        "agg_metric": "NA"
+      }
+    }, 
+    "HG": {
+      "82": {
+        "avg_precision": 0.1206896551724138, 
+        "agg_metric": 0
+      }, 
+      "79": {
+        "avg_precision": 0.46453425082568195, 
+        "agg_metric": 0
+      }, 
+      "44": {
+        "avg_precision": 0.49999279223201154, 
+        "agg_metric": 0
+      }, 
+      "37": {
+        "avg_precision": 0.2390436017726917, 
+        "agg_metric": 1
+      }, 
+      "35": {
+        "avg_precision": 0.10230926480926482, 
+        "agg_metric": 0
+      }, 
+      "76": {
+        "avg_precision": 0.12114753706558071, 
+        "agg_metric": 0
+      }, 
+      "5": {
+        "avg_precision": 0.49368588197323865, 
+        "agg_metric": 0
+      }, 
+      "4": {
+        "avg_precision": 0.19442701044307173, 
+        "agg_metric": 0
+      }, 
+      "71": {
+        "avg_precision": 0.38826966728962764, 
+        "agg_metric": 0
+      }, 
+      "69": {
+        "avg_precision": 0.18072289156626506, 
+        "agg_metric": 0
+      }, 
+      "68": {
+        "avg_precision": 0.8809064761508033, 
+        "agg_metric": 0
+      }, 
+      "83": {
+        "avg_precision": 0.20395009189736438, 
+        "agg_metric": 0
+      }, 
+      "100": {
+        "avg_precision": 0.8678676739860951, 
+        "agg_metric": 0
+      }, 
+      "84": {
+        "avg_precision": 0.5719383753547767, 
+        "agg_metric": 0
+      }, 
+      "78": {
+        "avg_precision": 0.8936170212765957, 
+        "agg_metric": 0
+      }
+    }
+  }
+}
