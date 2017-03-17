@@ -1,0 +1,190 @@
+{
+  "Cluster Aggregate": {
+    "NYU": {
+      "82": {
+        "avg_precision": 0, 
+        "agg_metric": 0
+      }, 
+      "79": {
+        "avg_precision": 0, 
+        "agg_metric": 0
+      }, 
+      "44": {
+        "avg_precision": 0.06983069182984206, 
+        "agg_metric": 0
+      }, 
+      "37": {
+        "avg_precision": 0.05555555555555555, 
+        "agg_metric": 0
+      }, 
+      "35": {
+        "avg_precision": 0.6470588235294118, 
+        "agg_metric": 0
+      }, 
+      "76": {
+        "avg_precision": 0.06595273832927252, 
+        "agg_metric": 0
+      }, 
+      "5": {
+        "avg_precision": 0.0617283950617284, 
+        "agg_metric": 0
+      }, 
+      "4": {
+        "avg_precision": 0.04246322065615544, 
+        "agg_metric": 0
+      }, 
+      "71": {
+        "avg_precision": 0.06666666666666667, 
+        "agg_metric": 0
+      }, 
+      "69": {
+        "avg_precision": 0.5945945945945946, 
+        "agg_metric": 0
+      }, 
+      "68": {
+        "avg_precision": 0, 
+        "agg_metric": 0
+      }, 
+      "83": {
+        "avg_precision": 0, 
+        "agg_metric": 0
+      }, 
+      "100": {
+        "avg_precision": 0, 
+        "agg_metric": 0
+      }, 
+      "84": {
+        "avg_precision": 0, 
+        "agg_metric": 0
+      }, 
+      "78": {
+        "avg_precision": 0.07692307692307693, 
+        "agg_metric": 0
+      }
+    }, 
+    "JPL": {
+      "82": {
+        "avg_precision": "NA", 
+        "agg_metric": "NA"
+      }, 
+      "79": {
+        "avg_precision": "NA", 
+        "agg_metric": "NA"
+      }, 
+      "44": {
+        "avg_precision": 0, 
+        "agg_metric": 0
+      }, 
+      "37": {
+        "avg_precision": 0.015625, 
+        "agg_metric": 0
+      }, 
+      "35": {
+        "avg_precision": 0.9375, 
+        "agg_metric": 0
+      }, 
+      "76": {
+        "avg_precision": 0, 
+        "agg_metric": 0
+      }, 
+      "5": {
+        "avg_precision": 0.2857142857142857, 
+        "agg_metric": 0
+      }, 
+      "4": {
+        "avg_precision": "NA", 
+        "agg_metric": "NA"
+      }, 
+      "71": {
+        "avg_precision": 0.5, 
+        "agg_metric": "NA"
+      }, 
+      "69": {
+        "avg_precision": 0.8823529411764706, 
+        "agg_metric": "NA"
+      }, 
+      "68": {
+        "avg_precision": "NA", 
+        "agg_metric": "NA"
+      }, 
+      "83": {
+        "avg_precision": "NA", 
+        "agg_metric": "NA"
+      }, 
+      "100": {
+        "avg_precision": 0.5, 
+        "agg_metric": 0
+      }, 
+      "84": {
+        "avg_precision": 0, 
+        "agg_metric": 0
+      }, 
+      "78": {
+        "avg_precision": "NA", 
+        "agg_metric": "NA"
+      }
+    }, 
+    "HG": {
+      "82": {
+        "avg_precision": 0.008620689655172414, 
+        "agg_metric": 0
+      }, 
+      "79": {
+        "avg_precision": 0.036836932928216624, 
+        "agg_metric": 0
+      }, 
+      "44": {
+        "avg_precision": 0, 
+        "agg_metric": 0
+      }, 
+      "37": {
+        "avg_precision": 0, 
+        "agg_metric": 0
+      }, 
+      "35": {
+        "avg_precision": 0.00641025641025641, 
+        "agg_metric": 0
+      }, 
+      "76": {
+        "avg_precision": 0.2674376214152803, 
+        "agg_metric": 0
+      }, 
+      "5": {
+        "avg_precision": 0, 
+        "agg_metric": 0
+      }, 
+      "4": {
+        "avg_precision": 0.13459597050884767, 
+        "agg_metric": 0
+      }, 
+      "71": {
+        "avg_precision": 0, 
+        "agg_metric": 0
+      }, 
+      "69": {
+        "avg_precision": 0.006024096385542169, 
+        "agg_metric": 0
+      }, 
+      "68": {
+        "avg_precision": 0.8630446145354476, 
+        "agg_metric": 0
+      }, 
+      "83": {
+        "avg_precision": 0.006097560975609756, 
+        "agg_metric": 0
+      }, 
+      "100": {
+        "avg_precision": 0, 
+        "agg_metric": 0
+      }, 
+      "84": {
+        "avg_precision": 0.008294301327088211, 
+        "agg_metric": 0
+      }, 
+      "78": {
+        "avg_precision": 0.24778939250153265, 
+        "agg_metric": 0
+      }
+    }
+  }
+}

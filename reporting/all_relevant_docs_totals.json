@@ -1,0 +1,1453 @@
+{
+  "Cluster Aggregate": {
+    "24": {
+      "Ground Truth": 57, 
+      "CDR": 57
+    }, 
+    "25": {
+      "Ground Truth": 142, 
+      "CDR": 138
+    }, 
+    "26": {
+      "Ground Truth": 135, 
+      "CDR": 134
+    }, 
+    "27": {
+      "Ground Truth": 135, 
+      "CDR": 135
+    }, 
+    "20": {
+      "Ground Truth": 16, 
+      "CDR": 15
+    }, 
+    "21": {
+      "Ground Truth": 42, 
+      "CDR": 40
+    }, 
+    "22": {
+      "Ground Truth": 74, 
+      "CDR": 74
+    }, 
+    "23": {
+      "Ground Truth": 42, 
+      "CDR": 41
+    }, 
+    "28": {
+      "Ground Truth": 44, 
+      "CDR": 44
+    }, 
+    "29": {
+      "Ground Truth": 23, 
+      "CDR": 23
+    }, 
+    "4": {
+      "Ground Truth": 40, 
+      "JPL": 0, 
+      "HG": 147, 
+      "CDR": 37, 
+      "NYU": 32
+    }, 
+    "8": {
+      "Ground Truth": 154, 
+      "CDR": 154
+    }, 
+    "59": {
+      "Ground Truth": 90, 
+      "CDR": 85
+    }, 
+    "58": {
+      "Ground Truth": 87, 
+      "CDR": 88
+    }, 
+    "55": {
+      "Ground Truth": 93, 
+      "CDR": 91
+    }, 
+    "54": {
+      "Ground Truth": 115, 
+      "CDR": 108
+    }, 
+    "57": {
+      "Ground Truth": 25, 
+      "CDR": 25
+    }, 
+    "56": {
+      "Ground Truth": 29, 
+      "CDR": 29
+    }, 
+    "51": {
+      "Ground Truth": 53, 
+      "CDR": 53
+    }, 
+    "50": {
+      "Ground Truth": 31, 
+      "CDR": 31
+    }, 
+    "53": {
+      "Ground Truth": 96, 
+      "CDR": 94
+    }, 
+    "52": {
+      "Ground Truth": 191, 
+      "CDR": 191
+    }, 
+    "88": {
+      "Ground Truth": 24, 
+      "CDR": 24
+    }, 
+    "89": {
+      "Ground Truth": 90, 
+      "CDR": 85
+    }, 
+    "82": {
+      "Ground Truth": 65, 
+      "JPL": 0, 
+      "HG": 58, 
+      "CDR": 65, 
+      "NYU": 51
+    }, 
+    "83": {
+      "Ground Truth": 107, 
+      "JPL": 0, 
+      "HG": 82, 
+      "CDR": 107, 
+      "NYU": 26
+    }, 
+    "80": {
+      "Ground Truth": 83, 
+      "CDR": 84
+    }, 
+    "81": {
+      "Ground Truth": 32, 
+      "CDR": 32
+    }, 
+    "86": {
+      "Ground Truth": 113, 
+      "CDR": 111
+    }, 
+    "87": {
+      "Ground Truth": 37, 
+      "CDR": 37
+    }, 
+    "84": {
+      "Ground Truth": 69, 
+      "JPL": 1, 
+      "HG": 122, 
+      "CDR": 68, 
+      "NYU": 45
+    }, 
+    "85": {
+      "Ground Truth": 116, 
+      "CDR": 108
+    }, 
+    "3": {
+      "Ground Truth": 55, 
+      "CDR": 51
+    }, 
+    "7": {
+      "Ground Truth": 56, 
+      "CDR": 27
+    }, 
+    "100": {
+      "Ground Truth": 47, 
+      "JPL": 2, 
+      "HG": 60, 
+      "CDR": 43, 
+      "NYU": 27
+    }, 
+    "39": {
+      "Ground Truth": 138, 
+      "CDR": 130
+    }, 
+    "38": {
+      "Ground Truth": 62, 
+      "CDR": 62
+    }, 
+    "33": {
+      "Ground Truth": 20, 
+      "CDR": 19
+    }, 
+    "32": {
+      "Ground Truth": 21, 
+      "CDR": 18
+    }, 
+    "31": {
+      "Ground Truth": 144, 
+      "CDR": 144
+    }, 
+    "30": {
+      "Ground Truth": 91, 
+      "CDR": 86
+    }, 
+    "37": {
+      "Ground Truth": 45, 
+      "JPL": 32, 
+      "HG": 118, 
+      "CDR": 42, 
+      "NYU": 18
+    }, 
+    "36": {
+      "Ground Truth": 35, 
+      "CDR": 31
+    }, 
+    "35": {
+      "Ground Truth": 101, 
+      "JPL": 16, 
+      "HG": 78, 
+      "CDR": 88, 
+      "NYU": 34
+    }, 
+    "34": {
+      "Ground Truth": 24, 
+      "CDR": 20
+    }, 
+    "60": {
+      "Ground Truth": 137, 
+      "CDR": 132
+    }, 
+    "61": {
+      "Ground Truth": 33, 
+      "CDR": 33
+    }, 
+    "62": {
+      "Ground Truth": 188, 
+      "CDR": 187
+    }, 
+    "63": {
+      "Ground Truth": 112, 
+      "CDR": 107
+    }, 
+    "64": {
+      "Ground Truth": 28, 
+      "CDR": 26
+    }, 
+    "65": {
+      "Ground Truth": 155, 
+      "CDR": 153
+    }, 
+    "66": {
+      "Ground Truth": 60, 
+      "CDR": 56
+    }, 
+    "67": {
+      "Ground Truth": 18, 
+      "CDR": 17
+    }, 
+    "68": {
+      "Ground Truth": 133, 
+      "JPL": 0, 
+      "HG": 99, 
+      "CDR": 131, 
+      "NYU": 55
+    }, 
+    "69": {
+      "Ground Truth": 99, 
+      "JPL": 17, 
+      "HG": 83, 
+      "CDR": 85, 
+      "NYU": 37
+    }, 
+    "2": {
+      "Ground Truth": 73, 
+      "CDR": 67
+    }, 
+    "6": {
+      "Ground Truth": 24, 
+      "CDR": 24
+    }, 
+    "99": {
+      "Ground Truth": 74, 
+      "CDR": 73
+    }, 
+    "98": {
+      "Ground Truth": 63, 
+      "CDR": 63
+    }, 
+    "91": {
+      "Ground Truth": 138, 
+      "CDR": 133
+    }, 
+    "90": {
+      "Ground Truth": 37, 
+      "CDR": 8
+    }, 
+    "93": {
+      "Ground Truth": 135, 
+      "CDR": 131
+    }, 
+    "92": {
+      "Ground Truth": 76, 
+      "CDR": 76
+    }, 
+    "95": {
+      "Ground Truth": 28, 
+      "CDR": 26
+    }, 
+    "94": {
+      "Ground Truth": 24, 
+      "CDR": 23
+    }, 
+    "97": {
+      "Ground Truth": 91, 
+      "CDR": 87
+    }, 
+    "96": {
+      "Ground Truth": 116, 
+      "CDR": 114
+    }, 
+    "11": {
+      "Ground Truth": 75, 
+      "CDR": 74
+    }, 
+    "10": {
+      "Ground Truth": 67, 
+      "CDR": 65
+    }, 
+    "13": {
+      "Ground Truth": 62, 
+      "CDR": 61
+    }, 
+    "12": {
+      "Ground Truth": 116, 
+      "CDR": 116
+    }, 
+    "15": {
+      "Ground Truth": 83, 
+      "CDR": 83
+    }, 
+    "14": {
+      "Ground Truth": 36, 
+      "CDR": 31
+    }, 
+    "17": {
+      "Ground Truth": 46, 
+      "CDR": 43
+    }, 
+    "16": {
+      "Ground Truth": 14, 
+      "CDR": 5
+    }, 
+    "19": {
+      "Ground Truth": 16, 
+      "CDR": 15
+    }, 
+    "18": {
+      "Ground Truth": 25, 
+      "CDR": 23
+    }, 
+    "48": {
+      "Ground Truth": 37, 
+      "CDR": 37
+    }, 
+    "49": {
+      "Ground Truth": 187, 
+      "CDR": 181
+    }, 
+    "46": {
+      "Ground Truth": 52, 
+      "CDR": 52
+    }, 
+    "47": {
+      "Ground Truth": 126, 
+      "CDR": 123
+    }, 
+    "44": {
+      "Ground Truth": 100, 
+      "JPL": 2, 
+      "HG": 189, 
+      "CDR": 100, 
+      "NYU": 71
+    }, 
+    "45": {
+      "Ground Truth": 31, 
+      "CDR": 31
+    }, 
+    "42": {
+      "Ground Truth": 174, 
+      "CDR": 174
+    }, 
+    "43": {
+      "Ground Truth": 26, 
+      "CDR": 25
+    }, 
+    "40": {
+      "Ground Truth": 19, 
+      "CDR": 19
+    }, 
+    "41": {
+      "Ground Truth": 77, 
+      "CDR": 68
+    }, 
+    "1": {
+      "Ground Truth": 77, 
+      "CDR": 74
+    }, 
+    "5": {
+      "Ground Truth": 11, 
+      "JPL": 7, 
+      "HG": 146, 
+      "CDR": 11, 
+      "NYU": 18
+    }, 
+    "9": {
+      "Ground Truth": 49, 
+      "CDR": 45
+    }, 
+    "77": {
+      "Ground Truth": 121, 
+      "CDR": 121
+    }, 
+    "76": {
+      "Ground Truth": 100, 
+      "JPL": 3, 
+      "HG": 154, 
+      "CDR": 100, 
+      "NYU": 58
+    }, 
+    "75": {
+      "Ground Truth": 78, 
+      "CDR": 77
+    }, 
+    "74": {
+      "Ground Truth": 82, 
+      "CDR": 73
+    }, 
+    "73": {
+      "Ground Truth": 33, 
+      "CDR": 33
+    }, 
+    "72": {
+      "Ground Truth": 96, 
+      "CDR": 91
+    }, 
+    "71": {
+      "Ground Truth": 63, 
+      "JPL": 1, 
+      "HG": 119, 
+      "CDR": 59, 
+      "NYU": 15
+    }, 
+    "70": {
+      "Ground Truth": 48, 
+      "CDR": 43
+    }, 
+    "79": {
+      "Ground Truth": 57, 
+      "JPL": 0, 
+      "HG": 125, 
+      "CDR": 57, 
+      "NYU": 36
+    }, 
+    "78": {
+      "Ground Truth": 112, 
+      "JPL": 0, 
+      "HG": 47, 
+      "CDR": 108, 
+      "NYU": 26
+    }
+  }, 
+  "Point Fact": {
+    "217": {
+      "Ground Truth": 1, 
+      "JPL": 2, 
+      "HG": 0, 
+      "CDR": 0, 
+      "NYU": 0
+    }, 
+    "1301": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1612": {
+      "Ground Truth": 2, 
+      "CDR": 0
+    }, 
+    "1942": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "288": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "2249": {
+      "Ground Truth": 3, 
+      "CDR": 0
+    }, 
+    "1464": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "2247": {
+      "Ground Truth": 2, 
+      "CDR": 0
+    }, 
+    "284": {
+      "Ground Truth": 1, 
+      "JPL": 0, 
+      "HG": 1, 
+      "CDR": 0, 
+      "NYU": 0
+    }, 
+    "1159": {
+      "Ground Truth": 1, 
+      "JPL": 0, 
+      "HG": 0, 
+      "CDR": 0, 
+      "NYU": 0
+    }, 
+    "1098": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "260": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1705": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1707": {
+      "Ground Truth": 1, 
+      "JPL": 3, 
+      "HG": 10, 
+      "CDR": 0, 
+      "NYU": 1
+    }, 
+    "921": {
+      "Ground Truth": 4, 
+      "CDR": 0
+    }, 
+    "292": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "823": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1124": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "192": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "392": {
+      "Ground Truth": 1, 
+      "JPL": 0, 
+      "HG": 0, 
+      "CDR": 0, 
+      "NYU": 0
+    }, 
+    "110": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "276": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "796": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "2304": {
+      "Ground Truth": 1, 
+      "JPL": 0, 
+      "HG": 0, 
+      "CDR": 0, 
+      "NYU": 0
+    }, 
+    "799": {
+      "Ground Truth": 8, 
+      "JPL": 0, 
+      "HG": 3, 
+      "CDR": 0, 
+      "NYU": 1
+    }, 
+    "429": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "2268": {
+      "Ground Truth": 4, 
+      "CDR": 0
+    }, 
+    "1521": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "2266": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "363": {
+      "Ground Truth": 1, 
+      "JPL": 0, 
+      "HG": 0, 
+      "CDR": 0, 
+      "NYU": 0
+    }, 
+    "1986": {
+      "Ground Truth": 3, 
+      "CDR": 0
+    }, 
+    "1339": {
+      "Ground Truth": 1, 
+      "JPL": 0, 
+      "HG": 0, 
+      "CDR": 0, 
+      "NYU": 2
+    }, 
+    "1330": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "244": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "383": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "242": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "107": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1647": {
+      "Ground Truth": 1, 
+      "JPL": 0, 
+      "HG": 0, 
+      "CDR": 0, 
+      "NYU": 2
+    }, 
+    "381": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "418": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1725": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "2278": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "519": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1666": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "510": {
+      "Ground Truth": 1, 
+      "JPL": 5, 
+      "HG": 4, 
+      "CDR": 0, 
+      "NYU": 0
+    }, 
+    "434": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1342": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "455": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1876": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "258": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1871": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1907": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1905": {
+      "Ground Truth": 3, 
+      "CDR": 0
+    }, 
+    "1630": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "2256": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1734": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "813": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1038": {
+      "Ground Truth": 1, 
+      "JPL": 0, 
+      "HG": 2, 
+      "CDR": 0, 
+      "NYU": 0
+    }, 
+    "1506": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "2112": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1035": {
+      "Ground Truth": 1, 
+      "JPL": 0, 
+      "HG": 0, 
+      "CDR": 0, 
+      "NYU": 0
+    }, 
+    "758": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "900": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1597": {
+      "Ground Truth": 1, 
+      "JPL": 0, 
+      "HG": 0, 
+      "CDR": 0, 
+      "NYU": 0
+    }, 
+    "1127": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1915": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "221": {
+      "Ground Truth": 2, 
+      "CDR": 0
+    }, 
+    "163": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1621": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1677": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "2215": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1998": {
+      "Ground Truth": 2, 
+      "CDR": 0
+    }, 
+    "1180": {
+      "Ground Truth": 1, 
+      "JPL": 0, 
+      "HG": 0, 
+      "CDR": 0, 
+      "NYU": 0
+    }, 
+    "2241": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "724": {
+      "Ground Truth": 2, 
+      "CDR": 0
+    }, 
+    "1103": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1453": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1513": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "881": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "559": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "884": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "552": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "230": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1892": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1965": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1967": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1960": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1446": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "321": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1692": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1442": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "2030": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1448": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "202": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "204": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "141": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1763": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "2121": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1284": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "1971": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }, 
+    "684": {
+      "Ground Truth": 1, 
+      "CDR": 0
+    }
+  }, 
+  "Cluster Facet": {
+    "30": {
+      "Ground Truth": 40, 
+      "CDR": 40
+    }, 
+    "42": {
+      "Ground Truth": 160, 
+      "CDR": 155
+    }, 
+    "43": {
+      "Ground Truth": 160, 
+      "CDR": 160
+    }, 
+    "36": {
+      "Ground Truth": 138, 
+      "CDR": 133
+    }, 
+    "32": {
+      "Ground Truth": 41, 
+      "CDR": 40
+    }, 
+    "24": {
+      "Ground Truth": 147, 
+      "CDR": 146
+    }, 
+    "25": {
+      "Ground Truth": 34, 
+      "JPL": 92, 
+      "HG": 84, 
+      "CDR": 32, 
+      "NYU": 133
+    }, 
+    "26": {
+      "Ground Truth": 33, 
+      "JPL": 137, 
+      "HG": 72, 
+      "CDR": 0, 
+      "NYU": 90
+    }, 
+    "27": {
+      "Ground Truth": 181, 
+      "CDR": 181
+    }, 
+    "20": {
+      "Ground Truth": 150, 
+      "CDR": 143
+    }, 
+    "21": {
+      "Ground Truth": 104, 
+      "CDR": 92
+    }, 
+    "22": {
+      "Ground Truth": 31, 
+      "JPL": 69, 
+      "HG": 79, 
+      "CDR": 1, 
+      "NYU": 125
+    }, 
+    "23": {
+      "Ground Truth": 55, 
+      "CDR": 53
+    }, 
+    "46": {
+      "Ground Truth": 121, 
+      "CDR": 121
+    }, 
+    "47": {
+      "Ground Truth": 132, 
+      "JPL": 71, 
+      "HG": 86, 
+      "CDR": 132, 
+      "NYU": 106
+    }, 
+    "44": {
+      "Ground Truth": 121, 
+      "CDR": 119
+    }, 
+    "45": {
+      "Ground Truth": 195, 
+      "CDR": 193
+    }, 
+    "28": {
+      "Ground Truth": 222, 
+      "CDR": 215
+    }, 
+    "29": {
+      "Ground Truth": 65, 
+      "CDR": 64
+    }, 
+    "40": {
+      "Ground Truth": 162, 
+      "CDR": 160
+    }, 
+    "41": {
+      "Ground Truth": 167, 
+      "CDR": 167
+    }, 
+    "1": {
+      "Ground Truth": 149, 
+      "CDR": 147
+    }, 
+    "3": {
+      "Ground Truth": 159, 
+      "CDR": 155
+    }, 
+    "2": {
+      "Ground Truth": 150, 
+      "CDR": 143
+    }, 
+    "5": {
+      "Ground Truth": 135, 
+      "CDR": 135
+    }, 
+    "4": {
+      "Ground Truth": 136, 
+      "CDR": 129
+    }, 
+    "7": {
+      "Ground Truth": 195, 
+      "CDR": 193
+    }, 
+    "6": {
+      "Ground Truth": 59, 
+      "CDR": 56
+    }, 
+    "9": {
+      "Ground Truth": 26, 
+      "JPL": 76, 
+      "HG": 14, 
+      "CDR": 26, 
+      "NYU": 100
+    }, 
+    "8": {
+      "Ground Truth": 195, 
+      "CDR": 194
+    }, 
+    "39": {
+      "Ground Truth": 66, 
+      "CDR": 66
+    }, 
+    "38": {
+      "Ground Truth": 36, 
+      "CDR": 34
+    }, 
+    "11": {
+      "Ground Truth": 196, 
+      "CDR": 194
+    }, 
+    "10": {
+      "Ground Truth": 77, 
+      "CDR": 22
+    }, 
+    "13": {
+      "Ground Truth": 29, 
+      "CDR": 29
+    }, 
+    "12": {
+      "Ground Truth": 203, 
+      "CDR": 200
+    }, 
+    "15": {
+      "Ground Truth": 118, 
+      "CDR": 118
+    }, 
+    "14": {
+      "Ground Truth": 22, 
+      "CDR": 22
+    }, 
+    "17": {
+      "Ground Truth": 121, 
+      "JPL": 5, 
+      "HG": 47, 
+      "CDR": 116, 
+      "NYU": 4
+    }, 
+    "16": {
+      "Ground Truth": 119, 
+      "CDR": 119
+    }, 
+    "19": {
+      "Ground Truth": 174, 
+      "CDR": 163
+    }, 
+    "18": {
+      "Ground Truth": 141, 
+      "CDR": 140
+    }, 
+    "31": {
+      "Ground Truth": 50, 
+      "CDR": 50
+    }, 
+    "49": {
+      "Ground Truth": 176, 
+      "CDR": 176
+    }, 
+    "37": {
+      "Ground Truth": 53, 
+      "JPL": 112, 
+      "HG": 160, 
+      "CDR": 53, 
+      "NYU": 132
+    }, 
+    "50": {
+      "Ground Truth": 72, 
+      "CDR": 72
+    }, 
+    "35": {
+      "Ground Truth": 49, 
+      "CDR": 44
+    }, 
+    "34": {
+      "Ground Truth": 126, 
+      "CDR": 124
+    }, 
+    "33": {
+      "Ground Truth": 129, 
+      "CDR": 128
+    }, 
+    "48": {
+      "Ground Truth": 127, 
+      "CDR": 127
+    }
+  }, 
+  "Cluster Identification": {
+    "30": {
+      "Ground Truth": 260, 
+      "CDR": 239
+    }, 
+    "42": {
+      "Ground Truth": 238, 
+      "CDR": 222
+    }, 
+    "43": {
+      "Ground Truth": 179, 
+      "CDR": 170
+    }, 
+    "36": {
+      "Ground Truth": 223, 
+      "CDR": 223
+    }, 
+    "32": {
+      "Ground Truth": 246, 
+      "CDR": 239
+    }, 
+    "24": {
+      "Ground Truth": 190, 
+      "CDR": 182
+    }, 
+    "25": {
+      "Ground Truth": 208, 
+      "CDR": 208
+    }, 
+    "26": {
+      "Ground Truth": 179, 
+      "CDR": 179
+    }, 
+    "27": {
+      "Ground Truth": 243, 
+      "CDR": 243
+    }, 
+    "20": {
+      "Ground Truth": 177, 
+      "CDR": 177
+    }, 
+    "21": {
+      "Ground Truth": 228, 
+      "CDR": 226
+    }, 
+    "22": {
+      "Ground Truth": 256, 
+      "CDR": 247
+    }, 
+    "23": {
+      "Ground Truth": 156, 
+      "CDR": 152
+    }, 
+    "46": {
+      "Ground Truth": 188, 
+      "CDR": 189
+    }, 
+    "47": {
+      "Ground Truth": 175, 
+      "CDR": 174
+    }, 
+    "44": {
+      "Ground Truth": 199, 
+      "CDR": 199
+    }, 
+    "45": {
+      "Ground Truth": 158, 
+      "CDR": 155
+    }, 
+    "28": {
+      "Ground Truth": 123, 
+      "CDR": 120
+    }, 
+    "29": {
+      "Ground Truth": 246, 
+      "JPL": 67, 
+      "HG": 69, 
+      "CDR": 235, 
+      "NYU": 13
+    }, 
+    "40": {
+      "Ground Truth": 177, 
+      "CDR": 175
+    }, 
+    "41": {
+      "Ground Truth": 177, 
+      "CDR": 177
+    }, 
+    "1": {
+      "Ground Truth": 124, 
+      "CDR": 123
+    }, 
+    "3": {
+      "Ground Truth": 201, 
+      "JPL": 0, 
+      "HG": 15, 
+      "CDR": 174, 
+      "NYU": 0
+    }, 
+    "2": {
+      "Ground Truth": 155, 
+      "CDR": 155
+    }, 
+    "5": {
+      "Ground Truth": 132, 
+      "CDR": 132
+    }, 
+    "4": {
+      "Ground Truth": 36, 
+      "CDR": 27
+    }, 
+    "7": {
+      "Ground Truth": 229, 
+      "CDR": 228
+    }, 
+    "6": {
+      "Ground Truth": 227, 
+      "CDR": 219
+    }, 
+    "9": {
+      "Ground Truth": 208, 
+      "CDR": 208
+    }, 
+    "8": {
+      "Ground Truth": 42, 
+      "CDR": 40
+    }, 
+    "39": {
+      "Ground Truth": 136, 
+      "CDR": 136
+    }, 
+    "38": {
+      "Ground Truth": 98, 
+      "CDR": 97
+    }, 
+    "11": {
+      "Ground Truth": 162, 
+      "CDR": 162
+    }, 
+    "10": {
+      "Ground Truth": 113, 
+      "CDR": 110
+    }, 
+    "13": {
+      "Ground Truth": 121, 
+      "CDR": 121
+    }, 
+    "12": {
+      "Ground Truth": 222, 
+      "CDR": 204
+    }, 
+    "15": {
+      "Ground Truth": 107, 
+      "CDR": 101
+    }, 
+    "14": {
+      "Ground Truth": 143, 
+      "CDR": 132
+    }, 
+    "17": {
+      "Ground Truth": 222, 
+      "JPL": 31, 
+      "HG": 73, 
+      "CDR": 219, 
+      "NYU": 0
+    }, 
+    "16": {
+      "Ground Truth": 117, 
+      "CDR": 108
+    }, 
+    "19": {
+      "Ground Truth": 153, 
+      "JPL": 55, 
+      "HG": 39, 
+      "CDR": 147, 
+      "NYU": 2
+    }, 
+    "18": {
+      "Ground Truth": 243, 
+      "CDR": 242
+    }, 
+    "31": {
+      "Ground Truth": 184, 
+      "CDR": 184
+    }, 
+    "49": {
+      "Ground Truth": 241, 
+      "JPL": 72, 
+      "HG": 49, 
+      "CDR": 232, 
+      "NYU": 8
+    }, 
+    "37": {
+      "Ground Truth": 206, 
+      "JPL": 2, 
+      "HG": 152, 
+      "CDR": 205, 
+      "NYU": 6
+    }, 
+    "50": {
+      "Ground Truth": 136, 
+      "JPL": 46, 
+      "HG": 53, 
+      "CDR": 134, 
+      "NYU": 4
+    }, 
+    "35": {
+      "Ground Truth": 126, 
+      "CDR": 125
+    }, 
+    "34": {
+      "Ground Truth": 149, 
+      "CDR": 147
+    }, 
+    "33": {
+      "Ground Truth": 236, 
+      "CDR": 236
+    }, 
+    "48": {
+      "Ground Truth": 99, 
+      "CDR": 21
+    }
+  }, 
+  "Pure Aggregate": {
+    "11": {
+      "Ground Truth": 99, 
+      "JPL": 0, 
+      "HG": 0, 
+      "CDR": 97, 
+      "NYU": 195
+    }, 
+    "10": {
+      "Ground Truth": 2, 
+      "JPL": 0, 
+      "HG": 0, 
+      "CDR": 0, 
+      "NYU": 2
+    }, 
+    "13": {
+      "Ground Truth": 38, 
+      "JPL": 0, 
+      "HG": 0, 
+      "CDR": 32, 
+      "NYU": 70
+    }, 
+    "12": {
+      "Ground Truth": 18, 
+      "JPL": 0, 
+      "HG": 0, 
+      "CDR": 19, 
+      "NYU": 124
+    }, 
+    "15": {
+      "Ground Truth": 113, 
+      "JPL": 0, 
+      "HG": 0, 
+      "CDR": 108, 
+      "NYU": 121
+    }, 
+    "14": {
+      "Ground Truth": 23, 
+      "JPL": 0, 
+      "HG": 0, 
+      "CDR": 6, 
+      "NYU": 151
+    }, 
+    "1": {
+      "Ground Truth": 26, 
+      "JPL": 0, 
+      "HG": 0, 
+      "CDR": 22, 
+      "NYU": 37
+    }, 
+    "3": {
+      "Ground Truth": 31, 
+      "JPL": 0, 
+      "HG": 0, 
+      "CDR": 31, 
+      "NYU": 48
+    }, 
+    "2": {
+      "Ground Truth": 18, 
+      "JPL": 0, 
+      "HG": 0, 
+      "CDR": 18, 
+      "NYU": 1
+    }, 
+    "5": {
+      "Ground Truth": 22, 
+      "JPL": 0, 
+      "HG": 0, 
+      "CDR": 18, 
+      "NYU": 133
+    }, 
+    "4": {
+      "Ground Truth": 402, 
+      "JPL": 0, 
+      "HG": 0, 
+      "CDR": 386, 
+      "NYU": 112
+    }, 
+    "7": {
+      "Ground Truth": 205, 
+      "JPL": 0, 
+      "HG": 0, 
+      "CDR": 204, 
+      "NYU": 102
+    }, 
+    "6": {
+      "Ground Truth": 135, 
+      "JPL": 0, 
+      "HG": 0, 
+      "CDR": 135, 
+      "NYU": 73
+    }, 
+    "9": {
+      "Ground Truth": 35, 
+      "JPL": 0, 
+      "HG": 0, 
+      "CDR": 34, 
+      "NYU": 9
+    }, 
+    "8": {
+      "Ground Truth": 13, 
+      "JPL": 0, 
+      "HG": 0, 
+      "CDR": 13, 
+      "NYU": 144
+    }
+  }
+}
